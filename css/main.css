@@ -8,8 +8,13 @@ body {
     color: #5a5a5a;
 }
 
-body { padding-top: 55px; }
+body { padding-top: 50px; }
 
+* {
+    margin: 0;
+}
+
+/*.nav > li > a:hover{ { color: #ff192e !important; }*/
 
 
 /* CUSTOMIZE THE CAROUSEL
