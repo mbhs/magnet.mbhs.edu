@@ -52,11 +52,11 @@
 <br> <br>
 
 <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'overview')">Overview</button>
-  <button class="tablinks" onclick="openTab(event, 'math')">Math Courses</button>
-  <button class="tablinks" onclick="openTab(event, 'science')">Science Courses</button>
-  <button class="tablinks" onclick="openTab(event, 'compsci')">Computer Science Courses</button>
-  <button class="tablinks" onclick="openTab(event, 'inter')">Interdisciplinary</button>
+  <button id="overviewTab" class="tablinks" onclick="openTab('overview')">Overview</button>
+  <button id="mathTab" class="tablinks" onclick="openTab('math')">Math Courses</button>
+  <button id="scienceTab" class="tablinks" onclick="openTab('science')">Science Courses</button>
+  <button id="compsciTab" class="tablinks" onclick="openTab('compsci')">Computer Science Courses</button>
+  <button id="interTab" class="tablinks" onclick="openTab('inter')">Interdisciplinary</button>
 </div>
 <div id="overview" class="tabcontent">
   <table class="table table-bordered table-hover" style="text-align: center;">
@@ -650,21 +650,31 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script   src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>  
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script>
-function openTab(evt, name) {
-  $(".tabcontent").hide();
-  $(".tablinks").removeClass("active");
-  $("#" + name)[0].style.display = "block";
-  evt.currentTarget.className += " active";
-}
 
-$(function() { 
-  $(".tabcontent")[0].style.display = "block";
-  $(".nostart").hide();
+<script>
+$(document).ready(function(){
+	hash = window.location.hash.substring(1);
+	if(hash == ""){
+		loadDefault();
+	} else {
+		openTab(hash);
+	}
 });
 
+function openTab(name) {
+	$(".tabcontent").hide();
+	$(".tablinks").removeClass("active");
+  	$("#" + name)[0].style.display = "block";
+  	$("#" + name + "Tab").addClass("active");
+}
+
+function loadDefault() { 
+	$(".tabcontent")[0].style.display = "block";
+  	$(".nostart").hide();
+}
+
 function toggle(id) {
-  $('#'+id).toggle("highlight", {}, 500);
+  	$('#'+id).toggle("highlight", {}, 500);
 }
 </script>
 </body>
