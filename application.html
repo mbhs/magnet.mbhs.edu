@@ -1,187 +1,221 @@
 <head>
-	<meta charset=utf-8>
-	<title>Magnet Application</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="css/main.css" />
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <meta charset=utf-8>
+    <title>Magnet Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 </head>
 
 <body>
-<nav class="navbar fixed-top front navbar-expand-md navbar-dark bg-dark">
-	<span id="title"><a href="index.html">Blair Magnet</a></span> 
-    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link text-dark" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./application.html">Apply</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./awards.html">Awards</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./news.html">News</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./resources.html">Resources</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item dropdown text-dark">
-                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Courses
-                </a>
-                <div class="dropdown-menu text-dark" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item text-dark" href="overview.html">Overview</a>
-                    <a class="dropdown-item text-dark" href="#">Science</a>
-                    <a class="dropdown-item text-dark" href="#">Math</a>
-                    <a class="dropdown-item text-dark" href="#">Computer Science</a>
-                    <a class="dropdown-item text-dark" href="#">Interdisciplinary</a>
-                </div>
-            </li>
-        </ul>
+    <nav class="navbar fixed-top front navbar-expand-md navbar-dark bg-dark">
+        <span id="title"><a href="index.html">Blair Magnet</a></span>
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-dark" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="./application.html">Apply</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="./awards.html">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="./news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="./resources.html">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="./contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown text-dark">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Courses
+                    </a>
+                    <div class="dropdown-menu text-dark" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item text-dark" href="overview.html">Overview</a>
+                        <a class="dropdown-item text-dark" href="#">Science</a>
+                        <a class="dropdown-item text-dark" href="#">Math</a>
+                        <a class="dropdown-item text-dark" href="#">Computer Science</a>
+                        <a class="dropdown-item text-dark" href="#">Interdisciplinary</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Applying to the Magnet</h1>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'info')">Four W's and How</button>
+        <button class="tablinks" onclick="openTab(event, 'criteria')">Selection Criteria</button>
+        <button class="tablinks" onclick="openTab(event, 'forms')">Application Forms</button>
+        <button class="tablinks" onclick="openTab(event, 'testing')">About Testing</button>
     </div>
-</nav>
 
-<h1>Applying to the Magnet</h1>
-<div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'info')">Four W's and How</button>
-  <button class="tablinks" onclick="openTab(event, 'criteria')">Selection Criteria</button>
-  <button class="tablinks" onclick="openTab(event, 'forms')">Application Forms</button>
-  <button class="tablinks" onclick="openTab(event, 'testing')">About Testing</button>
-</div>
-
-<div id="info" class="tabcontent">
-  <h2>What are you applying to?</h2>
-			<p>The Blair Magnet Program is funded to accept 100 Montgomery County students for its incoming 9th Grade class. Because the Magnet Program's curriculum is interrelated between grades and sequentially different from other high schools, only students entering 9th Grade are accepted. No mid-high school transfer of students is permitted. However, juniors and seniors enrolled in other Montgomery County high schools who meet the prerequisites and can provide their own transportation are eligible for magnet electives that are not offered at their home school.</p>
-			<h2>Who should apply?</h2>
-			<p>Students in Grade 8 with a strong interest in science, mathematics, and computer science who are enrolled in at least Algebra I may apply to the Blair Magnet Program for entrance the following school year. Applicants must reside in one of the following MCPS high school clusters at the time of testing (for more information on testing, see below): Bethesda-Chevy Chase, Winston Churchill, the Downcounty Consortium (Montgomery Blair, Albert Einstein, John F. Kennedy, Northwood, Wheaton), the Northeast Consortium (Blake, Paint Branch, Springbrook), Walter Johnson, Richard Montgomery, Rockville, Sherwood, Walt Whitman, or Thomas S. Wootton. Students in other high school clusters can apply to the Poolesville Magnet Program.</p>
-			<h2>Where and when can you get additional information?</h2>
-			<p>Each fall there are informational meetings about the Magnet for interested
-			  students and their parents/guardians. In 2018, families are invited
-			  to learn about the Magnet on Monday, <span style="font-weight: bold">October
-			  8th</span>, at 7:00 PM
-			  at Blair High School.</p>
-	  <h2>How do you apply?</h2>
-		  <p>Please carefully read the <strong><a href="/departments/magnet/pdfs/High School Magnet Application Programs Directions.pdf">instructions for applying to the Magnet here</a></strong>. Once you have read through the instructions and gathered all relevant information, current MCPS students can complete the <a href="https://goo.gl/forms/0XjQaKSxI5BtYWBm2" target="_blank">online application here</a> using their MCPS Google/Choromebook accounts. Students in private school or other non-MCPS students will have access to the application on October 8th. The application deadline is November 2nd.</p>
-			<p><i>Further questions? Call the Magnet Program at (301) 649-8240.</i></p>
-		</div>
-</div>
-
-
-<div id="criteria" class="tabcontent">
-			<h2>Selection Criteria</h2>
-			<p style="padding-bottom: 0">Students are accepted on the basis of:</p>
-				<li>demonstrated interest in mathematics, science, computer science, and technology</li>
-				<li>teacher recommendations</li>
-				<li>their achievement in Grades 7 and 8</li>
-				<li>scores on a reasoning and critical thinking assessment administered by the program (A writing component is included in the application and at the time of testing.)</li>
-			<p style="padding-top: 20px">Applicants take a series of mathematical and verbal aptitude, achievement, and critical thinking tests in December. </p>
-			<p>For more about the test, go to our <a href="apply_test.php">About Testing</a> page.			</p>
-			<p><i>Further questions? Call the Magnet Program at (301) 649-8240.</i></p>
-</div>
+    <div id="info" class="tabcontent">
+        <h2>What are you applying to?</h2>
+        <p>The Blair Magnet Program is funded to accept 100 Montgomery County students for its incoming 9th Grade
+            class. Because the Magnet Program's curriculum is interrelated between grades and sequentially different
+            from other high schools, only students entering 9th Grade are accepted. No mid-high school transfer of
+            students is permitted. However, juniors and seniors enrolled in other Montgomery County high schools who
+            meet the prerequisites and can provide their own transportation are eligible for magnet electives that are
+            not offered at their home school.</p>
+        <h2>Who should apply?</h2>
+        <p>Students in Grade 8 with a strong interest in science, mathematics, and computer science who are enrolled in
+            at least Algebra I may apply to the Blair Magnet Program for entrance the following school year. Applicants
+            must reside in one of the following MCPS high school clusters at the time of testing (for more information
+            on testing, see below): Bethesda-Chevy Chase, Winston Churchill, the Downcounty Consortium (Montgomery
+            Blair, Albert Einstein, John F. Kennedy, Northwood, Wheaton), the Northeast Consortium (Blake, Paint
+            Branch, Springbrook), Walter Johnson, Richard Montgomery, Rockville, Sherwood, Walt Whitman, or Thomas S.
+            Wootton. Students in other high school clusters can apply to the Poolesville Magnet Program.</p>
+        <h2>Where and when can you get additional information?</h2>
+        <p>Each fall there are informational meetings about the Magnet for interested
+            students and their parents/guardians. In 2018, families are invited
+            to learn about the Magnet on Monday, <span style="font-weight: bold">October
+                8th</span>, at 7:00 PM
+            at Blair High School.</p>
+        <h2>How do you apply?</h2>
+        <p>Please carefully read the <strong><a href="/departments/magnet/pdfs/High School Magnet Application Programs Directions.pdf">instructions
+                    for applying to the Magnet here</a></strong>. Once you have read through the instructions and
+            gathered all relevant information, current MCPS students can complete the <a href="https://goo.gl/forms/0XjQaKSxI5BtYWBm2"
+                target="_blank">online application here</a> using their MCPS Google/Choromebook accounts. Students in
+            private school or other non-MCPS students will have access to the application on October 8th. The
+            application deadline is November 2nd.</p>
+        <p><i>Further questions? Call the Magnet Program at (301) 649-8240.</i></p>
+    </div>
+    </div>
 
 
-<div id="forms" class="tabcontent">
-		  <p>Please carefully read the <strong><a href="/departments/magnet/pdfs/High School Magnet Application Programs Directions.pdf">instructions for applying to the Magnet here</a></strong>. Once you have read through the instructions and gathered all relevant information, current MCPS students can complete the <a href="https://goo.gl/forms/0XjQaKSxI5BtYWBm2" target="_blank">online application here</a> using their MCPS Google/Choromebook accounts. Students in private school or other non-MCPS students will have access to the application on October 8th. The application deadline is November 2nd.</p>
-		  <p><i>Further questions? Call the Magnet Program at (301) 649-8240.</i></p>
-		</div>
-</div>
+    <div id="criteria" class="tabcontent">
+        <h2>Selection Criteria</h2>
+        <p style="padding-bottom: 0">Students are accepted on the basis of:</p>
+        <li>demonstrated interest in mathematics, science, computer science, and technology</li>
+        <li>teacher recommendations</li>
+        <li>their achievement in Grades 7 and 8</li>
+        <li>scores on a reasoning and critical thinking assessment administered by the program (A writing component is
+            included in the application and at the time of testing.)</li>
+        <p style="padding-top: 20px">Applicants take a series of mathematical and verbal aptitude, achievement, and
+            critical thinking tests in December. </p>
+        <p>For more about the test, go to our <a href="apply_test.php">About Testing</a> page. </p>
+        <p><i>Further questions? Call the Magnet Program at (301) 649-8240.</i></p>
+    </div>
 
 
-<div id="testing" class="tabcontent">
-  			<p><br/>
-	            Testing for most students applying to enter the Magnet
-	              in Fall 2019 will be held on the morning of <span style="font-weight: bold">December
-	            1, 2018</span>.			</p>
-			<p>For the class incoming in the Fall of 2019, all applicants are to report
-			  to the assigned testing site on <b>Saturday, December 1st, 2018, between
-			  7:15 and 8:00 AM</b> (Snow Date: December 8th). Testing for students with
-			  testing accommodations will be December 2nd, 2018 at Richard Montgomery High School; you will be contacted
-			  by the program coordinator for arrangements. No contact will be
-			  made to confirm this testing date. </p>
-			<p>Students who are unable to test
-			  on Saturday due to religious reasons will be able to test on Sunday,
-			  December 2nd, at Richard Montgomery  High School. You must request
-			  alternate testing in writing to the program coordinator with the
-			  application. A telephone contact from the coordinator will confirm
-			  testing placement for this alternative date.</p>
-			<p>Please use the following list to determine your assigned test site:</p>
-			<p>Students from the following home high schools are to report for testing to Montgomery Blair High School (<a href="direction_blair.php" target="_blank">51 University Boulevard East, Silver Spring, MD 20901</a>):</p>
-            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
-            	<tr>
-                	<td width=33% align="center">Bethesda-Chevy Chase HS</td>
-                    <td width=34% align="center">John F. Kennedy HS</td>
-                    <td width=33% align="center">Sherwood HS</td>
-                </tr>
-                <tr>
-                 	<td width=33% align="center">Montgomery Blair HS</td>
-                    <td width=34% align="center">Northwood HS</td>
-                    <td width=33% align="center">Springbrook HS</td>               
-                </tr>
-                <tr>
-                	<td width=33% align="center">James Hubert Blake HS</td>
-                    <td width=34% align="center">Paint Branch HS</td>
-                    <td width=33% align="center">Wheaton HS</td>                
-                </tr>
-                <tr>
-                 	<td width=33% align="center">Albert Einstein HS</td>
-                    <td width=34% align="center"></td>
-                    <td width=33% align="center"></td>               
-                </tr>
-            </table>
-
-			<p><br />
-		    Students assigned to Blair should report to the Student Activity Center (on the the University Boulevard side of the building).</p>
-			<p>Students from the following home high schools are to report for testing to Richard Montgomery High School (<a href="direction_rm.php" target="_blank">250 Richard Montgomery Drive, Rockville, MD 20852</a>):</p>
-          <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
-            	<tr>
-                	<td width=33% align="center">Winston Churchill HS</td>
-                    <td width=34% align="center">Richard Montgomery HS</td>
-                    <td width=33% align="center">Thomas S. Wootton HS</td>
-                </tr>
-                <tr>
-                 	<td width=33% align="center">Walter Johnson HS</td>
-                    <td width=34% align="center">Rockville HS</td>
-                    <td width=33% align="center">Walt Whitman HS</td>               
-                </tr>
-            </table>
-			<p><br />
-			  (Note that students from Gaithersburg HS and Magruder HS applying to the Poolesville Magnets and/or the Richard Mongomery IB Program also test at Richard Montgomery at this time, but students from these two school cannot apply to the Blair Magnet)
-			</p>
-			<p>Students assigned to Richard Montgomery should report to the Auditorium. </p>
-		  <p>Please contact the International Baccalaureate Program (301-279-8418) if you are testing at Richard Montgomery and accessibility for the disabled is needed.</p>
-		  <p><em>Please note</em>, students whose home high schools are Clarksburg, Damascus, Gaithersburg, Magruder, Northwest, Poolesville, Quince Orchard, Seneca Valley, or Watkins Mill are not eligible to apply to Blair's Magnet Program, but are eligiable to apply to the Poolesville Magnet. Please see the <a href="http://www.montgomeryschoolsmd.org/curriculum/specialprograms/high/applications.aspx" target="_blank">MCPS website for more information</a>.</p>
-		  <p>More information about testing can be found in <a href="/departments/magnet/apply_forms.php">the
-	      application form</a>.</p>
-		  <p><i>Further questions? Call the Magnet Program at (301) 649-8240.</i></p>
-	  </div>
-</div>
+    <div id="forms" class="tabcontent">
+        <p>Please carefully read the <strong><a href="/departments/magnet/pdfs/High School Magnet Application Programs Directions.pdf">instructions
+                    for applying to the Magnet here</a></strong>. Once you have read through the instructions and
+            gathered all relevant information, current MCPS students can complete the <a href="https://goo.gl/forms/0XjQaKSxI5BtYWBm2"
+                target="_blank">online application here</a> using their MCPS Google/Choromebook accounts. Students in
+            private school or other non-MCPS students will have access to the application on October 8th. The
+            application deadline is November 2nd.</p>
+        <p><i>Further questions? Call the Magnet Program at (301) 649-8240.</i></p>
+    </div>
+    </div>
 
 
-<script>
-function openTab(evt, name) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+    <div id="testing" class="tabcontent">
+        <p><br />
+            Testing for most students applying to enter the Magnet
+            in Fall 2019 will be held on the morning of <span style="font-weight: bold">December
+                1, 2018</span>. </p>
+        <p>For the class incoming in the Fall of 2019, all applicants are to report
+            to the assigned testing site on <b>Saturday, December 1st, 2018, between
+                7:15 and 8:00 AM</b> (Snow Date: December 8th). Testing for students with
+            testing accommodations will be December 2nd, 2018 at Richard Montgomery High School; you will be contacted
+            by the program coordinator for arrangements. No contact will be
+            made to confirm this testing date. </p>
+        <p>Students who are unable to test
+            on Saturday due to religious reasons will be able to test on Sunday,
+            December 2nd, at Richard Montgomery High School. You must request
+            alternate testing in writing to the program coordinator with the
+            application. A telephone contact from the coordinator will confirm
+            testing placement for this alternative date.</p>
+        <p>Please use the following list to determine your assigned test site:</p>
+        <p>Students from the following home high schools are to report for testing to Montgomery Blair High School (<a
+                href="direction_blair.php" target="_blank">51 University Boulevard East, Silver Spring, MD 20901</a>):</p>
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width=33% align="center">Bethesda-Chevy Chase HS</td>
+                <td width=34% align="center">John F. Kennedy HS</td>
+                <td width=33% align="center">Sherwood HS</td>
+            </tr>
+            <tr>
+                <td width=33% align="center">Montgomery Blair HS</td>
+                <td width=34% align="center">Northwood HS</td>
+                <td width=33% align="center">Springbrook HS</td>
+            </tr>
+            <tr>
+                <td width=33% align="center">James Hubert Blake HS</td>
+                <td width=34% align="center">Paint Branch HS</td>
+                <td width=33% align="center">Wheaton HS</td>
+            </tr>
+            <tr>
+                <td width=33% align="center">Albert Einstein HS</td>
+                <td width=34% align="center"></td>
+                <td width=33% align="center"></td>
+            </tr>
+        </table>
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+        <p><br />
+            Students assigned to Blair should report to the Student Activity Center (on the the University Boulevard
+            side of the building).</p>
+        <p>Students from the following home high schools are to report for testing to Richard Montgomery High School (<a
+                href="direction_rm.php" target="_blank">250 Richard Montgomery Drive, Rockville, MD 20852</a>):</p>
+        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+                <td width=33% align="center">Winston Churchill HS</td>
+                <td width=34% align="center">Richard Montgomery HS</td>
+                <td width=33% align="center">Thomas S. Wootton HS</td>
+            </tr>
+            <tr>
+                <td width=33% align="center">Walter Johnson HS</td>
+                <td width=34% align="center">Rockville HS</td>
+                <td width=33% align="center">Walt Whitman HS</td>
+            </tr>
+        </table>
+        <p><br />
+            (Note that students from Gaithersburg HS and Magruder HS applying to the Poolesville Magnets and/or the
+            Richard Mongomery IB Program also test at Richard Montgomery at this time, but students from these two
+            school cannot apply to the Blair Magnet)
+        </p>
+        <p>Students assigned to Richard Montgomery should report to the Auditorium. </p>
+        <p>Please contact the International Baccalaureate Program (301-279-8418) if you are testing at Richard
+            Montgomery and accessibility for the disabled is needed.</p>
+        <p><em>Please note</em>, students whose home high schools are Clarksburg, Damascus, Gaithersburg, Magruder,
+            Northwest, Poolesville, Quince Orchard, Seneca Valley, or Watkins Mill are not eligible to apply to Blair's
+            Magnet Program, but are eligiable to apply to the Poolesville Magnet. Please see the <a href="http://www.montgomeryschoolsmd.org/curriculum/specialprograms/high/applications.aspx"
+                target="_blank">MCPS website for more information</a>.</p>
+        <p>More information about testing can be found in <a href="/departments/magnet/apply_forms.php">the
+                application form</a>.</p>
+        <p><i>Further questions? Call the Magnet Program at (301) 649-8240.</i></p>
+    </div>
+    </div>
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(name).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
+    <script>
+        function openTab(evt, name) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(name).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>

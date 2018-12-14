@@ -2,134 +2,136 @@
 <html>
 
 <head>
-	<meta charset=utf-8>
-	<title>MBHS Magnet</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-	 crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="./css/main.css" />
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+  <meta charset=utf-8>
+  <title>MBHS Magnet</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="./css/main.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 </head>
 
 <body>
-<nav class="navbar fixed-top front navbar-expand-md navbar-dark bg-dark">
-	<span id="title"><a href="index.html">Blair Magnet</a></span> 
+  <nav class="navbar fixed-top front navbar-expand-md navbar-dark bg-dark">
+    <span id="title"><a href="index.html">Blair Magnet</a></span>
     <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link text-dark" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./application.html">Application Process</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./awards.html">Awards</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./news.html">News</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./resources.html">Resources</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item dropdown text-dark">
-                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Courses
-                </a>
-                <div class="dropdown-menu text-dark" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item text-dark" href="overview.html">Overview</a>
-                    <a class="dropdown-item text-dark" href="#">Science</a>
-                    <a class="dropdown-item text-dark" href="#">Math</a>
-                    <a class="dropdown-item text-dark" href="#">Computer Science</a>
-                    <a class="dropdown-item text-dark" href="#">Interdisciplinary</a>
-                </div>
-            </li>
-        </ul>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-dark" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="./application.html">Application Process</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="./awards.html">Awards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="./news.html">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="./resources.html">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="./contact.html">Contact</a>
+        </li>
+        <li class="nav-item dropdown text-dark">
+          <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Courses
+          </a>
+          <div class="dropdown-menu text-dark" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item text-dark" href="overview.html">Overview</a>
+            <a class="dropdown-item text-dark" href="#">Science</a>
+            <a class="dropdown-item text-dark" href="#">Math</a>
+            <a class="dropdown-item text-dark" href="#">Computer Science</a>
+            <a class="dropdown-item text-dark" href="#">Interdisciplinary</a>
+          </div>
+        </li>
+      </ul>
     </div>
-</nav>
-<br> <br>
+  </nav>
+  <br> <br>
 
-<div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'overview')">Overview</button>
-  <button class="tablinks" onclick="openTab(event, 'math')">Math Courses</button>
-  <button class="tablinks" onclick="openTab(event, 'science')">Science Courses</button>
-  <button class="tablinks" onclick="openTab(event, 'compsci')">Computer Science Courses</button>
-  <button class="tablinks" onclick="openTab(event, 'inter')">Interdisciplinary</button>
-</div>
-<div id="overview" class="tabcontent">
-  <table class="table table-bordered table-hover" style="text-align: center;">
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'overview')">Overview</button>
+    <button class="tablinks" onclick="openTab(event, 'math')">Math Courses</button>
+    <button class="tablinks" onclick="openTab(event, 'science')">Science Courses</button>
+    <button class="tablinks" onclick="openTab(event, 'compsci')">Computer Science Courses</button>
+    <button class="tablinks" onclick="openTab(event, 'inter')">Interdisciplinary</button>
+  </div>
+  <div id="overview" class="tabcontent">
+    <table class="table table-bordered table-hover" style="text-align: center;">
       <thead>
-      <tr>
-        <th scope="col">Subject</th>
-        <th scope="col">Grade 9</th>
-        <th scope="col">Grade 10</th>
-        <th scope="col">Grade 11</th>
-        <th scope="col">Grade 12</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Science</th>
-        <td>Magnet Physics & Magnet Chemistry</td>
-        <td>Magnet Earth Science & Magnet Biology</td>
-        <td>Magnet Elective (optional)</td>
-        <td>Magnet Elective (optional)</td>
-      </tr>
-      <tr rowspan=3>
-        <th scope="row">Mathematics</th>
-        <td>Magnet Geometry A/B <b>OR</b><br>Magnet Precalculus A/B <b>OR</b><br>Magnet Functions A/B</td>
-        <td>Magnet Precalculus A/B <b>OR</b><br>Magnet Precalculus C & Analysis 1A <b>OR</b><br>Analysis 1A/B</td>
-        <td>Magnet Precalculus C & Analysis 1A <b>OR</b><br>Analysis 1B & Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
-        <td>Analysis 1B and Magnet Elective <b>OR</b><br>Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
-      </tr>
-      <tr>
-        <th scope="row">Computer Science</th>
-        <td>Fundamentals of Computer Science A/B</td>
-        <td>Algorithms and Data Structures A/B</td>
-        <td>Magnet Elective (optional)</td>
-        <td>Magnet Elective (optional)</td>
-      </tr>
-      <tr>
-        <th scope="row">Interdisciplinary</th>
-        <td>Research and Experimentation A/B</td>
-        <td>Principles of Engineering A</td>
-        <td>Principles of Engineering A & Research Project A</td>
-        <td>Research Project B & Elective</td>
-      </tr>
-      <tr rowspan=2>
-        <th scope="row">English</th>
-        <td>Honors English 9A/B</td>
-        <td>Honors English 10A/B</td>
-        <td>Honors English 11A/B <b>OR</b><br>
-  AP Language and Composition</td>
-        <td>Honors English 12A/B <b>OR</b><br>
-  AP Literature and Composition</td>
-      </tr>
-      <tr rowspan=2>
-        <th scope="row">Social Studies</th>
-        <td>Honors US History A/B</td>
-        <td>Honors NSL <b>OR</b><br>AP NSL</td>
-        <td>Honors World History <b>OR</b><br>AP World History</td>
-        <td>Elective (optional)</td>
-      </tr>
-      <tr>
-        <th scope="row">World Languages</th>
-        <td>World Language</td>
-        <td>World Language</td>
-        <td>World Language (optional)</td>
-        <td>World Language (optional)</td>
-      </tr>
-      <tr rowspan=2>
-        <th scope="row">Required Electives <br>(Recommended Schedule)</th>
-        <td>Fine Arts/Music <b>OR</b><br>Physical Education</td>
-        <td>Health/Elective</td>
-        <td>Fine Arts/Music <b>OR</b><br>Physical Education</td>
-        <td>Elective (optional)</td>
-      </tr>
-    </tbody>
-  </table>
+        <tr>
+          <th scope="col">Subject</th>
+          <th scope="col">Grade 9</th>
+          <th scope="col">Grade 10</th>
+          <th scope="col">Grade 11</th>
+          <th scope="col">Grade 12</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Science</th>
+          <td>Magnet Physics & Magnet Chemistry</td>
+          <td>Magnet Earth Science & Magnet Biology</td>
+          <td>Magnet Elective (optional)</td>
+          <td>Magnet Elective (optional)</td>
+        </tr>
+        <tr rowspan=3>
+          <th scope="row">Mathematics</th>
+          <td>Magnet Geometry A/B <b>OR</b><br>Magnet Precalculus A/B <b>OR</b><br>Magnet Functions A/B</td>
+          <td>Magnet Precalculus A/B <b>OR</b><br>Magnet Precalculus C & Analysis 1A <b>OR</b><br>Analysis 1A/B</td>
+          <td>Magnet Precalculus C & Analysis 1A <b>OR</b><br>Analysis 1B & Magnet Math Elective <b>OR</b><br>Magnet
+            Math Elective</td>
+          <td>Analysis 1B and Magnet Elective <b>OR</b><br>Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
+        </tr>
+        <tr>
+          <th scope="row">Computer Science</th>
+          <td>Fundamentals of Computer Science A/B</td>
+          <td>Algorithms and Data Structures A/B</td>
+          <td>Magnet Elective (optional)</td>
+          <td>Magnet Elective (optional)</td>
+        </tr>
+        <tr>
+          <th scope="row">Interdisciplinary</th>
+          <td>Research and Experimentation A/B</td>
+          <td>Principles of Engineering A</td>
+          <td>Principles of Engineering A & Research Project A</td>
+          <td>Research Project B & Elective</td>
+        </tr>
+        <tr rowspan=2>
+          <th scope="row">English</th>
+          <td>Honors English 9A/B</td>
+          <td>Honors English 10A/B</td>
+          <td>Honors English 11A/B <b>OR</b><br>
+            AP Language and Composition</td>
+          <td>Honors English 12A/B <b>OR</b><br>
+            AP Literature and Composition</td>
+        </tr>
+        <tr rowspan=2>
+          <th scope="row">Social Studies</th>
+          <td>Honors US History A/B</td>
+          <td>Honors NSL <b>OR</b><br>AP NSL</td>
+          <td>Honors World History <b>OR</b><br>AP World History</td>
+          <td>Elective (optional)</td>
+        </tr>
+        <tr>
+          <th scope="row">World Languages</th>
+          <td>World Language</td>
+          <td>World Language</td>
+          <td>World Language (optional)</td>
+          <td>World Language (optional)</td>
+        </tr>
+        <tr rowspan=2>
+          <th scope="row">Required Electives <br>(Recommended Schedule)</th>
+          <td>Fine Arts/Music <b>OR</b><br>Physical Education</td>
+          <td>Health/Elective</td>
+          <td>Fine Arts/Music <b>OR</b><br>Physical Education</td>
+          <td>Elective (optional)</td>
+        </tr>
+      </tbody>
+    </table>
 
   </div>
   <div id="math" class="tabcontent">
@@ -139,49 +141,51 @@
 
   </div>
   <div id='compsci' class='tabcontent'>
-  			
+
   </div>
-    <!-- FOOTER -->
-    <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2018 Simon Chervenak, in affiliation with the MBHS 2018 Sysops. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
-</main>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script>
-function openTab(evt, name) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; 2018 Simon Chervenak, in affiliation with the MBHS 2018 Sysops. &middot; <a href="#">Privacy</a> &middot;
+      <a href="#">Terms</a></p>
+  </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script>
+    function openTab(evt, name) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
 
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(name).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-$(function() { 
-  $(".tabcontent")[0].style.display = "block";
-  for (el of $(".nostart")) {
-    el.style.display = "none";
-  }
-});
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(name).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    $(function () {
+      $(".tabcontent")[0].style.display = "block";
+      for (el of $(".nostart")) {
+        el.style.display = "none";
+      }
+    });
 
-function toggle(id) {
-  $('#'+id).toggle(500);
-}
+    function toggle(id) {
+      $('#' + id).toggle(500);
+    }
 
-</script>
+  </script>
 </body>
 
 </html>
