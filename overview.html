@@ -82,25 +82,25 @@
         <tr rowspan=3>
             <th scope="row">Mathematics</th>
             <td><a href="#" id="#math#geomclass" class="tag">Magnet Geometry A/B</a> <b>OR</b><br><a href="#" id="#math#precclass" class="tag">Magnet Precalculus A/B</a> <b>OR</b><br><a href="#" id="#math#funcclass" class="tag">Magnet Functions A/B</a></td>
-            <td><a href="#" id="#math#precclass" class="tag">Magnet Precalculus A/B</a> <b>OR</b><br><a href="#" id="#math#precclass" class="tag">Magnet Precalculus C</a> & Analysis 1A <b>OR</b><br>Analysis 1A/B</td>
-            <td><a href="#" id="#math#precclass" class="tag">Magnet Precalculus C</a> & Analysis 1A <b>OR</b><br>Analysis 1B & Magnet Math Elective <b>OR</b><br>Magnet
+            <td><a href="#" id="#math#precclass" class="tag">Magnet Precalculus A/B</a> <b>OR</b><br><a href="#" id="#math#precclass" class="tag">Magnet Precalculus C</a> & <a href="#" id="#math#analyclass" class="tag">Analysis 1A</a> <b>OR</b><br><a href="#" id="#math#analyclass" class="tag">Analysis 1A/B</a></td>
+            <td><a href="#" id="#math#precclass" class="tag">Magnet Precalculus C</a> & <a href="#" id="#math#analyclass" class="tag">Analysis 1A</a> <b>OR</b><br><a href="#" id="#math#analyclass" class="tag">Analysis 1B</a> & Magnet Math Elective <b>OR</b><br>Magnet
                 Math Elective
             </td>
-            <td>Analysis 1B and Magnet Elective <b>OR</b><br>Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
+            <td><a href="#" id="#math#analyclass" class="tag">Analysis 1B</a> and Magnet Elective <b>OR</b><br>Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
         </tr>
         <tr>
             <th scope="row">Computer Science</th>
-            <td>Fundamentals of Computer Science A/B</td>
-            <td>Algorithms and Data Structures A/B</td>
-            <td>Magnet Elective (optional)</td>
-            <td>Magnet Elective (optional)</td>
+            <td><a href="#" id="#compsci#fundsclass" class="tag">Fundamentals of Computer Science A/B</a></td>
+            <td><a href="#" id="#compsci#adsclass" class="tag">Algorithms and Data Structures A/B</a></td>
+            <td></td>
+            <td></td>
         </tr>
         <tr>
             <th scope="row">Interdisciplinary</th>
-            <td>Research and Experimentation A/B</td>
-            <td>Principles of Engineering A</td>
-            <td>Principles of Engineering A & <a href="?d=0#inter#srp">Research Project A</a></td>
-            <td>Research Project B & Elective</td>
+            <td><a href="#" id="#inter#reclass" class="tag">Research and Experimentation A/B</a></td>
+            <td><a href="#" id="#inter#poeclass" class="tag">Principles of Engineering A</a></td>
+            <td><a href="#" id="#inter#poeclass" class="tag">Principles of Engineering B</a> & <a href="#" id="#inter#srpclass" class="tag">Research Project A</a></td>
+            <td><a href="#" id="#inter#srpclass" class="tag">Research Project B</a> & Elective</td>
         </tr>
         <tr rowspan=2>
             <th scope="row">English</th>
@@ -195,21 +195,23 @@
                 <span id="functions_inner">Functions begun in Algebra 1 are continued and expanded to include all forms of algebraic, exponential, logarithmic, and circular functions. The study of each includes a precise definition, a consideration of graphs and applications, an analysis of distinguishing and interesting features, and an identification of related tangents and slopes. Students study trigonometry, approached from circular functions, conics, limits, and derivatives.</span>
             </div>
         </div>
-        <h2>Magnet Analysis 1A/B</h2>
-        <ul>
-            <li>Grade Level: 10 - 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Magnet Precalculus or Magnet Functions</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Boiled down to one sentence, calculus is simply the study of change. But what makes calculus so powerful is
-            the elegant concept of limits that drives it at its core. By taking everything you've learned in math so far
-            and mixing it up with the magic of limits, a new world of theoretical and applicable results opens up. Soon
-            after covering the basics of derivatives and integrals, you'll be able to chug away with "The Limit Machine"
-            on some of the fundamental concepts from physics to economics. Plus, in the Magnet we call this course
-            Analysis because it covers a lot more information than a normal high-school calculus course.</p>
-        <div class="toggle" onclick="toggle('analysis1');">Show/Hide formal description</div>
-        <div class="nostart" id="analysis1">
-            <span id="analysis1_inner">The delta-epsilon definition of the limit of a function is examined and applied to develop the ideas of differentiation and integration. All the nonvector objectives of the MCPS AP calculus curriculum are studied with a greater degree of rigor and sophistication. Students study infinite series, differential equations, and the analysis of the polar plane. Students apply this knowledge to solve problems in the sciences and economics. Students take the AP Calculus BC Exam after completing this course.</span>
+        <div id="analyclass">
+            <h2>Magnet Analysis 1A/B</h2>
+            <ul>
+                <li>Grade Level: 10 - 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Magnet Precalculus or Magnet Functions</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Boiled down to one sentence, calculus is simply the study of change. But what makes calculus so powerful is
+                the elegant concept of limits that drives it at its core. By taking everything you've learned in math so far
+                and mixing it up with the magic of limits, a new world of theoretical and applicable results opens up. Soon
+                after covering the basics of derivatives and integrals, you'll be able to chug away with "The Limit Machine"
+                on some of the fundamental concepts from physics to economics. Plus, in the Magnet we call this course
+                Analysis because it covers a lot more information than a normal high-school calculus course.</p>
+            <div class="toggle" onclick="toggle('analysis1');">Show/Hide formal description</div>
+            <div class="nostart" id="analysis1">
+                <span id="analysis1_inner">The delta-epsilon definition of the limit of a function is examined and applied to develop the ideas of differentiation and integration. All the nonvector objectives of the MCPS AP calculus curriculum are studied with a greater degree of rigor and sophistication. Students study infinite series, differential equations, and the analysis of the polar plane. Students apply this knowledge to solve problems in the sciences and economics. Students take the AP Calculus BC Exam after completing this course.</span>
+            </div>
         </div>
         <h2>Multivariable Calculus and Differential Equations A/B (Magnet Analysis 2)</h2>
         <ul>
@@ -596,40 +598,44 @@
 </div>
 <div id='compsci' class='tabcontent'>
     <div class="courses">
-        <h2>Fundamentals of Computer Science A/B</h2>
-        <ul>
-            <li>Grade Level: 9</li>
-            <li>Prerequiste: none</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Taught by Ms. Piper, Fundamentals of Computer Science is closely linked to freshmen Physics, Chemistry, and R&amp;E.
-            For example, Microsoft Excel and STELLA models numerical data and the motion of objects in real time
-            (physics concepts). You will also find out what that PRGM button on a TI-83 calculator does and how to
-            program on TI-83. Later in the course, students will master the engineering of digital circuitry and wire
-            electronic circuit boards! (Usually, these topics are not taught until college!) Additional topics taught
-            include the basics of a Linux operating system, DrScheme, number systems, recursion, and much more!
-            Fundamentals of Computer Science prepares you for computer programming in high-level languages, covered in
-            Algorithms and Data Structures. For the real computer enthusiast, you will be equipped to take on American
-            Computer Science League competitions; you may even join Computer Club, Web Design Club, or try out for the
-            "Accelerated Track"!</p>
-        <div class="toggle" onclick="toggle('fund');">Show/Hide formal description</div>
-        <div class="nostart" id="fund">
-            <span id="fund_inner">Students study both the theory and practice of computer use through a wide variety of activities developed to coordinate with their mathematics and science courses. Students design and implement their own original solutions to given problems, following current structured programming concepts in a high-level language. They learn the inner workings of computer systems and design and build circuitry to accomplish a given task.</span>
+        <div id="fundcsclass">
+            <h2>Fundamentals of Computer Science A/B</h2>
+            <ul>
+                <li>Grade Level: 9</li>
+                <li>Prerequiste: none</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Taught by Ms. Piper, Fundamentals of Computer Science is closely linked to freshmen Physics, Chemistry, and R&amp;E.
+                For example, Microsoft Excel and STELLA models numerical data and the motion of objects in real time
+                (physics concepts). You will also find out what that PRGM button on a TI-83 calculator does and how to
+                program on TI-83. Later in the course, students will master the engineering of digital circuitry and wire
+                electronic circuit boards! (Usually, these topics are not taught until college!) Additional topics taught
+                include the basics of a Linux operating system, DrScheme, number systems, recursion, and much more!
+                Fundamentals of Computer Science prepares you for computer programming in high-level languages, covered in
+                Algorithms and Data Structures. For the real computer enthusiast, you will be equipped to take on American
+                Computer Science League competitions; you may even join Computer Club, Web Design Club, or try out for the
+                "Accelerated Track"!</p>
+            <div class="toggle" onclick="toggle('fund');">Show/Hide formal description</div>
+            <div class="nostart" id="fund">
+                <span id="fund_inner">Students study both the theory and practice of computer use through a wide variety of activities developed to coordinate with their mathematics and science courses. Students design and implement their own original solutions to given problems, following current structured programming concepts in a high-level language. They learn the inner workings of computer systems and design and build circuitry to accomplish a given task.</span>
+            </div>
         </div>
-        <h2>Algorithms and Data Structures A/B</h2>
-        <ul>
-            <li>Grade Level: 9 - 10 - 11</li>
-            <li>Prerequisite: Fundamentals of Computer Science A/B</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>TI programming, digital gate processing, and possibly Dr. Scheme. Now that you've learned all of that, let's
-            step it up. ADS is all about JAVA. But don't get frightened, Mrs. Dvorsky will be there all the way, to aid
-            you as you learn about object oriented programming, arrays, input/output, linked lists, and plenty more. You
-            emerge from this class with a full handle on the basics of JAVA, and prepared for Analysis of Algorithms the
-            following semester.</p>
-        <div class="toggle" onclick="toggle('data');">Show/Hide formal description</div>
-        <div class="nostart" id="data">
-            <span id="data_inner">Students learn object-oriented programming methodology, and the use and implementation of abstract data types using a high-level programming language. Students study object-oriented programming methods in order to design and code programming solutions to problems that require the use of files, control structures, methods, functions, classes, and arrays.<br/>Students study static and dynamic implementation of data structures. Stacks, queues, linked lists, and recursion are emphasized.</span>
+        <div id="adsclass">
+            <h2>Algorithms and Data Structures A/B</h2>
+            <ul>
+                <li>Grade Level: 9 - 10 - 11</li>
+                <li>Prerequisite: Fundamentals of Computer Science A/B</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>TI programming, digital gate processing, and possibly Dr. Scheme. Now that you've learned all of that, let's
+                step it up. ADS is all about JAVA. But don't get frightened, Mrs. Dvorsky will be there all the way, to aid
+                you as you learn about object oriented programming, arrays, input/output, linked lists, and plenty more. You
+                emerge from this class with a full handle on the basics of JAVA, and prepared for Analysis of Algorithms the
+                following semester.</p>
+            <div class="toggle" onclick="toggle('data');">Show/Hide formal description</div>
+            <div class="nostart" id="data">
+                <span id="data_inner">Students learn object-oriented programming methodology, and the use and implementation of abstract data types using a high-level programming language. Students study object-oriented programming methods in order to design and code programming solutions to problems that require the use of files, control structures, methods, functions, classes, and arrays.<br/>Students study static and dynamic implementation of data structures. Stacks, queues, linked lists, and recursion are emphasized.</span>
+            </div>
         </div>
         <h2>Analysis of Algorithms</h2>
         <ul>
@@ -743,61 +749,67 @@
 </div>
 <div id='inter' class='tabcontent'>
     <div class="courses">
-        <h2>Research and Experimentation for Problem Solving 1A/B</h2>
-        <ul>
-            <li>Grade Level: 9</li>
-            <li>Corequisite: Advanced Science 1, Physics/Advanced Science 2, Chemistry</li>
-            <li>0.25 credit per semester</li>
-        </ul>
-        <p>Despite the hundreds of able, gifted students that have walked the halls of Montgomery Blair High School, no
-            one has yet succeeded in measuring the exact height of the school's huge and mysterious steeple. Magnet
-            students try every year, constructing rudimentary measuring devices and implementing trigonometry to wager a
-            guess, but an estimate of a mere five feet is not unusual in spite of their best attempts. The mantra of
-            "try, try again" is one that Magnet students learn to embrace early on in high school, as they enter the
-            dusty Research and Experimentation classroom. From building trebuchets to conducting Chemistry experiments,
-            students utilize and hone their problem skills while exposing themselves to the real-life applications of
-            the concepts learned in other interdisciplinary Magnet classes. So don't be alarmed if you happen to hear
-            the high-pitched squeal of a band saw while walking down the 210s hallway - it's just the sound of learning,
-            Magnet-style.</p>
-        <div class="toggle" onclick="toggle('re1');">Show/Hide formal description</div>
-        <div class="nostart" id="re1">
-            <span id="re1_inner">This is an engineering, laboratory-based course in which students study, research, and apply concepts studied in their magnet science, mathematics, and computer science classes to solve real-world problems. Topics in Grade 9 include, but are not limited to, indirect measurement techniques and devices, data analysis, computer-aided drawing, materials science, research, and scientific instrumentation.</span>
+        <div id="reclass">
+            <h2>Research and Experimentation for Problem Solving 1A/B</h2>
+            <ul>
+                <li>Grade Level: 9</li>
+                <li>Corequisite: Advanced Science 1, Physics/Advanced Science 2, Chemistry</li>
+                <li>0.25 credit per semester</li>
+            </ul>
+            <p>Despite the hundreds of able, gifted students that have walked the halls of Montgomery Blair High School, no
+                one has yet succeeded in measuring the exact height of the school's huge and mysterious steeple. Magnet
+                students try every year, constructing rudimentary measuring devices and implementing trigonometry to wager a
+                guess, but an estimate of a mere five feet is not unusual in spite of their best attempts. The mantra of
+                "try, try again" is one that Magnet students learn to embrace early on in high school, as they enter the
+                dusty Research and Experimentation classroom. From building trebuchets to conducting Chemistry experiments,
+                students utilize and hone their problem skills while exposing themselves to the real-life applications of
+                the concepts learned in other interdisciplinary Magnet classes. So don't be alarmed if you happen to hear
+                the high-pitched squeal of a band saw while walking down the 210s hallway - it's just the sound of learning,
+                Magnet-style.</p>
+            <div class="toggle" onclick="toggle('re1');">Show/Hide formal description</div>
+            <div class="nostart" id="re1">
+                <span id="re1_inner">This is an engineering, laboratory-based course in which students study, research, and apply concepts studied in their magnet science, mathematics, and computer science classes to solve real-world problems. Topics in Grade 9 include, but are not limited to, indirect measurement techniques and devices, data analysis, computer-aided drawing, materials science, research, and scientific instrumentation.</span>
+            </div>
         </div>
-        <h2>Research and Experimentation for Problem Solving 2</h2>
-        <ul>
-            <li>Grade Level: 10</li>
-            <li>Prerequisite: Research and Experimentation for Problem Solving 1 A, B</li>
-            <li>Corequisite: Advanced Science 3, Earth/Space Sciences</li>
-            <li>0.25 credit per semester</li>
-        </ul>
-        <p>The main focus of R&amp;E in tenth grade is Mission Possible, a project heavily linked with Earth Systems
-            Science, where students solve problems in areas related to engineering design and construction of robots,
-            remote sensing and data collection with scientific instruments. R&amp;E is probably the first and only time
-            that students will have the opportunity to play with Legos for a school project. Students also practice
-            their oral presentation skills by giving a final report on the successes and failures of their project and
-            apply computer aided drafting techniques to draw a final sketch of their robot. By the end of the semester,
-            students come to realize that Mars is nothing compared to TerraBlair.</p>
-        <div class="toggle" onclick="toggle('re2');">Show/Hide formal description</div>
-        <div class="nostart" id="re2">
-            <span id="re2_inner">In Grade 10, the R and E course is linked instructionally to the magnet Earth and Space Science course. Topics include, but are not limited to, engineering design and construction, robotics, remote sensing, data collection with scientific instruments, and data analysis. Teamwork and research skills are emphasized.</span>
+        <div id="poeclass">
+            <h2>Principles of Engineering A/B</h2>
+            <ul>
+                <li>Grade Level: 10</li>
+                <li>Prerequisite: Research and Experimentation for Problem Solving 1 A, B</li>
+                <li>Corequisite: Advanced Science 3, Earth/Space Sciences</li>
+                <li>0.25 credit per semester</li>
+            </ul>
+            <p>The main focus of R&amp;E in tenth grade is Mission Possible, a project heavily linked with Earth Systems
+                Science, where students solve problems in areas related to engineering design and construction of robots,
+                remote sensing and data collection with scientific instruments. R&amp;E is probably the first and only time
+                that students will have the opportunity to play with Legos for a school project. Students also practice
+                their oral presentation skills by giving a final report on the successes and failures of their project and
+                apply computer aided drafting techniques to draw a final sketch of their robot. By the end of the semester,
+                students come to realize that Mars is nothing compared to TerraBlair.</p>
+            <div class="toggle" onclick="toggle('re2');">Show/Hide formal description</div>
+            <div class="nostart" id="re2">
+                <span id="re2_inner">In Grade 10, the R and E course is linked instructionally to the magnet Earth and Space Science course. Topics include, but are not limited to, engineering design and construction, robotics, remote sensing, data collection with scientific instruments, and data analysis. Teamwork and research skills are emphasized.</span>
+            </div>
         </div>
-        <h2>Research Project A/B</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Research Design</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Research Project is the class for the famous Senior Research Project (SRP). In order to get a magnet research
-            seal on your diploma, each Magnet junior must do a research project under the mentorship of a scientist. In
-            SRP A (for second semester juniors) you'll learn how to submit a proposal, get a mentor, keep a detailed lab
-            notebook and write all sections of a research paper. Over the summer you'll conduct your project and when
-            you return first semester senior year, you'll enter SRP B. SRP B is for the actual paper-writing process.
-            You'll get drafts edited, learn how to make a poster and presentation of your work, and have the opportunity
-            to enter your project in various competitions. It is highly recommended because research is such an integral
-            part of the magnet program.</p>
-        <div class="toggle" onclick="toggle('srp');">Show/Hide formal description</div>
-        <div class="nostart" id="srp">
-            <span id="srp_inner">Students conduct research projects based on an approved proposal. All students work either independently or on a team, with the guidance of their faculty advisor or mentor and the project coordinator. Students may elect to work outside of the school facility. Requirements include the completion of a journal, project display, oral presentation, and final paper. Students begin their projects in the spring of their junior year and continue into the fall of their senior year.</span>
+        <div id="srpclass">
+            <h2>Research Project A/B</h2>
+            <ul>
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Research Design</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Research Project is the class for the famous Senior Research Project (SRP). In order to get a magnet research
+                seal on your diploma, each Magnet junior must do a research project under the mentorship of a scientist. In
+                SRP A (for second semester juniors) you'll learn how to submit a proposal, get a mentor, keep a detailed lab
+                notebook and write all sections of a research paper. Over the summer you'll conduct your project and when
+                you return first semester senior year, you'll enter SRP B. SRP B is for the actual paper-writing process.
+                You'll get drafts edited, learn how to make a poster and presentation of your work, and have the opportunity
+                to enter your project in various competitions. It is highly recommended because research is such an integral
+                part of the magnet program.</p>
+            <div class="toggle" onclick="toggle('srp');">Show/Hide formal description</div>
+            <div class="nostart" id="srp">
+                <span id="srp_inner">Students conduct research projects based on an approved proposal. All students work either independently or on a team, with the guidance of their faculty advisor or mentor and the project coordinator. Students may elect to work outside of the school facility. Requirements include the completion of a journal, project display, oral presentation, and final paper. Students begin their projects in the spring of their junior year and continue into the fall of their senior year.</span>
+            </div>
         </div>
         <h2>Research Design</h2>
         <ul>
