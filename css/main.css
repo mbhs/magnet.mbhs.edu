@@ -14,8 +14,9 @@ body { padding-top: 50px; }
     margin: 0;
 }
 
-/*.nav > li > a:hover{ { color: #ff192e !important; }*/
-
+li {
+    list-style-type: none;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
