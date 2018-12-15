@@ -273,3 +273,15 @@ body { padding-top: 50px; }
 .nostart {
   margin-left: 50px;
 }
+
+.tag {
+    color: #3db5e3;
+}
+
+.courses {
+    position: relative;
+}
+
+.courses > div {
+    position: relative;
+}
