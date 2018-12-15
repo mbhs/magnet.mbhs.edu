@@ -20,7 +20,8 @@ $(function(){
     var hashes = window.location.hash.split("#").splice(1, 3);
     $(".nostart").hide(); // always hide all technical descriptions of classes
     if(hashes.length == 0){
-        $(".tabcontent")[0].style.display = "block"; // display first tab
+        $(".tabcontent").first().css("display", "block"); // display first tab
+        $(".tablinks").first().addClass("active"); // make first tab active
         return;
     }
     processHashes(hashes);
@@ -42,7 +43,7 @@ function openTab(name) {
     $(".tabcontent").hide(); // hide all tabs and content to start
     $(".tablinks").removeClass("active");
     $("#" + name)[0].style.display = "block"; // display only the passed tab content
-    $(name + "Tab").addClass("active"); // display grey "pressed" color on the passed tab button
+    $("#" + name + "Tab").addClass("active"); // display grey "pressed" color on the passed tab button
 }
 
 
