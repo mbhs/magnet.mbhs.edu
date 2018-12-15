@@ -33,8 +33,9 @@ function processHashes(hashes) {
     openTab(_class);
 
     if (hashes.length > 1) {
+        var offset = 55; // account for the size of the header 
         $("html, body").animate({
-            scrollTop: $("#" + hashes[1]).position().top  // animate a scroll down to that class
+            scrollTop: $("#" + hashes[1]).position().top - offset  // animate a scroll down to that class
         }, 1000);
     }
 }
