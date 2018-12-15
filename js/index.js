@@ -23,7 +23,8 @@ $(function () {
             $("html, body").animate({ scrollTop: $('#'+hashes[1]).position().top }, 1000);
         }
     } else {
-        $(".tabcontent")[0].style.display = "block";
+        var a = $(".tabcontent");
+        if (a.length > 0) { a[0].style.display = "block"; }
     }
     $(".nostart").hide();
 });
@@ -36,3 +37,14 @@ $(".tag").click(function(e, d, g) {
 function toggle(id) {
     $('#' + id).toggle("highlight", {}, 500);
 }
+
+$(window).on('scroll', function(event) {
+    var scrollValue = $(window).scrollTop();
+    if (scrollValue > 197) {
+        $('.navbar').addClass('fixed-top');
+        $("#fixer").show();
+    } else {
+        $(".navbar").removeClass("fixed-top");
+        $("#fixer").hide();
+    }
+});
