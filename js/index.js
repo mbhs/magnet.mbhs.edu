@@ -10,7 +10,8 @@ $(window).on('hashchange', function() {
 	if(hash == ""){
 		return;
 	} else {
-		openTab(hash);
+        openTab(hash);
+        $("html, body").scrollTop(0);
 	}
 });
 
