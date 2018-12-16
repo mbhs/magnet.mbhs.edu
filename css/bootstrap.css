@@ -41,6 +41,9 @@
     --breakpoint-xl: 1200px;
     --font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+    /* added by us */
+    --table-border-color: #292828;
 }
 
 @media print {
@@ -1864,7 +1867,7 @@ pre code {
 
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 1px solid var(--table-border-color);
 }
 
 .table tbody + tbody {
@@ -1881,18 +1884,20 @@ pre code {
 }
 
 .table-bordered {
-    border: 1px solid #f0f0f0;
+    border: 1px solid var(--table-border-color);
 }
 
 .table-bordered th,
 .table-bordered td {
-    border: 1px solid #f0f0f0;
+    /* border: 1px solid #f0f0f0;  //TODO */
+    border: 1px solid var(--table-border-color);
 }
 
-.table-bordered thead th,
+/* conflicts with setting border-bottom to 1px in .table thead th */
+/* .table-bordered thead th,
 .table-bordered thead td {
     border-bottom-width: 2px;
-}
+} */
 
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(0, 0, 0, 0.05);
