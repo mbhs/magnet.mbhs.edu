@@ -19,7 +19,7 @@ body {
 
 div { font-size: 13px; }
 ul { list-style: none; }
-p { border: 0; color: #000000; padding: 0 0 20px 0; float: none; }
+p { border: 0; color: #000000; padding: 0 0 10px 0; float: none; }
 p.plain { padding-top: 0; padding-bottom: 0; }
 a { text-decoration: none; color: #cc0011; }
 a:hover, a:focus { text-decoration: underline; }
@@ -36,6 +36,26 @@ h3.nav {
 	border-right: 1px solid #c01;
 	padding: 0 5px 0 5px;
 	font-size: 13px;
+}
+
+.toggle:hover { /* for show/hide dropdowns */
+    cursor: pointer;
+}
+
+/* smoosh paragraphs together in footer */
+footer p {
+    margin-bottom: 2px;
+    padding-bottom: 0;
+}
+
+
+/* See: https://stackoverflow.com/questions/4151743/how-i-change-the-thickness-of-my-hr-tag */
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
 }
 
 /* SVG css for the blair logo */
