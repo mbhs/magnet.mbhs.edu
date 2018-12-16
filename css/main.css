@@ -48,6 +48,11 @@ footer p {
     padding-bottom: 0;
 }
 
+/* leave some empty space at the bottom */
+footer { 
+    padding-bottom: 75px;
+}
+
 
 /* See: https://stackoverflow.com/questions/4151743/how-i-change-the-thickness-of-my-hr-tag */
 hr {
