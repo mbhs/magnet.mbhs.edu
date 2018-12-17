@@ -90,6 +90,10 @@
         .path-links:active {
             background-color: #ccc;
         }
+        
+        .math-content {
+            margin: 5px;
+        }
 
     </style>
     <div id="skel" class="tabcontent">
@@ -112,7 +116,7 @@
                     <td>-</td>
                 </tr>
                 <tr rowspan=3>
-                    <th scope="row" style='text-align: center;'>Mathematics<br>
+                    <th scope="row" style='text-align: center;'><p onclick="showAll(event, 'math')">Mathematics</p>
                         <button class='path-links math-links' id='geo-link' onclick="showPath(event, 'math', 'geo')">Show Track 1</button>
                         <br>
                         <button class='path-links math-links' id='precalc-link' onclick="showPath(event, 'math', 'precalc')">Show Track 2</button>
@@ -121,23 +125,29 @@
                     </th>
                     <td>
                         <p class='geo-path math-content'>Magnet Geometry A & B</p>
+                        <p class='math-content'><strong>OR</strong></p>
                         <p class='precalc-path math-content'>Magnet Precalculus A & B</p>
+                        <p class='math-content'><strong>OR</strong></p>
                         <p class='functions-path math-content'>Magnet Functions A & B</p>
                     </td>
                     <td>
                         <p class='geo-path math-content'>Magnet Precalculus A & B</p>
+                        <p class='math-content'><strong>OR</strong></p>
                         <p class='precalc-path math-content'>Magnet Precalculus C & Analysis 1A</p>
+                        <p class='math-content'><strong>OR</strong></p>
                         <p class='functions-path math-content'>Analysis 1A & B</p>
                     </td>
                     <td>
                         <p class='geo-path math-content'>Magnet Precalculus C & Analysis 1A</p>
+                        <p class='math-content'><strong>OR</strong></p>
                         <p class='precalc-path math-content'>Analysis 1B & -</p>
+                        <p class='math-content'><strong>OR</strong></p>
                         <p class='functions-path math-content'>-</p>
                     </td>
                     <td>
                         <p class='geo-path math-content'>Analysis 1B & -</p>
-                        <p class='precalc-path math-content'>-</p>
-                        <p class='functions-path math-content'>-</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path precalc-path math-content'>-</p>
                     </td>
                 </tr>
                 <tr>
@@ -467,6 +477,19 @@
             // Show this button
 //            document.getElementById(path + "-link").classname += " active";
             evt.currentTarget.className += " active"
+        }
+        
+        function showAll(evt, courses){
+            console.log('showing all ' + courses);
+            var contents = document.getElementsByClassName(courses + '-content');
+            for(var i = 0; i < contents.length; i++){
+                contents[i].style.display = "block";
+            }
+            
+            var links = document.getElementsByClassName(courses + '-links');
+            for(var i = 0; i < links.length; i++){
+                contents[i].className.replace(' active', '');
+            }
         }
 
         $(function() {
