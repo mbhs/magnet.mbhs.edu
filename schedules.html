@@ -218,11 +218,39 @@
                     <td class="diff">Magnet Elective (optional)</td>
                 </tr>
                 <tr rowspan=3>
-                    <th scope="row">Mathematics</th>
-                    <td>Magnet Geometry A & B <b>OR</b><br>Magnet Precalculus A & B <b>OR</b><br>Magnet Functions A & B</td>
-                    <td>Magnet Precalculus A & B <b>OR</b><br>Magnet Precalculus C & Analysis 1A <b>OR</b><br>Analysis 1A & B</td>
-                    <td>Magnet Precalculus C & Analysis 1A <b>OR</b><br>Analysis 1B & Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
-                    <td>Analysis 1B and Magnet Elective <b>OR</b><br>Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
+                    <th scope="row" style='text-align: center;'><p onclick="showAll(event, 'math')">Mathematics</p>
+                        <button class='path-links math-links' id='geo-link' onclick="showPath(event, 'math', 'geo')">Show Track 1</button>
+                        <br>
+                        <button class='path-links math-links' id='precalc-link' onclick="showPath(event, 'math', 'precalc')">Show Track 2</button>
+                        <br>
+                        <button class='path-links math-links' id='functions-link' onclick="showPath(event, 'math', 'functions')">Show Track 3</button>
+                    </th>
+                    <td>
+                        <p class='geo-path math-content'>Magnet Geometry A & B</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='precalc-path math-content'>Magnet Precalculus A & B</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path math-content'>Magnet Functions A & B</p>
+                    </td>
+                    <td>
+                        <p class='geo-path math-content'>Magnet Precalculus A & B</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='precalc-path math-content'>Magnet Precalculus C & Analysis 1A</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path math-content'>Analysis 1A & B</p>
+                    </td>
+                    <td>
+                        <p class='geo-path math-content'>Magnet Precalculus C & Analysis 1A</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='precalc-path math-content'>Analysis 1B & -</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path math-content'>-</p>
+                    </td>
+                    <td>
+                        <p class='geo-path math-content'>Analysis 1B & -</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path precalc-path math-content'>-</p>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">Computer Science</th>
@@ -291,11 +319,39 @@
                     <td class="diff">-</td>
                 </tr>
                 <tr rowspan=3>
-                    <th scope="row">Mathematics</th>
-                    <td>Magnet Geometry A & B <b>OR</b><br>Magnet Precalculus A & B <b>OR</b><br>Magnet Functions A & B</td>
-                    <td>Magnet Precalculus A & B <b>OR</b><br>Magnet Precalculus C & Analysis 1A <b>OR</b><br>Analysis 1A & B</td>
-                    <td>Magnet Precalculus C & Analysis 1A <b>OR</b><br>Analysis 1B & Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
-                    <td>Analysis 1B and Magnet Elective <b>OR</b><br>Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
+                    <th scope="row" style='text-align: center;'><p onclick="showAll(event, 'math')">Mathematics</p>
+                        <button class='path-links math-links' id='geo-link' onclick="showPath(event, 'math', 'geo')">Show Track 1</button>
+                        <br>
+                        <button class='path-links math-links' id='precalc-link' onclick="showPath(event, 'math', 'precalc')">Show Track 2</button>
+                        <br>
+                        <button class='path-links math-links' id='functions-link' onclick="showPath(event, 'math', 'functions')">Show Track 3</button>
+                    </th>
+                    <td>
+                        <p class='geo-path math-content'>Magnet Geometry A & B</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='precalc-path math-content'>Magnet Precalculus A & B</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path math-content'>Magnet Functions A & B</p>
+                    </td>
+                    <td>
+                        <p class='geo-path math-content'>Magnet Precalculus A & B</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='precalc-path math-content'>Magnet Precalculus C & Analysis 1A</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path math-content'>Analysis 1A & B</p>
+                    </td>
+                    <td>
+                        <p class='geo-path math-content'>Magnet Precalculus C & Analysis 1A</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='precalc-path math-content'>Analysis 1B & -</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path math-content'>-</p>
+                    </td>
+                    <td>
+                        <p class='geo-path math-content'>Analysis 1B & -</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path precalc-path math-content'>-</p>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">Computer Science</th>
@@ -364,11 +420,39 @@
                     <td class="diff">-</td>
                 </tr>
                 <tr rowspan=3>
-                    <th scope="row">Mathematics</th>
-                    <td>Magnet Geometry A & B <b>OR</b><br>Magnet Precalculus A & B <b>OR</b><br>Magnet Functions A & B</td>
-                    <td>Magnet Precalculus A & B <b>OR</b><br>Magnet Precalculus C & Analysis 1A <b>OR</b><br>Analysis 1A & B</td>
-                    <td>Magnet Precalculus C & Analysis 1A <b>OR</b><br>Analysis 1B & Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
-                    <td>Analysis 1B and Magnet Elective <b>OR</b><br>Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
+                    <th scope="row" style='text-align: center;'><p onclick="showAll(event, 'math')">Mathematics</p>
+                        <button class='path-links math-links' id='geo-link' onclick="showPath(event, 'math', 'geo')">Show Track 1</button>
+                        <br>
+                        <button class='path-links math-links' id='precalc-link' onclick ="showPath(event, 'math', 'precalc')">Show Track 2</button>
+                        <br>
+                        <button class='path-links math-links' id='functions-link' onclick="showPath(event, 'math', 'functions')">Show Track 3</button>
+                    </th>
+                    <td>
+                        <p class='geo-path math-content'>Magnet Geometry A & B</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='precalc-path math-content'>Magnet Precalculus A & B</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path math-content'>Magnet Functions A & B</p>
+                    </td>
+                    <td>
+                        <p class='geo-path math-content'>Magnet Precalculus A & B</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='precalc-path math-content'>Magnet Precalculus C & Analysis 1A</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path math-content'>Analysis 1A & B</p>
+                    </td>
+                    <td>
+                        <p class='geo-path math-content'>Magnet Precalculus C & Analysis 1A</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='precalc-path math-content'>Analysis 1B & -</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path math-content'>-</p>
+                    </td>
+                    <td>
+                        <p class='geo-path math-content'>Analysis 1B & -</p>
+                        <p class='math-content'><strong>OR</strong></p>
+                        <p class='functions-path precalc-path math-content'>-</p>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">Computer Science</th>
