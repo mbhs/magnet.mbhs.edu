@@ -17,14 +17,14 @@ body {
     line-height:1.6;
 }
 
-div { font-size: 16px; }
+div { font-size: 15px; }
 ul { list-style: none; }
 p { border: 0; color: #000000; padding: 0 0 10px 0; float: none; }
 p.plain { padding-top: 0; padding-bottom: 0; }
 a { text-decoration: none; color: #cc0011; }
 a:hover, a:focus { text-decoration: underline; }
 h1 { font-size: 30px; color: #cc0011; padding: 20px 0 20px 0; }
-h2 { font-size: 20px; padding: 20px 0 15px 0; }
+h2 { font-size: 24px; padding: 20px 0 15px 0; }
 h2.home { padding: 0 0 5px 0; border-bottom: 1px dotted #000;}
 h2.headline { text-align: center; margin: 0 0 10px 0; }
 h2.small { font-family: "Cambria", "Times New Roman", serif; font-size: 17px; }
@@ -38,8 +38,22 @@ h3.nav {
 	font-size: 13px;
 }
 
+.contact-instructor {
+    padding-bottom: 40px;
+}
+
 .toggle:hover { /* for show/hide dropdowns */
     cursor: pointer;
+}
+
+/* override bootstrap's 75% font size for .badge */
+.contact-badge {
+    font-size: 100%;
+}
+
+/* new bootstrap-like badge color type */
+.badge-white {
+    background-color: #f9f9f9;
 }
 
 /* smoosh paragraphs together in footer */
