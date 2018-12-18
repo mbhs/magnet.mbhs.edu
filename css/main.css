@@ -18,7 +18,6 @@ body {
 }
 
 div { font-size: 15px; }
-ul { list-style: none; }
 p { border: 0; color: #000000; padding: 0 0 10px 0; float: none; }
 p.plain { padding-top: 0; padding-bottom: 0; }
 a { text-decoration: none; color: #cc0011; }
