@@ -37,6 +37,9 @@ h3.nav {
 	font-size: 13px;
 }
 
+ul.no-style {
+    list-style: none;
+}
 .contact-instructor {
     padding-bottom: 40px;
 }
@@ -64,6 +67,10 @@ footer p {
 /* leave some empty space at the bottom */
 footer { 
     padding-bottom: 75px;
+}
+
+li {
+    margin-bottom: 3px;
 }
 
 
