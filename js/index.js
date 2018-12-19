@@ -46,6 +46,7 @@ function openTab(name) {
     $(".tablinks").removeClass("active");
     $("#" + name)[0].style.display = "block"; // display only the passed tab content
     $("#" + name + "Tab").addClass("active"); // display grey "pressed" color on the passed tab button
+    location.hash = name;
 }
 
 
