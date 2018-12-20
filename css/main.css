@@ -27,7 +27,7 @@ h2 { font-size: 24px; padding: 20px 0 15px 0; }
 h2.home { padding: 0 0 5px 0; border-bottom: 1px dotted #000;}
 h2.headline { text-align: center; margin: 0 0 10px 0; }
 h2.small { font-family: "Cambria", "Times New Roman", serif; font-size: 17px; }
-h3 { padding: 5px 0 5px 0; font-size: 14px; }
+h3 { padding: 5px 0 5px 0; font-size: 20px; }
 a h3 { color: #000000; font-weight: normal; }
 a h3:hover, a h3:focus { text-decoration: underline; }
 h3.nav {
