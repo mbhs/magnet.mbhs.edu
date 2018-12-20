@@ -6,13 +6,14 @@ $(".hover-column").hover(function(){
 
 
 $(window).on('hashchange', function() {
-	hash = window.location.hash.substring(1);
+    hash = window.location.hash.substring(1);
+    hashes = hash.split("#")
 	if(hash == ""){
-		return;
+		openTab("overview", null);
 	} else {
-        openTab(hash, undefined);
+        openTab(hashes[0], hashes[1]);
         $("html, body").scrollTop(0);
-	}
+    }
 });
 
 
@@ -45,16 +46,18 @@ function processHashes(hashes) {
 }
 
 function openTab(subject, _class) {
+    subject = (subject == "undefined") ? "overview" : subject;
+    console.log(subject)
     $(".tabcontent").hide(); // hide all tabs and content to start
     $(".tablinks").removeClass("active");
     $("#" + subject)[0].style.display = "block"; // display only the passed tab content
-    $("#" + subject + "Tab").addClass("active"); // display grey "pressed" color on the passed tab button
-    location.hash = _class == undefined ? subject : subject + "#" + _class;
+    $("#" + subject + "_tab").addClass("active"); // display grey "pressed" color on the passed tab button
+    location.hash = _class == null ? subject : subject + "#" + _class;
 }
 
 
 $(".tag").click(function(e, d, g) {
-    location.hash = e.target.id;
+    location.hash = e.target.redirect;
     location.reload();
 });
 
