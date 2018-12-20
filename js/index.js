@@ -10,7 +10,7 @@ $(window).on('hashchange', function() {
 	if(hash == ""){
 		return;
 	} else {
-        openTab(hash);
+        openTab(hash, undefined);
         $("html, body").scrollTop(0);
 	}
 });
@@ -30,8 +30,9 @@ $(function(){
 
 function processHashes(hashes) {
      // array of hashes in the url (#science#class -> [science, class])
-    var _class = hashes[0];
-    openTab(_class);
+    var subject = hashes[0];
+    var _class = hashes[1];
+    openTab(subject, _class);
 
     if (hashes.length > 1) {
         var offset = 55; // account for the size of the header 
@@ -39,14 +40,16 @@ function processHashes(hashes) {
             scrollTop: $("#" + hashes[1]).position().top - offset  // animate a scroll down to that class
         }, 1000);
     }
+
+
 }
 
-function openTab(name) {
+function openTab(subject, _class) {
     $(".tabcontent").hide(); // hide all tabs and content to start
     $(".tablinks").removeClass("active");
-    $("#" + name)[0].style.display = "block"; // display only the passed tab content
-    $("#" + name + "Tab").addClass("active"); // display grey "pressed" color on the passed tab button
-    location.hash = name;
+    $("#" + subject)[0].style.display = "block"; // display only the passed tab content
+    $("#" + subject + "Tab").addClass("active"); // display grey "pressed" color on the passed tab button
+    location.hash = _class == undefined ? subject : subject + "#" + _class;
 }
 
 
