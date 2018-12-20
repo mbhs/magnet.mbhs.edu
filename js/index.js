@@ -12,8 +12,8 @@ $(window).on('hashchange', function() {
 		openTab("overview", null);
 	} else {
         openTab(hashes[0], hashes[1]);
-        $("html, body").scrollTop(0);
     }
+    $("html, body").scrollTop(0);
 });
 
 
@@ -40,6 +40,8 @@ function processHashes(hashes) {
         $("html, body").animate({
             scrollTop: $("#" + hashes[1]).position().top - offset  // animate a scroll down to that class
         }, 1000);
+    } else {
+        $("html, body").scrollTop(0);
     }
 
 
