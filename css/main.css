@@ -53,9 +53,14 @@ ul.no-style {
     font-size: 100%;
 }
 
-/* new bootstrap-like badge color type */
-.badge-white {
+/* new bootstrap-like badge color types */
+/* .badge-white {
     background-color: #f9f9f9;
+} */
+
+.badge-emphasis {
+    background-color: #ec7575;
+    color: #ffffff;
 }
 
 /* smoosh paragraphs together in footer */
