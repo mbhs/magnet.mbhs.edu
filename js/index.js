@@ -39,7 +39,7 @@ function processHashes(hashes) {
         var offset = 55; // account for the size of the header 
         $("html, body").animate({
             scrollTop: $("#" + hashes[1]).position().top - offset  // animate a scroll down to that class
-        }, 1000);
+        }, 750);
     } else {
         $("html, body").scrollTop(0);
     }
