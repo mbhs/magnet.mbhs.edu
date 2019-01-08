@@ -87,17 +87,17 @@
             background-color: #ddd
         }
 
-        .path-links:active {
+        .path-links.active {
             background-color: #ccc;
         }
-        
+
         .math-content {
             margin: 5px;
         }
 
     </style>
     <div id="skel" class="tabcontent">
-        <table class="table table-bordered table-hover" style="text-align: center;">
+        <table class="table table-bordered table-hover" style="text-align: center; table-layout: fixed">
             <thead>
                 <tr>
                     <th scope="col">Subject</th>
@@ -116,7 +116,8 @@
                     <td>-</td>
                 </tr>
                 <tr rowspan=3>
-                    <th scope="row" style='text-align: center;'><p onclick="showAll(event, 'math')">Mathematics</p>
+                    <th scope="row" style='text-align: center;'>
+                        <p onclick="showAll(event, 'math')">Mathematics</p>
                         <button class='path-links math-links' id='geo-link' onclick="showPath(event, 'math', 'geo')">Show Track 1</button>
                         <br>
                         <button class='path-links math-links' id='precalc-link' onclick="showPath(event, 'math', 'precalc')">Show Track 2</button>
@@ -218,7 +219,7 @@
                     <td>
                         <p class='ss-content honss-path'>Honors World History A & B</p>
                         <p class='ss-content'><b>OR</b></p>
-                        <p class='ss-content apss-path'>AP WOrld History A & B</p>
+                        <p class='ss-content apss-path'>AP World History A & B</p>
                     </td>
                     <td>-</td>
                 </tr>
@@ -260,7 +261,8 @@
                     <td class="diff">Magnet Elective (optional)</td>
                 </tr>
                 <tr rowspan=3>
-                    <th scope="row" style='text-align: center;'><p onclick="showAll(event, 'math')">Mathematics</p>
+                    <th scope="row" style='text-align: center;'>
+                        <p onclick="showAll(event, 'math')">Mathematics</p>
                         <button class='path-links math-links' id='geo-link' onclick="showPath(event, 'math', 'geo')">Show Track 1</button>
                         <br>
                         <button class='path-links math-links' id='precalc-link' onclick="showPath(event, 'math', 'precalc')">Show Track 2</button>
@@ -377,7 +379,8 @@
                     <td class="diff">-</td>
                 </tr>
                 <tr rowspan=3>
-                    <th scope="row" style='text-align: center;'><p onclick="showAll(event, 'math')">Mathematics</p>
+                    <th scope="row" style='text-align: center;'>
+                        <p onclick="showAll(event, 'math')">Mathematics</p>
                         <button class='path-links math-links' id='geo-link' onclick="showPath(event, 'math', 'geo')">Show Track 1</button>
                         <br>
                         <button class='path-links math-links' id='precalc-link' onclick="showPath(event, 'math', 'precalc')">Show Track 2</button>
@@ -494,10 +497,11 @@
                     <td class="diff">-</td>
                 </tr>
                 <tr rowspan=3>
-                    <th scope="row" style='text-align: center;'><p onclick="showAll(event, 'math')">Mathematics</p>
+                    <th scope="row" style='text-align: center;'>
+                        <p onclick="showAll(event, 'math')">Mathematics</p>
                         <button class='path-links math-links' id='geo-link' onclick="showPath(event, 'math', 'geo')">Show Track 1</button>
                         <br>
-                        <button class='path-links math-links' id='precalc-link' onclick ="showPath(event, 'math', 'precalc')">Show Track 2</button>
+                        <button class='path-links math-links' id='precalc-link' onclick="showPath(event, 'math', 'precalc')">Show Track 2</button>
                         <br>
                         <button class='path-links math-links' id='functions-link' onclick="showPath(event, 'math', 'functions')">Show Track 3</button>
                     </th>
@@ -642,27 +646,28 @@
                 tabContentShow[i].style.display = "block";
             }
 
-            // Hide last buttton
+            // Hide last active buttton
             tablinks = document.getElementsByClassName(course + "-links");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
 
             // Show this button
-//            document.getElementById(path + "-link").classname += " active";
+            //            document.getElementById(path + "-link").classname += " active";
             evt.currentTarget.className += " active"
         }
-        
-        function showAll(evt, courses){
+
+        function showAll(evt, courses) {
             console.log('showing all ' + courses);
             var contents = document.getElementsByClassName(courses + '-content');
-            for(var i = 0; i < contents.length; i++){
+            for (var i = 0; i < contents.length; i++) {
                 contents[i].style.display = "block";
             }
-            
+
             var links = document.getElementsByClassName(courses + '-links');
-            for(var i = 0; i < links.length; i++){
-                contents[i].className.replace(' active', '');
+            for (var i = 0; i < links.length; i++) {
+                links[i].className = links[i].className.replace(" active", "");
+                links[i].className = links[i].className.replace("active ", "");
             }
         }
 
