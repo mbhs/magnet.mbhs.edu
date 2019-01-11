@@ -242,7 +242,7 @@
 
     </div>
     <div id="math" class="tabcontent">
-        <table class="table table-bordered table-hover" style="text-align: center;">
+        <table class="table table-bordered table-hover" style="text-align: center; table-layout: fixed;">
             <thead>
                 <tr>
                     <th scope="col">Subject</th>
@@ -327,20 +327,46 @@
                     <td>Research Project B & Elective</td>
                 </tr>
                 <tr rowspan=2>
-                    <th scope="row">English</th>
-                    <td>Honors English 9A & 9B</td>
-                    <td>Honors English 10A & 10B</td>
-                    <td>Honors English 11A & 11B <b>OR</b><br>
-                        AP Language and Composition</td>
-                    <td>Honors English 12A & 12B <b>OR</b><br>
-                        AP Literature and Composition</td>
+                    <th scope="row">
+                        <p onclick="showAll(event, 'english')">English</p>
+                        <button class='path-links english-links' id='apeng-link' onclick="showPath(event, 'english', 'honeng')">Show Honors Track</button>
+                        <button class='path-links english-links' id='honeng-link' onclick="showPath(event, 'english', 'apeng')">Show AP Track</button>
+                    </th>
+                    <td>
+                        <p class='english-content honeng-path apeng-path'>Honors English 9A & 9B</p>
+                    </td>
+                    <td>
+                        <p class='english-content honeng-path apeng-path'>Honors English 10A & 10B</p>
+                    </td>
+                    <td>
+                        <p class='english-content honeng-path'>Honors English 11A & 11B</p>
+                        <p class='english-content'><b>OR</b></p>
+                        <p class='english-content apeng-path'>AP Language and Composition</p>
+                    </td>
+                    <td>
+                        <p class='english-content honeng-path'>Honors English 12A & 12B</p>
+                        <p class='english-content'><b>OR</b></p>
+                        <p class='english-content apeng-path'>AP Literature and Composition</p>
+                    </td>
                 </tr>
                 <tr rowspan=2>
-                    <th scope="row">Social Studies</th>
+                    <th scope="row">
+                        <p onclick="showAll(event, 'ss')">Social Studies</p>
+                        <button class='path-links ss-links' id='apss-link' onclick="showPath(event, 'ss', 'honss')">Show Honors Track</button>
+                        <button class='path-links ss-links' id='honss-link' onclick="showPath(event, 'ss', 'apss')">Show AP Track</button>
+                    </th>
                     <td>Honors US History A & B</td>
-                    <td>Honors NSL A & B <b>OR</b><br>AP NSL A & B</td>
-                    <td>Honors World History A & B <b>OR</b><br>AP World History A & B</td>
-                    <td class="diff">Magnet Elective (optional)</td>
+                    <td>
+                        <p class='ss-content honss-path'>Honors NSL A & B</p>
+                        <p class='ss-content'><b>OR</b></p>
+                        <p class='ss-content apss-path'>AP NSL A & B</p>
+                    </td>
+                    <td>
+                        <p class='ss-content honss-path'>Honors World History A & B</p>
+                        <p class='ss-content'><b>OR</b></p>
+                        <p class='ss-content apss-path'>AP World History A & B</p>
+                    </td>
+                    <td>-</td>
                 </tr>
                 <tr>
                     <th scope="row">World Languages</th>
@@ -354,13 +380,13 @@
                     <td>Fine Arts/Music <b>OR</b><br>Physical Education</td>
                     <td>Health/Elective</td>
                     <td>Fine Arts/Music <b>OR</b><br>Physical Education</td>
-                    <td class="diff">Elective (optional)</td>
+                    <td class="diff">-</td>
                 </tr>
             </tbody>
         </table>
     </div>
     <div id="science" class="tabcontent">
-        <table class="table table-bordered table-hover" style="text-align: center;">
+        <table class="table table-bordered table-hover" style="text-align: center; table-layout: fixed;">
             <thead>
                 <tr>
                     <th scope="col">Subject</th>
@@ -445,20 +471,46 @@
                     <td>Research Project B & -</td>
                 </tr>
                 <tr rowspan=2>
-                    <th scope="row">English</th>
-                    <td>Honors English 9A & 9B</td>
-                    <td>Honors English 10A & 10B</td>
-                    <td>Honors English 11A & 11B <b>OR</b><br>
-                        AP Language and Composition</td>
-                    <td>Honors English 12A & 12B <b>OR</b><br>
-                        AP Literature and Composition</td>
+                    <th scope="row">
+                        <p onclick="showAll(event, 'english')">English</p>
+                        <button class='path-links english-links' id='apeng-link' onclick="showPath(event, 'english', 'honeng')">Show Honors Track</button>
+                        <button class='path-links english-links' id='honeng-link' onclick="showPath(event, 'english', 'apeng')">Show AP Track</button>
+                    </th>
+                    <td>
+                        <p class='english-content honeng-path apeng-path'>Honors English 9A & 9B</p>
+                    </td>
+                    <td>
+                        <p class='english-content honeng-path apeng-path'>Honors English 10A & 10B</p>
+                    </td>
+                    <td>
+                        <p class='english-content honeng-path'>Honors English 11A & 11B</p>
+                        <p class='english-content'><b>OR</b></p>
+                        <p class='english-content apeng-path'>AP Language and Composition</p>
+                    </td>
+                    <td>
+                        <p class='english-content honeng-path'>Honors English 12A & 12B</p>
+                        <p class='english-content'><b>OR</b></p>
+                        <p class='english-content apeng-path'>AP Literature and Composition</p>
+                    </td>
                 </tr>
                 <tr rowspan=2>
-                    <th scope="row">Social Studies</th>
+                    <th scope="row">
+                        <p onclick="showAll(event, 'ss')">Social Studies</p>
+                        <button class='path-links ss-links' id='apss-link' onclick="showPath(event, 'ss', 'honss')">Show Honors Track</button>
+                        <button class='path-links ss-links' id='honss-link' onclick="showPath(event, 'ss', 'apss')">Show AP Track</button>
+                    </th>
                     <td>Honors US History A & B</td>
-                    <td>Honors NSL A & B <b>OR</b><br>AP NSL A & B</td>
-                    <td>Honors World History A & B <b>OR</b><br>AP World History A & B</td>
-                    <td class="diff">-</td>
+                    <td>
+                        <p class='ss-content honss-path'>Honors NSL A & B</p>
+                        <p class='ss-content'><b>OR</b></p>
+                        <p class='ss-content apss-path'>AP NSL A & B</p>
+                    </td>
+                    <td>
+                        <p class='ss-content honss-path'>Honors World History A & B</p>
+                        <p class='ss-content'><b>OR</b></p>
+                        <p class='ss-content apss-path'>AP World History A & B</p>
+                    </td>
+                    <td>-</td>
                 </tr>
                 <tr>
                     <th scope="row">World Languages</th>
@@ -478,7 +530,7 @@
         </table>
     </div>
     <div id='compsci' class='tabcontent'>
-        <table class="table table-bordered table-hover" style="text-align: center;">
+        <table class="table table-bordered table-hover" style="text-align: center; table-layout: fixed;">
             <thead>
                 <tr>
                     <th scope="col">Subject</th>
@@ -563,20 +615,46 @@
                     <td>Research Project B & -</td>
                 </tr>
                 <tr rowspan=2>
-                    <th scope="row">English</th>
-                    <td>Honors English 9A & 9B</td>
-                    <td>Honors English 10A & 10B</td>
-                    <td>Honors English 11A & 11B <b>OR</b><br>
-                        AP Language and Composition</td>
-                    <td>Honors English 12A & 12B <b>OR</b><br>
-                        AP Literature and Composition</td>
+                    <th scope="row">
+                        <p onclick="showAll(event, 'english')">English</p>
+                        <button class='path-links english-links' id='apeng-link' onclick="showPath(event, 'english', 'honeng')">Show Honors Track</button>
+                        <button class='path-links english-links' id='honeng-link' onclick="showPath(event, 'english', 'apeng')">Show AP Track</button>
+                    </th>
+                    <td>
+                        <p class='english-content honeng-path apeng-path'>Honors English 9A & 9B</p>
+                    </td>
+                    <td>
+                        <p class='english-content honeng-path apeng-path'>Honors English 10A & 10B</p>
+                    </td>
+                    <td>
+                        <p class='english-content honeng-path'>Honors English 11A & 11B</p>
+                        <p class='english-content'><b>OR</b></p>
+                        <p class='english-content apeng-path'>AP Language and Composition</p>
+                    </td>
+                    <td>
+                        <p class='english-content honeng-path'>Honors English 12A & 12B</p>
+                        <p class='english-content'><b>OR</b></p>
+                        <p class='english-content apeng-path'>AP Literature and Composition</p>
+                    </td>
                 </tr>
                 <tr rowspan=2>
-                    <th scope="row">Social Studies</th>
+                    <th scope="row">
+                        <p onclick="showAll(event, 'ss')">Social Studies</p>
+                        <button class='path-links ss-links' id='apss-link' onclick="showPath(event, 'ss', 'honss')">Show Honors Track</button>
+                        <button class='path-links ss-links' id='honss-link' onclick="showPath(event, 'ss', 'apss')">Show AP Track</button>
+                    </th>
                     <td>Honors US History A & B</td>
-                    <td>Honors NSL A & B <b>OR</b><br>AP NSL A & B</td>
-                    <td>Honors World History A & B <b>OR</b><br>AP World History A & B</td>
-                    <td class="diff">-</td>
+                    <td>
+                        <p class='ss-content honss-path'>Honors NSL A & B</p>
+                        <p class='ss-content'><b>OR</b></p>
+                        <p class='ss-content apss-path'>AP NSL A & B</p>
+                    </td>
+                    <td>
+                        <p class='ss-content honss-path'>Honors World History A & B</p>
+                        <p class='ss-content'><b>OR</b></p>
+                        <p class='ss-content apss-path'>AP World History A & B</p>
+                    </td>
+                    <td>-</td>
                 </tr>
                 <tr>
                     <th scope="row">World Languages</th>
