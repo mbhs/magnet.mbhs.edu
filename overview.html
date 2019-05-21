@@ -2,728 +2,938 @@
 <html>
 
 <head>
-    <meta charset=utf-8>
+    <meta charset=utf-8 name="viewport" content="width=device-width, initial-scale=1">
     <title>MBHS Magnet</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-          crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
-    <link rel="stylesheet" type="text/css" href="./css/main.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
 </head>
 
 <body>
-<nav class="navbar fixed-top front navbar-expand-md navbar-dark bg-dark">
-    <span id="title">Blair Magnet</span>
-    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link text-dark" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./application.html">Application Process</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./awards.html">Awards</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./news.html">News</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./resources.html">Resources</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item dropdown text-dark">
-                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink"
-                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Courses
-                </a>
-                <div class="dropdown-menu text-dark" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item text-dark" href="overview.html">Overview</a>
-                    <a class="dropdown-item text-dark" href="#">Science</a>
-                    <a class="dropdown-item text-dark" href="#">Math</a>
-                    <a class="dropdown-item text-dark" href="#">Computer Science</a>
-                    <a class="dropdown-item text-dark" href="#">Interdisciplinary</a>
+    <nav class="navbar fixed-top front navbar-expand-md navbar-dark bg-dark">
+        <span id="title"><a href="index.html">Blair Magnet</a></span>
+        <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-dark" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="application.html">Apply</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="awards.html">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="resources.html">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item dropdown text-dark">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Courses
+                    </a>
+                    <div class="dropdown-menu text-dark" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item text-dark" href="overview.html">Overview</a>
+                        <a class="dropdown-item text-dark" href="overview.html#science">Science</a>
+                        <a class="dropdown-item text-dark" href="overview.html#math">Math</a>
+                        <a class="dropdown-item text-dark" href="overview.html#compsci">Computer Science</a>
+                        <a class="dropdown-item text-dark" href="overview.html#inter">Interdisciplinary</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="tab">
+        <button class="tablinks" id="overview_tab" onclick="openTab('overview')">Overview</button>
+        <button class="tablinks" id="science_tab" onclick="openTab('science')">Science Courses</button>
+        <button class="tablinks" id="math_tab" onclick="openTab('math')">Math Courses</button>
+        <button class="tablinks" id="compsci_tab" onclick="openTab('compsci')">Computer Science Courses</button>
+        <button class="tablinks" id="inter_tab" onclick="openTab('inter')">Interdisciplinary</button>
+    </div>
+    <div id="overview" class="tabcontent">
+        <table class="table table-bordered table-hover" style="text-align: center;">
+            <thead>
+                <tr>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Grade 9</th>
+                    <th scope="col">Grade 10</th>
+                    <th scope="col">Grade 11</th>
+                    <th scope="col">Grade 12</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Science</th>
+                    <td><a href="#science#physics" class="tag">Magnet Physics</a> & <a href="#science#chemistry" class="tag">Magnet
+                            Chemistry</a></td>
+                    <td><a href="#science#ess" class="tag">Magnet Earth Science</a> & <a href="#science#biology" class="tag">Magnet
+                            Biology</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr rowspan=3>
+                    <th scope="row">Mathematics</th>
+                    <td><a href="#math#geometry" class="tag">Magnet Geometry A/B</a> <b>OR</b><br><a href="#math#precalc"
+                            class="tag">Magnet Precalculus A/B</a> <b>OR</b><br><a href="#math#functions" class="tag">Magnet
+                            Functions A/B</a></td>
+                    <td><a href="#math#precalc" class="tag">Magnet Precalculus A/B</a> <b>OR</b><br><a href="#math#precalc"
+                            class="tag">Magnet Precalculus C</a> & <a href="#math#analysis" class="tag">Analysis 1A</a>
+                        <b>OR</b><br><a href="#math#analysis" class="tag">Analysis 1A/B</a></td>
+                    <td><a href="#math#precalc" class="tag">Magnet Precalculus C</a> & <a href="#math#analysis" class="tag">Analysis
+                            1A</a> <b>OR</b><br><a href="#math#analysis" class="tag">Analysis 1B</a> & Magnet Math
+                        Elective <b>OR</b><br>Magnet
+                        Math Elective
+                    </td>
+                    <td><a href="#math#analy" class="tag">Analysis 1B</a> and Magnet
+                        Elective <b>OR</b><br>Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
+                </tr>
+                <tr>
+                    <th scope="row">Computer Science</th>
+                    <td><a href="#compsci#funds" class="tag">Fundamentals of Computer
+                            Science A/B</a></td>
+                    <td><a href="#compsci#ads" class="tag">Algorithms and Data Structures
+                            A/B</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Interdisciplinary</th>
+                    <td><a href="#inter#re" class="tag">Research and Experimentation A/B</a></td>
+                    <td><a href="#inter#poe" class="tag">Principles of Engineering A</a></td>
+                    <td><a href="#inter#poe" class="tag">Principles of Engineering B</a> & <a href="#inter#srp" class="tag">Research
+                            Project A</a></td>
+                    <td><a href="#inter#srp" class="tag">Research Project B</a> & Elective</td>
+                </tr>
+                <tr rowspan=2>
+                    <th scope="row">English</th>
+                    <td>Honors English 9A/B</td>
+                    <td>Honors English 10A/B</td>
+                    <td>Honors English 11A/B <b>OR</b><br>
+                        AP Language and Composition
+                    </td>
+                    <td>Honors English 12A/B <b>OR</b><br>
+                        AP Literature and Composition
+                    </td>
+                </tr>
+                <tr rowspan=2>
+                    <th scope="row">Social Studies</th>
+                    <td>Honors US History A/B</td>
+                    <td>Honors NSL <b>OR</b><br>AP NSL</td>
+                    <td>Honors World History <b>OR</b><br>AP World History</td>
+                    <td>Elective (optional)</td>
+                </tr>
+                <tr>
+                    <th scope="row">World Languages</th>
+                    <td>World Language</td>
+                    <td>World Language</td>
+                    <td>World Language (optional)</td>
+                    <td>World Language (optional)</td>
+                </tr>
+                <tr rowspan=2>
+                    <th scope="row">Required Electives <br>(Recommended Schedule)</th>
+                    <td>Fine Arts/Music <b>OR</b><br>Physical Education</td>
+                    <td>Health/Elective</td>
+                    <td>Fine Arts/Music <b>OR</b><br>Physical Education</td>
+                    <td>Elective (optional)</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div id="math" class="tabcontent">
+        <div class="courses">
+            <div id="geometry">
+                <h2>Magnet Geometry</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 9</li>
+                    <li>Prerequiste: attainment of the outcomes of Algebra 1</li>
+                    <li>0.5 credit per semester</li>
+                </ul>
+                <p>If triangles are the things for you, Magnet Geometry is the place to be. From logic to the law of
+                    cosines,
+                    this class covers it all. You can follow in the steps of Euclid as you prove the major geometric
+                    theorems
+                    from the basic to the mind-boggling. Or learn your if's, and's, and or's as you work through
+                    rigorous logic
+                    proofs. In the end, Magnet Geometry provides an engaging learning experience and a rock-solid
+                    foundation for
+                    the math and life to come.</p>
+                <div class="toggle" onclick="toggle('geometry_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="geometry_formal">
+                    <span id="geometry_inner">Students study logic, methods of proof (direct/indirect, coordinate) in
+                        both two-column and essay forms, constructions, loci, and transformational geometry. All of the
+                        objectives of the MCPS Honors Geometry curriculum are taught. Nontraditional topics studied
+                        include affine geometry, conics, circuit diagrams, writing a two-bit adder on a circuit board,
+                        and an introduction to circular functions.</span>
                 </div>
-            </li>
-        </ul>
-    </div>
-</nav>
-<br> <br>
-
-<div class="tab">
-    <button class="tablinks" id="toverview" onclick="openTab(event, 'overview')">Overview</button>
-    <button class="tablinks" id="tmath" onclick="openTab(event, 'math')">Math Courses</button>
-    <button class="tablinks" id="tscience" onclick="openTab(event, 'science')">Science Courses</button>
-    <button class="tablinks" id="tcompsci" onclick="openTab(event, 'compsci')">Computer Science Courses</button>
-    <button class="tablinks" id="tinter" onclick="openTab(event, 'inter')">Interdisciplinary</button>
-</div>
-<div id="overview" class="tabcontent">
-    <table class="table table-bordered table-hover" style="text-align: center;">
-        <thead>
-        <tr>
-            <th scope="col">Subject</th>
-            <th scope="col">Grade 9</th>
-            <th scope="col">Grade 10</th>
-            <th scope="col">Grade 11</th>
-            <th scope="col">Grade 12</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">Science</th>
-            <td><a href="#science#physicsclass" id="#science#physicsclass" class="tag">Magnet Physics</a> & <a href="#science#chemclass" id="#science#chemclass" class="tag">Magnet Chemistry</a></td>
-            <td><a href="#science#essclass" id="#science#essclass" class="tag">Magnet Earth Science</a> & <a href="#science#bioclass" id="#science#bioclass" class="tag">Magnet Biology</a></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr rowspan=3>
-            <th scope="row">Mathematics</th>
-            <td><a href="#math#geomclass" id="#math#geomclass" class="tag">Magnet Geometry A/B</a> <b>OR</b><br><a href="#" id="#math#precclass" class="tag">Magnet Precalculus A/B</a> <b>OR</b><br><a href="#math#funcclass" id="#math#funcclass" class="tag">Magnet Functions A/B</a></td>
-            <td><a href="#math#precclass" id="#math#precclass" class="tag">Magnet Precalculus A/B</a> <b>OR</b><br><a href="#" id="#math#precclass" class="tag">Magnet Precalculus C</a> & <a href="#math#analyclass" id="#math#analyclass" class="tag">Analysis 1A</a> <b>OR</b><br><a href="#" id="#math#analyclass" class="tag">Analysis 1A/B</a></td>
-            <td><a href="#math#precclass" id="#math#precclass" class="tag">Magnet Precalculus C</a> & <a href="#" id="#math#analyclass" class="tag">Analysis 1A</a> <b>OR</b><br><a href="#math#analyclass" id="#math#analyclass" class="tag">Analysis 1B</a> & Magnet Math Elective <b>OR</b><br>Magnet
-                Math Elective
-            </td>
-            <td><a href="#math#analyclass" id="#math#analyclass" class="tag">Analysis 1B</a> and Magnet Elective <b>OR</b><br>Magnet Math Elective <b>OR</b><br>Magnet Math Elective</td>
-        </tr>
-        <tr>
-            <th scope="row">Computer Science</th>
-            <td><a href="#compsci#fundsclass" id="#compsci#fundsclass" class="tag">Fundamentals of Computer Science A/B</a></td>
-            <td><a href="#compsci#adsclass" id="#compsci#adsclass" class="tag">Algorithms and Data Structures A/B</a></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">Interdisciplinary</th>
-            <td><a href="#inter#reclass" id="#inter#reclass" class="tag">Research and Experimentation A/B</a></td>
-            <td><a href="#inter#poeclass#" id="#inter#poeclass" class="tag">Principles of Engineering A</a></td>
-            <td><a href="#inter#poeclass" id="#inter#poeclass" class="tag">Principles of Engineering B</a> & <a href="#inter#srpclass" id="#inter#srpclass" class="tag">Research Project A</a></td>
-            <td><a href="#inter#srpclass" id="#inter#srpclass" class="tag">Research Project B</a> & Elective</td>
-        </tr>
-        <tr rowspan=2>
-            <th scope="row">English</th>
-            <td>Honors English 9A/B</td>
-            <td>Honors English 10A/B</td>
-            <td>Honors English 11A/B <b>OR</b><br>
-                AP Language and Composition
-            </td>
-            <td>Honors English 12A/B <b>OR</b><br>
-                AP Literature and Composition
-            </td>
-        </tr>
-        <tr rowspan=2>
-            <th scope="row">Social Studies</th>
-            <td>Honors US History A/B</td>
-            <td>Honors NSL <b>OR</b><br>AP NSL</td>
-            <td>Honors World History <b>OR</b><br>AP World History</td>
-            <td>Elective (optional)</td>
-        </tr>
-        <tr>
-            <th scope="row">World Languages</th>
-            <td>World Language</td>
-            <td>World Language</td>
-            <td>World Language (optional)</td>
-            <td>World Language (optional)</td>
-        </tr>
-        <tr rowspan=2>
-            <th scope="row">Required Electives <br>(Recommended Schedule)</th>
-            <td>Fine Arts/Music <b>OR</b><br>Physical Education</td>
-            <td>Health/Elective</td>
-            <td>Fine Arts/Music <b>OR</b><br>Physical Education</td>
-            <td>Elective (optional)</td>
-        </tr>
-        </tbody>
-    </table>
-
-</div>
-<div id="math" class="tabcontent">
-    <div class="courses">
-        <div id="geomclass">
-            <h2>Magnet Geometry</h2>
-            <ul>
-                <li>Grade Level: 9</li>
-                <li>Prerequiste: attainment of the outcomes of Algebra 1</li>
+            </div>
+            <div id="precalc">
+                <h2>Magnet Precalculus A, B, C</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 9 - 10 - 11</li>
+                    <li>Prerequisite for Precalculus A, B: Attainment of the outcomes of Magnet or Honors Geometry and
+                        teacher
+                        recommendation
+                    </li>
+                    <li>Prerequisite for Precalculus C: Attainment of the outcomes of Magnet Precaculus A and B
+                    <li>0.5 credit per semester</li>
+                </ul>
+                <p>The starting grounds for most of the students in the Magnet Program, Precalculus will provide
+                    students the
+                    basics for future Magnet math courses, such as Analysis 1 and Analysis 2. In Precalculus A,
+                    students will
+                    begin to learn functions and their properties, as well as introductory trigonometry. As a
+                    continuation of
+                    the math curriculum, the Precalculus B and C courses will expand students' horizons in solving
+                    various
+                    equations, and learning about vectors, polar coordinates, conics, and series and sequences.
+                    Although the
+                    information presented in Precalculus is a lot of ground to cover in two or three semesters,
+                    students will be
+                    well-prepared for math in their future years.</p>
+                <div class="toggle" onclick="toggle('precalc_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="precalc_formal">
+                    <span id="precalc_inner">The properties of the real numbers and of functions, and the solution of
+                        equations in one variable are introduced. The discussion of functions includes all forms of
+                        algebraic, exponential, logarithmic, and circular functions. The study of each function
+                        includes a precise definition, a consideration of graphs and applications, an analysis of
+                        distinguishing features, and an identification of related tangents and slope.
+                        <br />The definition, properties,and application of matrices are studied. The discussion of
+                        functions includes all forms of algebraic, exponential, logarithmic, and circular functions.
+                        The study of each function includes a precise definition, a consideration of graphs and
+                        applications, an analysis of distinguishing features, and an identification of related tangents
+                        and slope.</span>
+                </div>
+            </div>
+            <div id="functions">
+                <h2>Magnet Functions A/B</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 9 - 10</li>
+                    <li>Prerequisite: Teacher recommendation and the attainment of the outcomes of Magnet or Honors
+                        Geometry
+                    </li>
+                    <li>0.5 credit per semester</li>
+                </ul>
+                <p>Functions is by invitation only. The curriculum is very similar to the Precalculus A, B, and C
+                    courses, but
+                    Functions is an intense, two-semester course whereas Precalculus is taught over three semesters.</p>
+                <div class="toggle" onclick="toggle('functions_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="functions_formal">
+                    <span id="functions_inner">Functions begun in Algebra 1 are continued and expanded to include all
+                        forms of algebraic, exponential, logarithmic, and circular functions. The study of each
+                        includes a precise definition, a consideration of graphs and applications, an analysis of
+                        distinguishing and interesting features, and an identification of related tangents and slopes.
+                        Students study trigonometry, approached from circular functions, conics, limits, and
+                        derivatives.</span>
+                </div>
+            </div>
+            <div id="analysis">
+                <h2>Magnet Analysis 1A/B</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 10 - 11 - 12</li>
+                    <li>Prerequisite: Attainment of the outcomes of Magnet Precalculus or Magnet Functions</li>
+                    <li>0.5 credit per semester</li>
+                </ul>
+                <p>Boiled down to one sentence, calculus is simply the study of change. But what makes calculus so
+                    powerful is
+                    the elegant concept of limits that drives it at its core. By taking everything you've learned in
+                    math so far
+                    and mixing it up with the magic of limits, a new world of theoretical and applicable results opens
+                    up. Soon
+                    after covering the basics of derivatives and integrals, you'll be able to chug away with "The Limit
+                    Machine"
+                    on some of the fundamental concepts from physics to economics. Plus, in the Magnet we call this
+                    course
+                    Analysis because it covers a lot more information than a normal high-school calculus course.</p>
+                <div class="toggle" onclick="toggle('analysis_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="analysis_formal">
+                    <span id="analysis_inner">The delta-epsilon definition of the limit of a function is examined and
+                        applied to develop the ideas of differentiation and integration. All the nonvector objectives
+                        of the MCPS AP calculus curriculum are studied with a greater degree of rigor and
+                        sophistication. Students study infinite series, differential equations, and the analysis of the
+                        polar plane. Students apply this knowledge to solve problems in the sciences and economics.
+                        Students take the AP Calculus BC Exam after completing this course.</span>
+                </div>
+            </div>
+            <h2>Multivariable Calculus and Differential Equations A/B (Magnet Analysis 2)</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of AP Calculus BC with teacher recommendation.</li>
                 <li>0.5 credit per semester</li>
             </ul>
-            <p>If triangles are the things for you, Magnet Geometry is the place to be. From logic to the law of cosines,
-                this class covers it all. You can follow in the steps of Euclid as you prove the major geometric theorems
-                from the basic to the mind-boggling. Or learn your if's, and's, and or's as you work through rigorous logic
-                proofs. In the end, Magnet Geometry provides an engaging learning experience and a rock-solid foundation for
-                the math and life to come.</p>
-            <div class="toggle" onclick="toggle('geometry');">Show/Hide formal description</div>
-            <div class="nostart" id="geometry">
-                <span id="geometry_inner">Students study logic, methods of proof (direct/indirect, coordinate) in both two-column and essay forms, constructions, loci, and transformational geometry. All of the objectives of the MCPS Honors Geometry curriculum are taught. Nontraditional topics studied include affine geometry, conics, circuit diagrams, writing a two-bit adder on a circuit board, and an introduction to circular functions.</span>
+            <p>So you've taken Analysis 1, and you've mastered change in one variable. But how do you deal with
+                problems in
+                the real world that deal with change in all three dimensions? That's where Analysis 2 comes in. In this
+                course you'll learn how to extend some of the concepts from Analysis 1 to into multiple dimensions,
+                leading
+                to deep connections in fields as varied as electromagnetism to weather patterns. In the second semester
+                of
+                the course you'll cover methods of solving differential equations used to describe various forms of
+                motion.</p>
+            <div class="toggle" onclick="toggle('multivar_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="multivar_formal">
+                <span id="multivar_inner">The first semester covers three-dimensional analytic geometry and vectors;
+                    the calculus of functions of more than one variable, including partial derivatives, vector-valued
+                    functions, multiple integrals, volumes, surface area, and the classical theorems of Green, Stokes,
+                    and Gauss. The second semester introduces the basic concepts of ordinary differential equations.</span>
             </div>
-        </div>
-        <div id="precclass">
-            <h2>Magnet Precalculus A, B, C</h2>
-            <ul>
-                <li>Grade Level: 9 - 10 - 11</li>
-                <li>Prerequisite for Precalculus A, B: Attainment of the outcomes of Magnet or Honors Geometry and teacher
-                    recommendation
-                </li>
-                <li>Prerequisite for Precalculus C: Attainment of the outcomes of Magnet Precaculus A and B
-                <li>0.5 credit per semester</li>
-            </ul>
-            <p>The starting grounds for most of the students in the Magnet Program, Precalculus will provide students the
-                basics for future Magnet math courses, such as Analysis 1 and Analysis 2. In Precalculus A, students will
-                begin to learn functions and their properties, as well as introductory trigonometry. As a continuation of
-                the math curriculum, the Precalculus B and C courses will expand students' horizons in solving various
-                equations, and learning about vectors, polar coordinates, conics, and series and sequences. Although the
-                information presented in Precalculus is a lot of ground to cover in two or three semesters, students will be
-                well-prepared for math in their future years.</p>
-            <div class="toggle" onclick="toggle('precalcAB');">Show/Hide formal description</div>
-            <div class="nostart" id="precalcAB">
-                            <span id="precalcAB_inner">The properties of the real numbers and of functions, and the solution of equations in one variable are introduced. The discussion of functions includes all forms of algebraic, exponential, logarithmic, and circular functions. The study of each function includes a precise definition, a consideration of graphs and applications, an analysis of distinguishing features, and an identification of related tangents and slope.
-                            <br/>The definition, properties,and application of matrices are studied. The discussion of functions includes all forms of algebraic, exponential, logarithmic, and circular functions. The study of each function includes a precise definition, a consideration of graphs and applications, an analysis of distinguishing features, and an identification of related tangents and slope.</span>
-            </div>
-        </div>
-        <div id="funcclass">
-            <h2>Magnet Functions A/B</h2>
-            <ul>
-                <li>Grade Level: 9 - 10</li>
-                <li>Prerequisite: Teacher recommendation and the attainment of the outcomes of Magnet or Honors Geometry
+            <h2>Applied Statistics</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Magnet Analysis 1, AP Calculus BC, or teacher
+                    recommentation.
                 </li>
                 <li>0.5 credit per semester</li>
             </ul>
-            <p>Functions is by invitation only. The curriculum is very similar to the Precalculus A, B, and C courses, but
-                Functions is an intense, two-semester course whereas Precalculus is taught over three semesters.</p>
-            <div class="toggle" onclick="toggle('functions');">Show/Hide formal description</div>
-            <div class="nostart" id="functions">
-                <span id="functions_inner">Functions begun in Algebra 1 are continued and expanded to include all forms of algebraic, exponential, logarithmic, and circular functions. The study of each includes a precise definition, a consideration of graphs and applications, an analysis of distinguishing and interesting features, and an identification of related tangents and slopes. Students study trigonometry, approached from circular functions, conics, limits, and derivatives.</span>
+            <p>Mark Twain once wrote that "There are three kinds of lies: lies, damned lies, and statistics." Twain was
+                right that numbers are manipulated all the time to support every claim, but the harshness of his
+                cynicism
+                may have resulted from his incomplete understanding of true, mathematical statistics. Far from the
+                stereotype of con men rattling off questionable numbers, statistics is in fact a mathematically
+                rigorous and
+                intellectually rich field of research. In addition to learning how to spot flaws in real-life
+                statistical
+                attempts, in this course you'll cover the potential sources of bias in a study, the proper procedures
+                for
+                setting up statistically-sound experiments, and the correct methods for analyzing various types of
+                data.
+                Besides providing a mathematical understanding of statistics, this course is also useful when designing
+                and
+                analyzing experiments during the Senior Research Project experience.</p>
+            <div class="toggle" onclick="toggle('stat_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="stat_formal">
+                <span id="stat_inner">Students learn sufficient statistical background to design, collect, and analyze
+                    data for surveys and research projects. All the objectives of the MCPS AP statistics curriculum are
+                    studied with a greater degree of rigor and sophistication. Students study simple probability
+                    theory, counting techniques, and a variety of probability distributions. These distributions
+                    justify tests of significance of parametric and nonparametric statistics.</span>
             </div>
-        </div>
-        <div id="analyclass">
-            <h2>Magnet Analysis 1A/B</h2>
-            <ul>
-                <li>Grade Level: 10 - 11 - 12</li>
-                <li>Prerequisite: Attainment of the outcomes of Magnet Precalculus or Magnet Functions</li>
+            <h2>Discrete Mathematics</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Magnet Precalculus or Functions and Analysis of
+                    Algorithms
+                    or AP computer science
+                </li>
                 <li>0.5 credit per semester</li>
             </ul>
-            <p>Boiled down to one sentence, calculus is simply the study of change. But what makes calculus so powerful is
-                the elegant concept of limits that drives it at its core. By taking everything you've learned in math so far
-                and mixing it up with the magic of limits, a new world of theoretical and applicable results opens up. Soon
-                after covering the basics of derivatives and integrals, you'll be able to chug away with "The Limit Machine"
-                on some of the fundamental concepts from physics to economics. Plus, in the Magnet we call this course
-                Analysis because it covers a lot more information than a normal high-school calculus course.</p>
-            <div class="toggle" onclick="toggle('analysis1');">Show/Hide formal description</div>
-            <div class="nostart" id="analysis1">
-                <span id="analysis1_inner">The delta-epsilon definition of the limit of a function is examined and applied to develop the ideas of differentiation and integration. All the nonvector objectives of the MCPS AP calculus curriculum are studied with a greater degree of rigor and sophistication. Students study infinite series, differential equations, and the analysis of the polar plane. Students apply this knowledge to solve problems in the sciences and economics. Students take the AP Calculus BC Exam after completing this course.</span>
+            <p>Most of your mathematics education in school has probably been focused on continuous mathematics, with
+                geometrical shapes that form perfectly connected curves and functions that can be applied all across
+                the
+                real numbers. But what about phenomena that are fundamentally discrete, that involve counting distinct
+                objects with separate numbers rather than on a continuum? Discrete mathematics tries to fit this entire
+                half
+                of mathematics into a single course, focusing on concepts from areas such as combinatorics, graph
+                theory,
+                and logic, paying special attention to applications in computer science.</p>
+            <div class="toggle" onclick="toggle('discrete_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="discrete_formal">
+                <span id="discrete_inner">Students learn the mathematical tools, language, and thought processes used
+                    in computer science. The analysis of finite collections of objects provides a solid foundation in
+                    set and graph theory. Students study combinations, countability, and number theory to establish the
+                    framework for analysis of data structures. Matrices and matrix algebra are studied to describe and
+                    manipulate graphs.</span>
+            </div>
+            <h2>Linear Algebra</h2>
+            <ul class="no-style">
+                <li>0.5 credit per semester</li>
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Magnet Analysis I or teacher recommendation</li>
+            </ul>
+            <p>Linear Algebra is a field that deals with vectors, matrices, and spaces. You may think that these
+                concepts
+                sounds way too abstract, but in fact linear algebra may be one of the most applicable and foundational
+                fields in mathematics. Besides being used to formalize a variety of fundamental ideas in mathematics,
+                linear
+                algebra is connected to a variety of computer applications, from computer graphics to network
+                algorithms. In
+                fact, the basic ideas used in modern search engines like Google are rooted in linear algebra.</p>
+            <div class="toggle" onclick="toggle('linalg_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="linalg_formal">
+                <span id="linalg_inner">Students learn the theory and practice of matrices and determinants and their
+                    use in solving linear equations. They study the structure and properties of linear transformations,
+                    vector spaces, and linear programming as they apply to such fields as biology, chemistry,
+                    differential equations, economics, psychology, and weather forecasting.</span>
+            </div>
+            <h2>Complex Analysis</h2>
+            <ul class="no-style">
+                <li>0.5 credit per semester</li>
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Magnet Analysis 2</li>
+            </ul>
+            <p>You may know that complex numbers arise when you play around too much with square roots and negative
+                numbers.
+                However, complex numbers aren't just curiosities resulting from bad mathematical behavior. The most
+                advanced
+                calculus class offered in the Magnet, Complex Analysis takes the concepts from the first two Analysis
+                courses a step further by pushing them into the exotic realm of the complex plane. In this course
+                you'll
+                study some of the concepts that are being applied to the hottest problems in mathematics and physics
+                today,
+                such as the Riemann Hypothesis and string theory.</p>
+            <div class="toggle" onclick="toggle('complex_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="complex_formal">
+                <span id="complex_inner">Students are introduced to the theory of functions of complex variables, an
+                    essential part of the mathematical background of engineers, physicists, mathematicians, and other
+                    scientists. They review complex numbers and study complex functions and the calculus of complex
+                    functions, including derivatives and integrals. Other topics studied include series, residues, and
+                    conformal mappings.</span>
+            </div>
+            <h2>Sports Statistics</h2>
+            <ul class="no-style">
+                <li>Grade Level: 12</li>
+                <li>Prerequisite: Teacher recommendation and coordinator permission</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Randomness, standard deviations, means...regression... all these statistics concepts have the perfect
+                application in, of all places, sports. In Sports Statistics, students use the statistical tests and
+                topics
+                they learned in Applied Statistics to explain various phenomena in the world of sports. Daily viewings
+                of
+                SportsCenter add color to this relatively chill class. Though some knowledge of sports is recommended
+                to
+                fully appreciate this course, Sports Statistics is a great to delve deeper into the world of
+                statistics.</p>
+            <p>When signing up for this course, please keep in mind that the formal name of Sports Statistics is Guided
+                Research!</p>
+            <div class="toggle" onclick="toggle('sportsstat_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="sportsstat_formal">
+                <span id="sportsstat_inner">This is an individualized course that addresses the research interests of
+                    students who are advanced in a particular subject area. Arrangements are made with a sponsoring
+                    teacher for in-depth work in an area of interest, typically involving equipment or materials that
+                    go beyond what is available in the classroom. The advisor and student set individual goals and
+                    expectations.</span>
             </div>
         </div>
-        <h2>Multivariable Calculus and Differential Equations A/B (Magnet Analysis 2)</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of AP Calculus BC with teacher recommendation.</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>So you've taken Analysis 1, and you've mastered change in one variable. But how do you deal with problems in
-            the real world that deal with change in all three dimensions? That's where Analysis 2 comes in. In this
-            course you'll learn how to extend some of the concepts from Analysis 1 to into multiple dimensions, leading
-            to deep connections in fields as varied as electromagnetism to weather patterns. In the second semester of
-            the course you'll cover methods of solving differential equations used to describe various forms of
-            motion.</p>
-        <div class="toggle" onclick="toggle('multivar');">Show/Hide formal description</div>
-        <div class="nostart" id="multivar">
-            <span id="multivar_inner">The first semester covers three-dimensional analytic geometry and vectors; the calculus of functions of more than one variable, including partial derivatives, vector-valued functions, multiple integrals, volumes, surface area, and the classical theorems of Green, Stokes, and Gauss. The second semester introduces the basic concepts of ordinary differential equations.</span>
-        </div>
-        <h2>Applied Statistics</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Magnet Analysis 1, AP Calculus BC, or teacher
-                recommentation.
-            </li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Mark Twain once wrote that "There are three kinds of lies: lies, damned lies, and statistics." Twain was
-            right that numbers are manipulated all the time to support every claim, but the harshness of his cynicism
-            may have resulted from his incomplete understanding of true, mathematical statistics. Far from the
-            stereotype of con men rattling off questionable numbers, statistics is in fact a mathematically rigorous and
-            intellectually rich field of research. In addition to learning how to spot flaws in real-life statistical
-            attempts, in this course you'll cover the potential sources of bias in a study, the proper procedures for
-            setting up statistically-sound experiments, and the correct methods for analyzing various types of data.
-            Besides providing a mathematical understanding of statistics, this course is also useful when designing and
-            analyzing experiments during the Senior Research Project experience.</p>
-        <div class="toggle" onclick="toggle('stat');">Show/Hide formal description</div>
-        <div class="nostart" id="stat">
-            <span id="stat_inner">Students learn sufficient statistical background to design, collect, and analyze data for surveys and research projects. All the objectives of the MCPS AP statistics curriculum are studied with a greater degree of rigor and sophistication. Students study simple probability theory, counting techniques, and a variety of probability distributions. These distributions justify tests of significance of parametric and nonparametric statistics.</span>
-        </div>
-        <h2>Discrete Mathematics</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Magnet Precalculus or Functions and Analysis of Algorithms
-                or AP computer science
-            </li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Most of your mathematics education in school has probably been focused on continuous mathematics, with
-            geometrical shapes that form perfectly connected curves and functions that can be applied all across the
-            real numbers. But what about phenomena that are fundamentally discrete, that involve counting distinct
-            objects with separate numbers rather than on a continuum? Discrete mathematics tries to fit this entire half
-            of mathematics into a single course, focusing on concepts from areas such as combinatorics, graph theory,
-            and logic, paying special attention to applications in computer science.</p>
-        <div class="toggle" onclick="toggle('discrete');">Show/Hide formal description</div>
-        <div class="nostart" id="discrete">
-            <span id="discrete_inner">Students learn the mathematical tools, language, and thought processes used in computer science. The analysis of finite collections of objects provides a solid foundation in set and graph theory. Students study combinations, countability, and number theory to establish the framework for analysis of data structures. Matrices and matrix algebra are studied to describe and manipulate graphs.</span>
-        </div>
-        <h2>Linear Algebra</h2>
-        <ul>
-            <li>0.5 credit per semester</li>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Magnet Analysis I or teacher recommendation</li>
-        </ul>
-        <p>Linear Algebra is a field that deals with vectors, matrices, and spaces. You may think that these concepts
-            sounds way too abstract, but in fact linear algebra may be one of the most applicable and foundational
-            fields in mathematics. Besides being used to formalize a variety of fundamental ideas in mathematics, linear
-            algebra is connected to a variety of computer applications, from computer graphics to network algorithms. In
-            fact, the basic ideas used in modern search engines like Google are rooted in linear algebra.</p>
-        <div class="toggle" onclick="toggle('linear');">Show/Hide formal description</div>
-        <div class="nostart" id="linear">
-            <span id="linear_inner">Students learn the theory and practice of matrices and determinants and their use in solving linear equations. They study the structure and properties of linear transformations, vector spaces, and linear programming as they apply to such fields as biology, chemistry, differential equations, economics, psychology, and weather forecasting.</span>
-        </div>
-        <h2>Complex Analysis</h2>
-        <ul>
-            <li>0.5 credit per semester</li>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Magnet Analysis 2</li>
-        </ul>
-        <p>You may know that complex numbers arise when you play around too much with square roots and negative numbers.
-            However, complex numbers aren't just curiosities resulting from bad mathematical behavior. The most advanced
-            calculus class offered in the Magnet, Complex Analysis takes the concepts from the first two Analysis
-            courses a step further by pushing them into the exotic realm of the complex plane. In this course you'll
-            study some of the concepts that are being applied to the hottest problems in mathematics and physics today,
-            such as the Riemann Hypothesis and string theory.</p>
-        <div class="toggle" onclick="toggle('complex');">Show/Hide formal description</div>
-        <div class="nostart" id="complex">
-            <span id="complex_inner">Students are introduced to the theory of functions of complex variables, an essential part of the mathematical background of engineers, physicists, mathematicians, and other scientists. They review complex numbers and study complex functions and the calculus of complex functions, including derivatives and integrals. Other topics studied include series, residues, and conformal mappings.</span>
-        </div>
-        <h2>Sports Statistics</h2>
-        <ul>
-            <li>Grade Level: 12</li>
-            <li>Prerequisite: Teacher recommendation and coordinator permission</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Randomness, standard deviations, means...regression... all these statistics concepts have the perfect
-            application in, of all places, sports. In Sports Statistics, students use the statistical tests and topics
-            they learned in Applied Statistics to explain various phenomena in the world of sports. Daily viewings of
-            SportsCenter add color to this relatively chill class. Though some knowledge of sports is recommended to
-            fully appreciate this course, Sports Statistics is a great to delve deeper into the world of statistics.</p>
-        <p>When signing up for this course, please keep in mind that the formal name of Sports Statistics is Guided
-            Research!</p>
-        <div class="toggle" onclick="toggle('guided');">Show/Hide formal description</div>
-        <div class="nostart" id="guided">
-            <span id="guided_inner">This is an individualized course that addresses the research interests of students who are advanced in a particular subject area. Arrangements are made with a sponsoring teacher for in-depth work in an area of interest, typically involving equipment or materials that go beyond what is available in the classroom. The advisor and student set individual goals and expectations.</span>
-        </div>
+
+
     </div>
-
-
-</div>
-<div id="science" class="tabcontent">
-    <div class="courses">
-        <div id="physicsclass">
-            <h2>Advanced Science 1, Physics</h2>
-            <ul>
-                <li>Grade Level: 9</li>
-                <li>Prerequisite: Attainment of the outcomes of Algebra 1</li>
-                <li>1.0 credit per semester</li>
-            </ul>
-            <p>The first science class you'll take as a Magnet student, physics is filled with fun. You'll spend your
-                classes throwing souffles, wearing kingly crowns, singing songs, and visiting Decamelot. When you return to
-                Earth, physics joins with computer science and R&amp;E classes for interdisciplinary activities like the
-                trebuchet project.</p>
-            <div class="toggle" onclick="toggle('physics');">Show/Hide formal description</div>
-            <div class="nostart" id="physics">
-                <span id="physics_inner">Students study the same topics and instructional objectives as in the MCPS Honors Physics A and B curriculum. Nonlinear systems are emphasized and are solved by numerical rather than analytical methods. Computer science and mathematics are integrated with the use of vectors, spreadsheets, interfaces, and simulators.</span>
+    <div id="science" class="tabcontent">
+        <div class="courses">
+            <div id="physics">
+                <h2>Advanced Science 1, Physics</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 9</li>
+                    <li>Prerequisite: Attainment of the outcomes of Algebra 1</li>
+                    <li>1.0 credit per semester</li>
+                </ul>
+                <p>The first science class you'll take as a Magnet student, physics is filled with fun. You'll spend
+                    your
+                    classes throwing souffles, wearing kingly crowns, singing songs, and visiting Decamelot. When you
+                    return to
+                    Earth, physics joins with computer science and R&E classes for interdisciplinary activities
+                    like the
+                    trebuchet project.</p>
+                <div class="toggle" onclick="toggle('physics_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="physics_formal">
+                    <span id="physics_inner">Students study the same topics and instructional objectives as in the MCPS
+                        Honors Physics A and B curriculum. Nonlinear systems are emphasized and are solved by numerical
+                        rather than analytical methods. Computer science and mathematics are integrated with the use of
+                        vectors, spreadsheets, interfaces, and simulators.</span>
+                </div>
             </div>
-        </div>
-        <div id="chemclass">
-            <h2>Advanced Science 2, Chemistry</h2>
-            <ul>
-                <li>Grade Level: 9</li>
-                <li>Prerequisite: Attainment of the outcomes of Advanced Science 1, Physics</li>
-                <li>1.0 credit per semester</li>
-            </ul>
-            <p>You had better strap on your seatbelts for this one-semester Chemistry course that covers a broad spectrum of
-                concepts as part of the Magnet Program's core curriculum. Students gather knowledge both through theoretical
-                discussions and laboratory experiences, and culminate the course with the traditional "Chem R&amp;E
-                Project." Here students must apply both chemical and engineering principles as they push their limits in a
-                flexible environment that provides them with an excellent opportunity to nurture skills that they will carry
-                well beyond their educational years.</p>
-            <div class="toggle" onclick="toggle('chem');">Show/Hide formal description</div>
-            <div class="nostart" id="chem">
-                <span id="chem_inner">Students study the same topics and instructional objectives as in the MCPS Honors Chemistry A and B curriculum. Additional emphasis is placed on interdisciplinary topics, the production and conservation of energy, computer and mathematical concepts that are related to modeling, and student research.</span>
+            <div id="chemistry">
+                <h2>Advanced Science 2, Chemistry</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 9</li>
+                    <li>Prerequisite: Attainment of the outcomes of Advanced Science 1, Physics</li>
+                    <li>1.0 credit per semester</li>
+                </ul>
+                <p>You had better strap on your seatbelts for this one-semester Chemistry course that covers a broad
+                    spectrum of
+                    concepts as part of the Magnet Program's core curriculum. Students gather knowledge both through
+                    theoretical
+                    discussions and laboratory experiences, and culminate the course with the traditional "Chem R&amp;E
+                    Project." Here students must apply both chemical and engineering principles as they push their
+                    limits in a
+                    flexible environment that provides them with an excellent opportunity to nurture skills that they
+                    will carry
+                    well beyond their educational years.</p>
+                <div class="toggle" onclick="toggle('chemistry_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="chemistry_formal">
+                    <span id="chemistry_inner">Students study the same topics and instructional objectives as in the
+                        MCPS
+                        Honors Chemistry A and B curriculum. Additional emphasis is placed on interdisciplinary topics,
+                        the production and conservation of energy, computer and mathematical concepts that are related
+                        to modeling, and student research.</span>
+                </div>
             </div>
-        </div>
-        <div id="essclass">
-            <h2>Advanced Science 3, Earth/Space Sciences</h2>
-            <ul>
-                <li>Grade Level: 10</li>
-                <li>Prerequisite: Attainment of the outcomes of Advanced Science 1B, Chemistry</li>
-                <li>1.0 credit per semester</li>
-            </ul>
-            <p>Earth Space Systems Science is a course that deals with the study of Earth as a system of interacting parts.
-                In this course, you will learn about the Earth-Space System, and be able to understand how the seasons and
-                weather come about. The highlight of first quarter is Mission Possible, a project that combines your ESS and
-                R$amp;E knowledge. In the second semester, you will study the Solid Earth System, and understand rocks and
-                minerals.</p>
-            <div class="toggle" onclick="toggle('ess');">Show/Hide formal description</div>
-            <div class="nostart" id="ess">
-                <span id="ess_inner">Students study the same topics and instructional objectives as in the MCPS Earth Science A and B curriculum. Additionally, students study the interpretation of data from remote sensing instruments, computer and mathematical concepts that are related to science and engineering, and current research into the interactive process of earth evolution and global change. Emphasis is placed on the dynamic interaction of the solid earth, its atmosphere, and its oceans as special cases of more general processes occur.</span>
+            <div id="ess">
+                <h2>Advanced Science 3, Earth/Space Sciences</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 10</li>
+                    <li>Prerequisite: Attainment of the outcomes of Advanced Science 1B, Chemistry</li>
+                    <li>1.0 credit per semester</li>
+                </ul>
+                <p>Earth Space Systems Science is a course that deals with the study of Earth as a system of
+                    interacting parts.
+                    In this course, you will learn about the Earth-Space System, and be able to understand how the
+                    seasons and
+                    weather come about. The highlight of first quarter is Mission Possible, a project that combines
+                    your ESS and
+                    R$amp;E knowledge. In the second semester, you will study the Solid Earth System, and understand
+                    rocks and
+                    minerals.</p>
+                <div class="toggle" onclick="toggle('ess_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="ess_formal">
+                    <span id="ess_inner">Students study the same topics and instructional objectives as in the MCPS
+                        Earth Science A and B curriculum. Additionally, students study the interpretation of data from
+                        remote sensing instruments, computer and mathematical concepts that are related to science and
+                        engineering, and current research into the interactive process of earth evolution and global
+                        change. Emphasis is placed on the dynamic interaction of the solid earth, its atmosphere, and
+                        its oceans as special cases of more general processes occur.</span>
+                </div>
             </div>
-        </div>
-        <div id="bioclass">
-            <h2>Advanced Science 4, Biology</h2>
-            <ul>
-                <li>Grade Level: 10</li>
-                <li>Prerequisite: Attainment of the outcomes of Advanced Science 3, Earth/Space Sciences</li>
-                <li>1.0 credit per semester</li>
-            </ul>
-            <p>After Physics, Chemistry, and ESS, Magnet sophomores take their first double period course in none other than
-                Biology! This course covers ecology, biochemistry, the origin of life, taxonomy, genetics and so much more.
-                The topics of life science in this course range from evolution to microbiology and physiology. By the end of
-                the course, students will have a thorough understanding of biological science and will be prepared to take
-                the Magnet's specialized biology courses like Genetics, Cellular Physiology, or Marine Biology.</p>
-            <div class="toggle" onclick="toggle('bio');">Show/Hide formal description</div>
-            <div class="nostart" id="bio">
-                <span id="bio_inner">Students study the same topics and instructional objectives as in the MCPS Honors Biology A and B curriculum. An interdisciplinary approach emphasizes the continued development of problem-solving skills and the collection and analysis of biological data. The culminating activity is a three-day field study of marine ecosystems in which students collect, report, and evaluate physical, chemical, and biological data.</span>
+            <div id="biology">
+                <h2>Advanced Science 4, Biology</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 10</li>
+                    <li>Prerequisite: Attainment of the outcomes of Advanced Science 3, Earth/Space Sciences</li>
+                    <li>1.0 credit per semester</li>
+                </ul>
+                <p>After Physics, Chemistry, and ESS, Magnet sophomores take their first double period course in none
+                    other than
+                    Biology! This course covers ecology, biochemistry, the origin of life, taxonomy, genetics and so
+                    much more.
+                    The topics of life science in this course range from evolution to microbiology and physiology. By
+                    the end of
+                    the course, students will have a thorough understanding of biological science and will be prepared
+                    to take
+                    the Magnet's specialized biology courses like Genetics, Cellular Physiology, or Marine Biology.</p>
+                <div class="toggle" onclick="toggle('biology_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="biology_formal">
+                    <span id="biology_inner">Students study the same topics and instructional objectives as in the MCPS
+                        Honors Biology A and B curriculum. An interdisciplinary approach emphasizes the continued
+                        development of problem-solving skills and the collection and analysis of biological data. The
+                        culminating activity is a three-day field study of marine ecosystems in which students collect,
+                        report, and evaluate physical, chemical, and biological data.</span>
+                </div>
             </div>
-        </div>
-        <h2>Mathematical Physics A/B</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: By invitation only</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Whatever classes you decide to sign up for in the Magnet, you're guaranteed to get a good dose of physics in
-            your four years, first in the semester long freshmen course, perhaps later in an AP Physics course, and
-            constantly in a variety of courses such as Chemistry and Calculus. Math-Phys is the full year culmination of
-            all of this physics work, designed for seniors that are really serious about solving problems beyond the AP
-            curriculum, applying complex ideas from advanced math courses to physics, and figuring out the rigorous
-            foundations of some of the fundamental concepts in mechanics and electromagnetism. Beyond covering ground
-            normally taught in college courses, in Math-phys you will consider results from the cutting-edge of physics
-            through article reviews and research projects.</p>
-        <!--		<div class="toggle" onclick="toggle('mathphys');">Show/Hide formal description</div>
+            <h2>Mathematical Physics A/B</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: By invitation only</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Whatever classes you decide to sign up for in the Magnet, you're guaranteed to get a good dose of
+                physics in
+                your four years, first in the semester long freshmen course, perhaps later in an AP Physics course, and
+                constantly in a variety of courses such as Chemistry and Calculus. Math-Phys is the full year
+                culmination of
+                all of this physics work, designed for seniors that are really serious about solving problems beyond
+                the AP
+                curriculum, applying complex ideas from advanced math courses to physics, and figuring out the rigorous
+                foundations of some of the fundamental concepts in mechanics and electromagnetism. Beyond covering
+                ground
+                normally taught in college courses, in Math-phys you will consider results from the cutting-edge of
+                physics
+                through article reviews and research projects.</p>
+            <!-- There is no formal description for Math Phys -->
+            <!--		<div class="toggle" onclick="toggle('mathphys');">Show/Hide formal description</div>
                 <div id="mathphys">
                     <span id="matphys_inner">???</span>
                 </div>-->
-        <h2>Marine Biology</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Honors Biology and Honors Chemistry</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>One of the electives that students can take in their junior and senior
-            year, Marine Biology looks comprehensively into biology
-            of the oceans. (As for you freshmen and sophomores, don't
-            worry. You'll get your chance to take this amazing class).
-            Taught by the wonderful, fun-loving Mrs. Blaha, Marine
-            Biology is one of those classes where you can relax, yet learn a great
-            deal at the same time. Topics range from marine ecology and the denizens
-            of the deep to the ocean environment and how humans interact with the
-            marine world. The ocean is a vast resource that contains many hidden secrets
-            as well as new, unique species. And seeing as how oceans cover approximately
-            70.78% of Earth's surface, I'd think it is quite important to learn about
-            them. Wouldn't you?</p>
-        <div class="toggle" onclick="toggle('marinebio');">Show/Hide formal description</div>
-        <div class="nostart" id="marinebio">
-            <span id="marinebio_inner">Students study basic marine ecological principles and develop an understanding of both the complexity and delicate balance of ocean ecosystems. Relevant science, technology, and societal issues are integrated into the curriculum. Laboratory exercises, field trips, classroom presentations, and literature research are an integral part of the course.</span>
-        </div>
-        <h2>Introductory Genetic Analysis</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Honors Biology and Honors Chemistry</li>
-            <li>1.0 credit per semester</li>
-        </ul>
-        <p>There are so many complicated ways of regulating genes and their expression that it's a miracle that you
-            don't have some crazy deformity (unless you do, in which case, sorry). You could have eight sets of
-            chromosomes (great - if you were a strawberry), or have urine that smells like maple syrup. Remember
-            Mendel's ratios from sophomore bio? They hardly ever work, because of this strange thing called reality -
-            things like lethal alleles and penetrance and duplicate genes. Oh, and by the way, genetics is one of the
-            most useful classes to take in your junior year if you're interested in an SRP related in any way to
-            genomics, or proteomics, or if you're planning on doing any genetic manipulation of any kind. There is, in
-            fact, a reason why this class is double period.</p>
-        <div class="toggle" onclick="toggle('genetics');">Show/Hide formal description</div>
-        <div class="nostart" id="genetics">
-            <span id="genetics_inner">Students learn Mendelian, molecular, and medical genetics. The historical aspects as well as our current understanding of the laws governing inheritance are investigated. Students are exposed to hands-on laboratory exercises, problem-solving sessions, Internet activities, student-led seminars, field trips, and other class activities that complement lectures and discussions.</span>
-        </div>
-        <h2>Cellular Physiology</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Honors Biology and Honors Chemistry</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Have you ever wondered how neurons actually fire, or what goes on in muscle cells when they contract? Cell
-            phys is all about different types of cells and their functions. In this fun, lab-based course, you'll
-            explore everything cellular from the differences between eukaryotes and prokaryotes to immunology and the
-            process of cell respiration. You get an in-depth look at the cell cycle, the structure and function of cell
-            organelles, stem cells, cancer cells, and even signal transduction mechanisms.</p>
-        <div class="toggle" onclick="toggle('cellphys');">Show/Hide formal description</div>
-        <div class="nostart" id="cellphys">
-            <span id="cellphys_inner">Students study the major topics in molecular and cellular biology, including the cell cycle, cellular macromolecules, the structure and function of cellular organelles, cell communication, cellular energy flow, immunology, and special cell functions. The course includes laboratory investigations in which students use advanced methods of biotechnology to analyze cell structures and explore cellular processes.</span>
-        </div>
-        <h2>Quantum Physics</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Advanced Science 1 or Honors or AP Physics</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Classical physics (think ninth grade) works well most of the time, but everyone knows that when it comes to
-            talking about the Universe, you have to turn to Einstein and his theory of relativity. What about really
-            tiny things? As you begin to learn in freshman chemistry, physics also fails there. This class will
-            challenge everything you thought you knew about the world, leaving you feeling uncertain.</p>
-        <div class="toggle" onclick="toggle('quantum');">Show/Hide formal description</div>
-        <div class="nostart" id="quantum">
-            <span id="quantum_inner">Modern physical sciences are examined in light of recent discoveries regarding the limits of experience, the atom, and the universe. The course includes a critical analysis of the scientific process, which led to the renunciation of classical physics and the introduction of ideas so foreign to everyday experience as to cause a reassessment of the meaning of physical reality.</span>
-        </div>
-        <h2>Thermodynamics</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Advanced Science 1 or Honors or AP Physics</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Thermodynamics has the unfortunate reputation of being the class where people blow things up. For the most
-            part, this reputation is true. Thermo is a very "hands-on" course. After learning an important principle,
-            you'll spend a few days using your newfound knowledge to build something. Or, occasionally, to blow
-            something up. BOOM!</p>
-        <div class="toggle" onclick="toggle('thermo');">Show/Hide formal description</div>
-        <div class="nostart" id="thermo">
-            <span id="thermo_inner">Students are introduced to the macroscopic (observable) level with topics of heat flow, physical properties as a function of temperature changes, specific heat, calorimetry, latent heats of fusion and vaporization, and heat transport. The microscopic topics of Joule equivalent, the laws of thermodynamics, and kinetic molecular theory also are studied. Students study examples from current research in a variety of disciplines</span>
-        </div>
-        <h2>Optics</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Advanced Science 1 or Honors or AP Physics and completion of
-                AP Calculus BC or Analysis 1A
-            </li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>If you took Mr. Donaldson's freshman physics course, then imagine the amount of fun (and learning) and
-            multiply that by a very large number. Optics, the study of the behavior and properties of light, is one
-            class that you can't miss. In Optics, you learn both classical and modern theories/approaches. Optics is a
-            one-semester course, so naturally you learn a lot in very little time; this means there is a fair amount of
-            work to complete (but they're fun). Some memorable projects include applying what you learned in class to
-            designing and engineering a kaleidoscope and optical camera. Optical science is relevant to many disciplines
-            including electrical engineering and medicine. In the end, optics is a class that will last you a
-            lifetime.</p>
-        <div class="toggle" onclick="toggle('optics');">Show/Hide formal description</div>
-        <div class="nostart" id="optics">
-            <span id="optics_inner">Students examine geometrical optics, physical (wave) optics, and instrumentation applications. Knowledge of basic calculus topics is necessary for understanding mathematical derivations.</span>
-        </div>
-        <h2>Introductory Physical Chemistry</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Advanced Science 2 or AP Chemistry</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Physical Chemistry deals with the overlap of Physics and Chemistry, and the curriculum is built off of the
-            firm foundation provided in freshman chemistry. Be prepared for a fun-filled course that goes in-depth into
-            a variety of topics using advanced laboratory techniques to supplement student learning, and deep
-            theoretical discussions that cater to students' thirst for knowledge.</p>
-        <div class="toggle" onclick="toggle('physchem');">Show/Hide formal description</div>
-        <div class="nostart" id="physchem">
-            <span id="physchem_inner">Students study topics related to chemical thermodynamics, quantum chemistry, chemical kinetics, chemical equilibrium, and chemical reactions. They learn practical applications through examination of various heat engines and different models of atoms, polyatomic molecules, and atomic bonding. Organic chemistry topics are introduced through the use of instrumentation</span>
-        </div>
-        <h2>Analytical Chemistry</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Advanced Science 2 or AP Chemistry</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Analytical Chemistry deals with different processes to analyze unknown samples and identify the relative
-            amounts of components. This class has more labs than other chemistry classes to provide students with more
-            hands-on experiences and builds on important skills that are pertinent to many fields such as medicine,
-            biochemistry, biology, and pharmacology. This course is essential for students who are considering a career
-            in the life sciences.</p>
-        <div class="toggle" onclick="toggle('analychem');">Show/Hide formal description</div>
-        <div class="nostart" id="analychem">
-            <span id="analychem_inner">Students learn qualitative and quantitative methods of chemical analysis. Sampling techniques, analytical statistics, units of measurement, and errors in chemical analysis are studied. Students learn traditional techniques in wet chemistry in addition to analytical instrumentation, including, but not limited to, gas chromatography, infrared spectroscopy, atomic absorption spectrophotometry, and nuclear resonance spectroscopy.</span>
-        </div>
-        <!--			<h2>Advanced Topics in Earth Science A (Plate Tectonics/Oceanography)</h2>
-                        <ul>
-                            <li>Grade Level: 11 - 12</li>
-                            <li>Prerequisite: Attainment of the outcomes of Honors Biology and Chemistry</li>
-                            <li>0.5 credit per semester</li>
-                        </ul>
-                        <p>INSERT BLURB HERE!!!!! ???</p>
-                        <div class="toggle" onclick="toggle('plate');">Show/Hide formal description</div>
-                        <div id="plate">
-                            <span id="plate_inner">Plate Tectonics/Oceanography. The historical development of plate tectonic theory, its application to current research in physical and structural geology, and physical and geological oceanography are studied.</span>
-                        </div>
-                    <h2>Advanced Topics in Earth Science B (Astronomy)</h2>
-                        <ul>
-                            <li>Grade Level: 11 - 12</li>
-                            <li>Prerequisite: Prior completion of any Honors level science course.</li>
-                            <li>0.5 credit per semester</li>
-                        </ul>
-                        <p>INSERT BLURB HERE!!!!! ???</p>
-                        <div class="toggle" onclick="toggle('astronomyB');">Show/Hide formal description</div>
-                        <div id="astronomy">
-                            <span id="astronomy_inner">Contemporary Astronomy. Basic astronomy is integrated with current topics like black holes, quasars, stellar evolution, and cosmic strings. Historical and mathematical foundations are combined with observations across the spectrum. Data analysis is emphasized.</span>
-                        </div> -->
-        <h2>Materials Science</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Advanced Science 2 or AP Chemistry</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Materials Science is a semester-long 11th or 12th grade elective. Students study the topics of synthetic
-            materials (including electrospinning), toxic materials, and metallurgy. Students also examine alloys and
-            different material properties. For instance, in one project, after metals have been stressed in some way,
-            they are mounted in epoxy, polished, and examined under high power microscopes to examine the changes in
-            material structure due to the stresses.</p>
-        <div class="toggle" onclick="toggle('matsci');">Show/Hide formal description</div>
-        <div class="nostart" id="matsci">
-            <span id="matsci_inner">Students study and investigate the properties of materials, including, but not limited to, ceramics and glass, natural and synthetic materials, and metals. Projects vary in depth and scope, ranging from the study of toxic materials to the production of synthetic shoes.</span>
-        </div>
-        <h2>Origins of Science</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Interest in science, history, and the arts</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Part philosophy, part science, part singing, part dancing. Mr. Donaldson blends this unlikely (but awesome)
-            mix in Origins of Science, and there's a little something for everyone. Travel from ancient Mesopotamia to
-            modern times with the help of Sophie's World by Jostein Gaarder, the most interesting textbook you'll read
-            in your life. Enjoy story time while sitting cross-legged on the carpeted floor, and take short field trips
-            outside to look at the sky and stars. Offered in first semester, this class is the perfect haven from
-            college apps for seniors or a burgeoning workload for juniors. Your Magnet experience will not be complete
-            without it.</p>
-        <div class="toggle" onclick="toggle('origins');">Show/Hide formal description</div>
-        <div class="nostart" id="origins">
-            <span id="origins_inner">Students read and analyze important primary sources in the history of philosophy and science. Students replicate original experiments. Major scientific discoveries are presented in the context of contemporary politics, philosophy, and art and of preceding and succeeding scientific developments.</span>
+            <h2>Marine Biology</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Honors Biology and Honors Chemistry</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>One of the electives that students can take in their junior and senior
+                year, Marine Biology looks comprehensively into biology
+                of the oceans. (As for you freshmen and sophomores, don't
+                worry. You'll get your chance to take this amazing class).
+                Taught by the wonderful, fun-loving Mrs. Blaha, Marine
+                Biology is one of those classes where you can relax, yet learn a great
+                deal at the same time. Topics range from marine ecology and the denizens
+                of the deep to the ocean environment and how humans interact with the
+                marine world. The ocean is a vast resource that contains many hidden secrets
+                as well as new, unique species. And seeing as how oceans cover approximately
+                70.78% of Earth's surface, I'd think it is quite important to learn about
+                them. Wouldn't you?</p>
+            <div class="toggle" onclick="toggle('marinebio_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="marinebio_formal">
+                <span id="marinebio_inner">Students study basic marine ecological principles and develop an
+                    understanding of both the complexity and delicate balance of ocean ecosystems. Relevant science,
+                    technology, and societal issues are integrated into the curriculum. Laboratory exercises, field
+                    trips, classroom presentations, and literature research are an integral part of the course.</span>
+            </div>
+            <h2>Introductory Genetic Analysis</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Honors Biology and Honors Chemistry</li>
+                <li>1.0 credit per semester</li>
+            </ul>
+            <p>There are so many complicated ways of regulating genes and their expression that it's a miracle that you
+                don't have some crazy deformity (unless you do, in which case, sorry). You could have eight sets of
+                chromosomes (great - if you were a strawberry), or have urine that smells like maple syrup. Remember
+                Mendel's ratios from sophomore bio? They hardly ever work, because of this strange thing called reality
+                -
+                things like lethal alleles and penetrance and duplicate genes. Oh, and by the way, genetics is one of
+                the
+                most useful classes to take in your junior year if you're interested in an SRP related in any way to
+                genomics, or proteomics, or if you're planning on doing any genetic manipulation of any kind. There is,
+                in
+                fact, a reason why this class is double period.</p>
+            <div class="toggle" onclick="toggle('genetics_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="genetics_formal">
+                <span id="genetics_inner">Students learn Mendelian, molecular, and medical genetics. The historical
+                    aspects as well as our current understanding of the laws governing inheritance are investigated.
+                    Students are exposed to hands-on laboratory exercises, problem-solving sessions, Internet
+                    activities, student-led seminars, field trips, and other class activities that complement lectures
+                    and discussions.</span>
+            </div>
+            <h2>Cellular Physiology</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Honors Biology and Honors Chemistry</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Have you ever wondered how neurons actually fire, or what goes on in muscle cells when they contract?
+                Cell
+                phys is all about different types of cells and their functions. In this fun, lab-based course, you'll
+                explore everything cellular from the differences between eukaryotes and prokaryotes to immunology and
+                the
+                process of cell respiration. You get an in-depth look at the cell cycle, the structure and function of
+                cell
+                organelles, stem cells, cancer cells, and even signal transduction mechanisms.</p>
+            <div class="toggle" onclick="toggle('cellphys_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="cellphys_formal">
+                <span id="cellphys_inner">Students study the major topics in molecular and cellular biology, including
+                    the cell cycle, cellular macromolecules, the structure and function of cellular organelles, cell
+                    communication, cellular energy flow, immunology, and special cell functions. The course includes
+                    laboratory investigations in which students use advanced methods of biotechnology to analyze cell
+                    structures and explore cellular processes.</span>
+            </div>
+            <h2>Quantum Physics</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Advanced Science 1 or Honors or AP Physics</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Classical physics (think ninth grade) works well most of the time, but everyone knows that when it comes
+                to
+                talking about the Universe, you have to turn to Einstein and his theory of relativity. What about
+                really
+                tiny things? As you begin to learn in freshman chemistry, physics also fails there. This class will
+                challenge everything you thought you knew about the world, leaving you feeling uncertain.</p>
+            <div class="toggle" onclick="toggle('quantum_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="quantum_formal">
+                <span id="quantum_inner">Modern physical sciences are examined in light of recent discoveries regarding
+                    the limits of experience, the atom, and the universe. The course includes a critical analysis of
+                    the scientific process, which led to the renunciation of classical physics and the introduction of
+                    ideas so foreign to everyday experience as to cause a reassessment of the meaning of physical
+                    reality.</span>
+            </div>
+            <h2>Thermodynamics</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Advanced Science 1 or Honors or AP Physics</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Thermodynamics has the unfortunate reputation of being the class where people blow things up. For the
+                most
+                part, this reputation is true. Thermo is a very "hands-on" course. After learning an important
+                principle,
+                you'll spend a few days using your newfound knowledge to build something. Or, occasionally, to blow
+                something up. BOOM!</p>
+            <div class="toggle" onclick="toggle('thermo_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="thermo_formal">
+                <span id="thermo_inner">Students are introduced to the macroscopic (observable) level with topics of
+                    heat flow, physical properties as a function of temperature changes, specific heat, calorimetry,
+                    latent heats of fusion and vaporization, and heat transport. The microscopic topics of Joule
+                    equivalent, the laws of thermodynamics, and kinetic molecular theory also are studied. Students
+                    study examples from current research in a variety of disciplines</span>
+            </div>
+            <h2>Optics</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Advanced Science 1 or Honors or AP Physics and
+                    completion of
+                    AP Calculus BC or Analysis 1A
+                </li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>If you took Mr. Donaldson's freshman physics course, then imagine the amount of fun (and learning) and
+                multiply that by a very large number. Optics, the study of the behavior and properties of light, is one
+                class that you can't miss. In Optics, you learn both classical and modern theories/approaches. Optics
+                is a
+                one-semester course, so naturally you learn a lot in very little time; this means there is a fair
+                amount of
+                work to complete (but they're fun). Some memorable projects include applying what you learned in class
+                to
+                designing and engineering a kaleidoscope and optical camera. Optical science is relevant to many
+                disciplines
+                including electrical engineering and medicine. In the end, optics is a class that will last you a
+                lifetime.</p>
+            <div class="toggle" onclick="toggle('optics_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="optics_formal">
+                <span id="optics_inner">Students examine geometrical optics, physical (wave) optics, and
+                    instrumentation applications. Knowledge of basic calculus topics is necessary for understanding
+                    mathematical derivations.</span>
+            </div>
+            <h2>Introductory Physical Chemistry</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Advanced Science 2 or AP Chemistry</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Physical Chemistry deals with the overlap of Physics and Chemistry, and the curriculum is built off of
+                the
+                firm foundation provided in freshman chemistry. Be prepared for a fun-filled course that goes in-depth
+                into
+                a variety of topics using advanced laboratory techniques to supplement student learning, and deep
+                theoretical discussions that cater to students' thirst for knowledge.</p>
+            <div class="toggle" onclick="toggle('pchem_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="pchem_formal">
+                <span id="pchem_inner">Students study topics related to chemical thermodynamics, quantum chemistry,
+                    chemical kinetics, chemical equilibrium, and chemical reactions. They learn practical applications
+                    through examination of various heat engines and different models of atoms, polyatomic molecules,
+                    and atomic bonding. Organic chemistry topics are introduced through the use of instrumentation</span>
+            </div>
+            <h2>Analytical Chemistry</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Advanced Science 2 or AP Chemistry</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Analytical Chemistry deals with different processes to analyze unknown samples and identify the relative
+                amounts of components. This class has more labs than other chemistry classes to provide students with
+                more
+                hands-on experiences and builds on important skills that are pertinent to many fields such as medicine,
+                biochemistry, biology, and pharmacology. This course is essential for students who are considering a
+                career
+                in the life sciences.</p>
+            <div class="toggle" onclick="toggle('achem_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="achem_formal">
+                <span id="achem_inner">Students learn qualitative and quantitative methods of chemical analysis.
+                    Sampling techniques, analytical statistics, units of measurement, and errors in chemical analysis
+                    are studied. Students learn traditional techniques in wet chemistry in addition to analytical
+                    instrumentation, including, but not limited to, gas chromatography, infrared spectroscopy, atomic
+                    absorption spectrophotometry, and nuclear resonance spectroscopy.</span>
+            </div>
+
+            <h2>Materials Science</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Advanced Science 2 or AP Chemistry</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Materials Science is a semester-long 11th or 12th grade elective. Students study the topics of synthetic
+                materials (including electrospinning), toxic materials, and metallurgy. Students also examine alloys
+                and
+                different material properties. For instance, in one project, after metals have been stressed in some
+                way,
+                they are mounted in epoxy, polished, and examined under high power microscopes to examine the changes
+                in
+                material structure due to the stresses.</p>
+            <div class="toggle" onclick="toggle('matsci');">Show/Hide formal description</div>
+            <div class="nostart" id="matsci">
+                <span id="matsci_inner">Students study and investigate the properties of materials, including, but not
+                    limited to, ceramics and glass, natural and synthetic materials, and metals. Projects vary in depth
+                    and scope, ranging from the study of toxic materials to the production of synthetic shoes.</span>
+            </div>
+            <h2>Origins of Science</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Interest in science, history, and the arts</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Part philosophy, part science, part singing, part dancing. Mr. Donaldson blends this unlikely (but
+                awesome)
+                mix in Origins of Science, and there's a little something for everyone. Travel from ancient Mesopotamia
+                to
+                modern times with the help of Sophie's World by Jostein Gaarder, the most interesting textbook you'll
+                read
+                in your life. Enjoy story time while sitting cross-legged on the carpeted floor, and take short field
+                trips
+                outside to look at the sky and stars. Offered in first semester, this class is the perfect haven from
+                college apps for seniors or a burgeoning workload for juniors. Your Magnet experience will not be
+                complete
+                without it.</p>
+            <div class="toggle" onclick="toggle('origins_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="origins_formal">
+                <span id="origins_inner">Students read and analyze important primary sources in the history of
+                    philosophy and science. Students replicate original experiments. Major scientific discoveries are
+                    presented in the context of contemporary politics, philosophy, and art and of preceding and
+                    succeeding scientific developments.</span>
+            </div>
         </div>
     </div>
-</div>
-<div id='compsci' class='tabcontent'>
-    <div class="courses">
-        <div id="fundcsclass">
-            <h2>Fundamentals of Computer Science A/B</h2>
-            <ul>
-                <li>Grade Level: 9</li>
-                <li>Prerequiste: none</li>
+    <div id='compsci' class='tabcontent'>
+        <div class="courses">
+            <div id="fundcs">
+                <h2>Fundamentals of Computer Science A/B</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 9</li>
+                    <li>Prerequiste: none</li>
+                    <li>0.5 credit per semester</li>
+                </ul>
+                <p>Taught by Ms. Piper, Fundamentals of Computer Science is closely linked to freshmen Physics,
+                    Chemistry, and R&amp;E.
+                    For example, Microsoft Excel and STELLA models numerical data and the motion of objects in real
+                    time
+                    (physics concepts). You will also find out what that PRGM button on a TI-83 calculator does and how
+                    to
+                    program on TI-83. Later in the course, students will master the engineering of digital circuitry
+                    and wire
+                    electronic circuit boards! (Usually, these topics are not taught until college!) Additional topics
+                    taught
+                    include the basics of a Linux operating system, DrScheme, number systems, recursion, and much more!
+                    Fundamentals of Computer Science prepares you for computer programming in high-level languages,
+                    covered in
+                    Algorithms and Data Structures. For the real computer enthusiast, you will be equipped to take on
+                    American
+                    Computer Science League competitions; you may even join Computer Club, Web Design Club, or try out
+                    for the
+                    "Accelerated Track"!</p>
+                <div class="toggle" onclick="toggle('fundcs_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="fundcs_formal">
+                    <span id="fundcs_inner">Students study both the theory and practice of computer use through a wide
+                        variety of activities developed to coordinate with their mathematics and science courses.
+                        Students design and implement their own original solutions to given problems, following current
+                        structured programming concepts in a high-level language. They learn the inner workings of
+                        computer systems and design and build circuitry to accomplish a given task.</span>
+                </div>
+            </div>
+            <div id="ads">
+                <h2>Algorithms and Data Structures A/B</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 9 - 10 - 11</li>
+                    <li>Prerequisite: Fundamentals of Computer Science A/B</li>
+                    <li>0.5 credit per semester</li>
+                </ul>
+                <p>TI programming, digital gate processing, and possibly Dr. Scheme. Now that you've learned all of
+                    that, let's
+                    step it up. ADS is all about JAVA. But don't get frightened, Mrs. Dvorsky will be there all the
+                    way, to aid
+                    you as you learn about object oriented programming, arrays, input/output, linked lists, and plenty
+                    more. You
+                    emerge from this class with a full handle on the basics of JAVA, and prepared for Analysis of
+                    Algorithms the
+                    following semester.</p>
+                <div class="toggle" onclick="toggle('ads_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="ads_formal">
+                    <span id="ads_inner">Students learn object-oriented programming methodology, and the use and
+                        implementation of abstract data types using a high-level programming language. Students study
+                        object-oriented programming methods in order to design and code programming solutions to
+                        problems that require the use of files, control structures, methods, functions, classes, and
+                        arrays.<br />Students study static and dynamic implementation of data structures. Stacks,
+                        queues, linked lists, and recursion are emphasized.</span>
+                </div>
+            </div>
+            <h2>Analysis of Algorithms</h2>
+            <ul class="no-style">
+                <li>Grade Level: 10 - 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Algorithms and Data Structures A and B</li>
                 <li>0.5 credit per semester</li>
             </ul>
-            <p>Taught by Ms. Piper, Fundamentals of Computer Science is closely linked to freshmen Physics, Chemistry, and R&amp;E.
-                For example, Microsoft Excel and STELLA models numerical data and the motion of objects in real time
-                (physics concepts). You will also find out what that PRGM button on a TI-83 calculator does and how to
-                program on TI-83. Later in the course, students will master the engineering of digital circuitry and wire
-                electronic circuit boards! (Usually, these topics are not taught until college!) Additional topics taught
-                include the basics of a Linux operating system, DrScheme, number systems, recursion, and much more!
-                Fundamentals of Computer Science prepares you for computer programming in high-level languages, covered in
-                Algorithms and Data Structures. For the real computer enthusiast, you will be equipped to take on American
-                Computer Science League competitions; you may even join Computer Club, Web Design Club, or try out for the
-                "Accelerated Track"!</p>
-            <div class="toggle" onclick="toggle('fund');">Show/Hide formal description</div>
-            <div class="nostart" id="fund">
-                <span id="fund_inner">Students study both the theory and practice of computer use through a wide variety of activities developed to coordinate with their mathematics and science courses. Students design and implement their own original solutions to given problems, following current structured programming concepts in a high-level language. They learn the inner workings of computer systems and design and build circuitry to accomplish a given task.</span>
+            <p>To learn more about programming in Java, take this exciting and engaging course. Throughout the
+                semester, you
+                will learn even more about algorithms and data structures to make your program more efficient, as well
+                as
+                new concepts such as trees and maps. Be prepared to write programs to do anything from sorting lists
+                and
+                doing algebra to drawing pictures and moving bugs. And don't forget, this class also prepares you for
+                the AP
+                Computer Science Exam!</p>
+            <div class="toggle" onclick="toggle('aoa_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="aoa_formal">
+                <span id="aoa_inner">Students study the mathematical and empirical analysis of algorithms. Various
+                    searching and sorting techniques are examined. Benchmarking, the efficiency of algorithms, and
+                    comparative studies are emphasized as well as the current AP computer science case study. All the
+                    objectives of the MCPS AP curriculum are studied, with a greater degree of rigor and
+                    sophistication. Students are prepared to take the AP Computer Science AB Exam.</span>
             </div>
-        </div>
-        <div id="adsclass">
-            <h2>Algorithms and Data Structures A/B</h2>
-            <ul>
-                <li>Grade Level: 9 - 10 - 11</li>
-                <li>Prerequisite: Fundamentals of Computer Science A/B</li>
-                <li>0.5 credit per semester</li>
-            </ul>
-            <p>TI programming, digital gate processing, and possibly Dr. Scheme. Now that you've learned all of that, let's
-                step it up. ADS is all about JAVA. But don't get frightened, Mrs. Dvorsky will be there all the way, to aid
-                you as you learn about object oriented programming, arrays, input/output, linked lists, and plenty more. You
-                emerge from this class with a full handle on the basics of JAVA, and prepared for Analysis of Algorithms the
-                following semester.</p>
-            <div class="toggle" onclick="toggle('data');">Show/Hide formal description</div>
-            <div class="nostart" id="data">
-                <span id="data_inner">Students learn object-oriented programming methodology, and the use and implementation of abstract data types using a high-level programming language. Students study object-oriented programming methods in order to design and code programming solutions to problems that require the use of files, control structures, methods, functions, classes, and arrays.<br/>Students study static and dynamic implementation of data structures. Stacks, queues, linked lists, and recursion are emphasized.</span>
-            </div>
-        </div>
-        <h2>Analysis of Algorithms</h2>
-        <ul>
-            <li>Grade Level: 10 - 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Algorithms and Data Structures A and B</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>To learn more about programming in Java, take this exciting and engaging course. Throughout the semester, you
-            will learn even more about algorithms and data structures to make your program more efficient, as well as
-            new concepts such as trees and maps. Be prepared to write programs to do anything from sorting lists and
-            doing algebra to drawing pictures and moving bugs. And don't forget, this class also prepares you for the AP
-            Computer Science Exam!</p>
-        <div class="toggle" onclick="toggle('analy');">Show/Hide formal description</div>
-        <div class="nostart" id="analy">
-            <span id="analy_inner">Students study the mathematical and empirical analysis of algorithms. Various searching and sorting techniques are examined. Benchmarking, the efficiency of algorithms, and comparative studies are emphasized as well as the current AP computer science case study. All the objectives of the MCPS AP curriculum are studied, with a greater degree of rigor and sophistication. Students are prepared to take the AP Computer Science AB Exam.</span>
-        </div>
-        <!--<h2>Advanced Application Software</h2>
-            <ul>
+            <h2>Computer Graphics</h2>
+            <ul class="no-style">
                 <li>Grade Level: 11 - 12</li>
-                <li>Prerequisite: Attainment of the outcomes of Algorithms and Data Structures or AP Computer Science</li>
+                <li>Prerequisite: Attainment of the outcomes of Analysis of Algorithms or AP Computer Science</li>
                 <li>0.5 credit per semester</li>
             </ul>
-            <p>INSERT BLURB HERE!!!!! ???</p>
-            <div class="toggle" onclick="toggle('apps');">Show/Hide formal description</div>
-            <div id="apps">
-                <span id="apps_inner">Self-motivated, self-directed students explore several sophisticated computer application software packages and study programming languages not otherwise offered in the magnet program. Students actively participate in designing their own course goals and projects.</span>
-            </div>-->
-        <h2>Computer Graphics</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Analysis of Algorithms or AP Computer Science</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Computer Graphics is a great introduction to next level of computer science. Unlike previous computer science
-            courses, the end result of each program is not fully predefined. Students have the ability to be fairly
-            creative and unique within the bounds of the rubric. The class teaches all the skills of using Java to
-            create 2D graphics, animations, and eventually a basic physics simulation. There is no shortage of projects
-            to work through, but a keen and conscientious student should find them all reasonable and engaging.</p>
-        <div class="toggle" onclick="toggle('graphics');">Show/Hide formal description</div>
-        <div class="nostart" id="graphics">
-            <span id="graphics_inner">An introduction to the use of computers for input, manipulation, and display of graphical information. Students design and code modules to carry out fundamental graphics operations such as transforming, clipping, and zooming two-dimensional objects. Some animation techniques also are studied.</span>
-        </div>
-        <h2>Software Design</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Computer Graphics</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Software Design is unique because of its freedom. Working with one or two team members, you get one whole
-            semester to develop a software application from start to finish. Most groups decide to create a
-            graphics-based game but the ultimate decision is up to the group members. Time management is a must, but
-            this course is the perfect opportunity to put your programming skills to use and imagination to work. The
-            end result is definitely worth it.</p>
-        <div class="toggle" onclick="toggle('software');">Show/Hide formal description</div>
-        <div class="nostart" id="software">
-            <span id="software_inner">A formal approach to current techniques in software design and development provides students with a means to apply the techniques as they work in teams in the organization, management, and development of a large software project from start to finish. Software management, program requirements definition, program design methodology, program correctness, documentation, program testing, and program maintenance are studied.</span>
-        </div>
-        <h2>Computer Modeling and Simulation</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Analysis of Algorithms or AP Computer Science</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Imagine, if you will, lots of squirrels. So many squirrels that they can gang up on you and take your
-            sandwiches. This is not very realistic. In fact, your squirrel population model probably just went beserk
-            with a positive feedback loop. <br/> Learn how to create realistic, useful, informative and robust models in
-            ModSim. As well as prevent squirrel gangs.</p>
-        <div class="toggle" onclick="toggle('modsim');">Show/Hide formal description</div>
-        <div class="nostart" id="modsim">
-            <span id="modsim_inner">The theoretical foundations for modeling and simulating discrete and continuous systems are studied. Students design computer simulations and implement them in a high-level language using current simulation software tools.</span>
-        </div>
-        <h2>Introduction to Aritificial Intelligence with LISP</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Analysis of Algorithms or AP Computer Science</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Introduction to AI covers the basic history and concepts of the growing field of artificial intelligence.
-            Students learn to code functions and programs in LISP, including a logic puzzle solver that inputs clues and
-            outputs the solution to puzzles often solved with grids. The class involves independent work as well as
-            several group projects. For anyone who would like to learn about the theory and applications behind
-            artificial intelligence, the class is a solid and fun introduction to a very timely subject.</p>
-        <div class="toggle" onclick="toggle('ai');">Show/Hide formal description</div>
-        <div class="nostart" id="ai">
-            <span id="ai_inner">An introduction to the traditional problems and techniques of artificial intelligence. Students study search strategies, knowledge representation, and an introduction to LISP. Application areas include expert systems, natural language processing, and vision processing.</span>
-        </div>
-        <!--				 <h2>Computational Methods</h2>
-                            <ul>
+            <p>Computer Graphics is a great introduction to next level of computer science. Unlike previous computer
+                science
+                courses, the end result of each program is not fully predefined. Students have the ability to be fairly
+                creative and unique within the bounds of the rubric. The class teaches all the skills of using Java to
+                create 2D graphics, animations, and eventually a basic physics simulation. There is no shortage of
+                projects
+                to work through, but a keen and conscientious student should find them all reasonable and engaging.</p>
+            <div class="toggle" onclick="toggle('graphics_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="graphics_formal">
+                <span id="graphics_inner">An introduction to the use of computers for input, manipulation, and display
+                    of graphical information. Students design and code modules to carry out fundamental graphics
+                    operations such as transforming, clipping, and zooming two-dimensional objects. Some animation
+                    techniques also are studied.</span>
+            </div>
+            <h2>Software Design</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Computer Graphics</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Software Design is unique because of its freedom. Working with one or two team members, you get one
+                whole
+                semester to develop a software application from start to finish. Most groups decide to create a
+                graphics-based game but the ultimate decision is up to the group members. Time management is a must,
+                but
+                this course is the perfect opportunity to put your programming skills to use and imagination to work.
+                The
+                end result is definitely worth it.</p>
+            <div class="toggle" onclick="toggle('software_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="software_formal">
+                <span id="software_inner">A formal approach to current techniques in software design and development
+                    provides students with a means to apply the techniques as they work in teams in the organization,
+                    management, and development of a large software project from start to finish. Software management,
+                    program requirements definition, program design methodology, program correctness, documentation,
+                    program testing, and program maintenance are studied.</span>
+            </div>
+            <h2>Computer Modeling and Simulation</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Analysis of Algorithms or AP Computer Science</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Imagine, if you will, lots of squirrels. So many squirrels that they can gang up on you and take your
+                sandwiches. This is not very realistic. In fact, your squirrel population model probably just went
+                beserk
+                with a positive feedback loop. <br /> Learn how to create realistic, useful, informative and robust
+                models in
+                ModSim. As well as prevent squirrel gangs.</p>
+            <div class="toggle" onclick="toggle('modsim_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="modsim_formal">
+                <span id="modsim_inner">The theoretical foundations for modeling and simulating discrete and continuous
+                    systems are studied. Students design computer simulations and implement them in a high-level
+                    language using current simulation software tools.</span>
+            </div>
+            <h2>Introduction to Aritificial Intelligence with LISP</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Analysis of Algorithms or AP Computer Science</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Introduction to AI covers the basic history and concepts of the growing field of artificial
+                intelligence.
+                Students learn to code functions and programs in LISP, including a logic puzzle solver that inputs
+                clues and
+                outputs the solution to puzzles often solved with grids. The class involves independent work as well as
+                several group projects. For anyone who would like to learn about the theory and applications behind
+                artificial intelligence, the class is a solid and fun introduction to a very timely subject.</p>
+            <div class="toggle" onclick="toggle('ai_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="ai_formal">
+                <span id="ai_inner">An introduction to the traditional problems and techniques of artificial
+                    intelligence. Students study search strategies, knowledge representation, and an introduction to
+                    LISP. Application areas include expert systems, natural language processing, and vision processing.</span>
+            </div>
+            <!--				 <h2>Computational Methods</h2>
+                            <ul class="no-style">
                                 <li>Grade Level: 11 - 12</li>
                                 <li>Prerequisite: Attainment of the outcomes of Analysis of Algorithms or AP Computer Science and Analysis 1A</li>
                                 <li>0.5 credit per semester</li>
@@ -733,8 +943,8 @@
                             <div id="compmeth">
                                 <span id="compmeth_inner">Students create programs using numerical algorithms, analyzing each with respect to requirements and limitations.</span>
                             </div> -->
-        <!--				 <h2>3-D Computer Graphics</h2>
-                            <ul>
+            <!--				 <h2>3-D Computer Graphics</h2>
+                            <ul class="no-style">
                                 <li>Grade Level: 11 - 12</li>
                                 <li>Prerequisite: Teacher recommendation and coordinator permission</li>
                                 <li>0.5 credit per semester</li>
@@ -745,135 +955,199 @@
                             <div id="guided">
                                 <span id="guided_inner">This is an individualized course that addresses the research interests of students who are advanced in a particular subject area. Arrangements are made with a sponsoring teacher for in-depth work in an area of interest, typically involving equipment or materials that go beyond what is available in the classroom. The advisor and student set individual goals and expectations.</span>
                             </div> -->
+        </div>
     </div>
-</div>
-<div id='inter' class='tabcontent'>
-    <div class="courses">
-        <div id="reclass">
-            <h2>Research and Experimentation for Problem Solving 1A/B</h2>
-            <ul>
-                <li>Grade Level: 9</li>
-                <li>Corequisite: Advanced Science 1, Physics/Advanced Science 2, Chemistry</li>
-                <li>0.25 credit per semester</li>
-            </ul>
-            <p>Despite the hundreds of able, gifted students that have walked the halls of Montgomery Blair High School, no
-                one has yet succeeded in measuring the exact height of the school's huge and mysterious steeple. Magnet
-                students try every year, constructing rudimentary measuring devices and implementing trigonometry to wager a
-                guess, but an estimate of a mere five feet is not unusual in spite of their best attempts. The mantra of
-                "try, try again" is one that Magnet students learn to embrace early on in high school, as they enter the
-                dusty Research and Experimentation classroom. From building trebuchets to conducting Chemistry experiments,
-                students utilize and hone their problem skills while exposing themselves to the real-life applications of
-                the concepts learned in other interdisciplinary Magnet classes. So don't be alarmed if you happen to hear
-                the high-pitched squeal of a band saw while walking down the 210s hallway - it's just the sound of learning,
-                Magnet-style.</p>
-            <div class="toggle" onclick="toggle('re1');">Show/Hide formal description</div>
-            <div class="nostart" id="re1">
-                <span id="re1_inner">This is an engineering, laboratory-based course in which students study, research, and apply concepts studied in their magnet science, mathematics, and computer science classes to solve real-world problems. Topics in Grade 9 include, but are not limited to, indirect measurement techniques and devices, data analysis, computer-aided drawing, materials science, research, and scientific instrumentation.</span>
+    <div id='inter' class='tabcontent'>
+        <div class="courses">
+            <div id="re">
+                <h2>Research and Experimentation for Problem Solving 1A/B</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 9</li>
+                    <li>Corequisite: Advanced Science 1, Physics/Advanced Science 2, Chemistry</li>
+                    <li>0.25 credit per semester</li>
+                </ul>
+                <p>Despite the hundreds of able, gifted students that have walked the halls of Montgomery Blair High
+                    School, no
+                    one has yet succeeded in measuring the exact height of the school's huge and mysterious steeple.
+                    Magnet
+                    students try every year, constructing rudimentary measuring devices and implementing trigonometry
+                    to wager a
+                    guess, but an estimate of a mere five feet is not unusual in spite of their best attempts. The
+                    mantra of
+                    "try, try again" is one that Magnet students learn to embrace early on in high school, as they
+                    enter the
+                    dusty Research and Experimentation classroom. From building trebuchets to conducting Chemistry
+                    experiments,
+                    students utilize and hone their problem skills while exposing themselves to the real-life
+                    applications of
+                    the concepts learned in other interdisciplinary Magnet classes. So don't be alarmed if you happen
+                    to hear
+                    the high-pitched squeal of a band saw while walking down the 210s hallway - it's just the sound of
+                    learning,
+                    Magnet-style.</p>
+                <div class="toggle" onclick="toggle('re_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="re_formal">
+                    <span id="re_inner">This is an engineering, laboratory-based course in which students study,
+                        research, and apply concepts studied in their magnet science, mathematics, and computer science
+                        classes to solve real-world problems. Topics in Grade 9 include, but are not limited to,
+                        indirect measurement techniques and devices, data analysis, computer-aided drawing, materials
+                        science, research, and scientific instrumentation.</span>
+                </div>
             </div>
-        </div>
-        <div id="poeclass">
-            <h2>Principles of Engineering A/B</h2>
-            <ul>
-                <li>Grade Level: 10</li>
-                <li>Prerequisite: Research and Experimentation for Problem Solving 1 A, B</li>
-                <li>Corequisite: Advanced Science 3, Earth/Space Sciences</li>
-                <li>0.25 credit per semester</li>
-            </ul>
-            <p>The main focus of R&amp;E in tenth grade is Mission Possible, a project heavily linked with Earth Systems
-                Science, where students solve problems in areas related to engineering design and construction of robots,
-                remote sensing and data collection with scientific instruments. R&amp;E is probably the first and only time
-                that students will have the opportunity to play with Legos for a school project. Students also practice
-                their oral presentation skills by giving a final report on the successes and failures of their project and
-                apply computer aided drafting techniques to draw a final sketch of their robot. By the end of the semester,
-                students come to realize that Mars is nothing compared to TerraBlair.</p>
-            <div class="toggle" onclick="toggle('re2');">Show/Hide formal description</div>
-            <div class="nostart" id="re2">
-                <span id="re2_inner">In Grade 10, the R and E course is linked instructionally to the magnet Earth and Space Science course. Topics include, but are not limited to, engineering design and construction, robotics, remote sensing, data collection with scientific instruments, and data analysis. Teamwork and research skills are emphasized.</span>
+            <div id="poe">
+                <h2>Principles of Engineering A/B</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 10</li>
+                    <li>Prerequisite: Research and Experimentation for Problem Solving 1 A, B</li>
+                    <li>Corequisite: Advanced Science 3, Earth/Space Sciences</li>
+                    <li>0.25 credit per semester</li>
+                </ul>
+                <p>The main focus of R&amp;E in tenth grade is Mission Possible, a project heavily linked with Earth
+                    Systems
+                    Science, where students solve problems in areas related to engineering design and construction of
+                    robots,
+                    remote sensing and data collection with scientific instruments. R&amp;E is probably the first and
+                    only time
+                    that students will have the opportunity to play with Legos for a school project. Students also
+                    practice
+                    their oral presentation skills by giving a final report on the successes and failures of their
+                    project and
+                    apply computer aided drafting techniques to draw a final sketch of their robot. By the end of the
+                    semester,
+                    students come to realize that Mars is nothing compared to TerraBlair.</p>
+                <div class="toggle" onclick="toggle('poe_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="poe_formal">
+                    <span id="poe_inner">In Grade 10, the R and E course is linked instructionally to the magnet Earth
+                        and Space Science course. Topics include, but are not limited to, engineering design and
+                        construction, robotics, remote sensing, data collection with scientific instruments, and data
+                        analysis. Teamwork and research skills are emphasized.</span>
+                </div>
             </div>
-        </div>
-        <div id="srpclass">
-            <h2>Research Project A/B</h2>
-            <ul>
-                <li>Grade Level: 11 - 12</li>
-                <li>Prerequisite: Research Design</li>
+            <div id="srp">
+                <h2>Research Project A/B</h2>
+                <ul class="no-style">
+                    <li>Grade Level: 11 - 12</li>
+                    <li>Prerequisite: Research Design</li>
+                    <li>0.5 credit per semester</li>
+                </ul>
+                <p>Research Project is the class for the famous Senior Research Project (SRP). In order to get a magnet
+                    research
+                    seal on your diploma, each Magnet junior must do a research project under the mentorship of a
+                    scientist. In
+                    SRP A (for second semester juniors) you'll learn how to submit a proposal, get a mentor, keep a
+                    detailed lab
+                    notebook and write all sections of a research paper. Over the summer you'll conduct your project
+                    and when
+                    you return first semester senior year, you'll enter SRP B. SRP B is for the actual paper-writing
+                    process.
+                    You'll get drafts edited, learn how to make a poster and presentation of your work, and have the
+                    opportunity
+                    to enter your project in various competitions. It is highly recommended because research is such an
+                    integral
+                    part of the magnet program.</p>
+                <div class="toggle" onclick="toggle('srp_formal');">Show/Hide formal description</div>
+                <div class="nostart" id="srp_formal">
+                    <span id="srp_inner">Students conduct research projects based on an approved proposal. All students
+                        work either independently or on a team, with the guidance of their faculty advisor or mentor
+                        and the project coordinator. Students may elect to work outside of the school facility.
+                        Requirements include the completion of a journal, project display, oral presentation, and final
+                        paper. Students begin their projects in the spring of their junior year and continue into the
+                        fall of their senior year.</span>
+                </div>
+            </div>
+            <h2>Research Design</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11</li>
+                <li>Prerequisite: Research and Experimentation for Problem Solving 2</li>
                 <li>0.5 credit per semester</li>
             </ul>
-            <p>Research Project is the class for the famous Senior Research Project (SRP). In order to get a magnet research
-                seal on your diploma, each Magnet junior must do a research project under the mentorship of a scientist. In
-                SRP A (for second semester juniors) you'll learn how to submit a proposal, get a mentor, keep a detailed lab
-                notebook and write all sections of a research paper. Over the summer you'll conduct your project and when
-                you return first semester senior year, you'll enter SRP B. SRP B is for the actual paper-writing process.
-                You'll get drafts edited, learn how to make a poster and presentation of your work, and have the opportunity
-                to enter your project in various competitions. It is highly recommended because research is such an integral
-                part of the magnet program.</p>
-            <div class="toggle" onclick="toggle('srp');">Show/Hide formal description</div>
-            <div class="nostart" id="srp">
-                <span id="srp_inner">Students conduct research projects based on an approved proposal. All students work either independently or on a team, with the guidance of their faculty advisor or mentor and the project coordinator. Students may elect to work outside of the school facility. Requirements include the completion of a journal, project display, oral presentation, and final paper. Students begin their projects in the spring of their junior year and continue into the fall of their senior year.</span>
+            <p>Developing intriguing ways to save lives is just part of life in the Magnet program. In Research and
+                Design
+                classes in eleventh grade, students propose ideas for novel devices that improve our safety from a
+                spinning
+                candleholder to an attachable leg on a crutch. After a thorough investigation of existing patents,
+                students
+                work in groups to actually construct their safety devices and present them in front of an audience of
+                several grade levels. Later on in the semester, students engage in discussions on ethics in research
+                and
+                engineering and analyze an emerging or future technology for entry into the Toshiba ExploraVision
+                Competition. The skills acquired in this course build upon those introduced in ninth and tenth grade
+                and
+                prepare students for their independent senior research projects.</p>
+            <div class="toggle" onclick="toggle('research_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="research_formal">
+                <span id="research_inner">Students explore various research methods used in science and technology to
+                    bridge
+                    the gap between classroom laboratory exercises and real-world research project design and
+                    implementation. Through a series of interdisciplinary mini-projects, students gain hands-on
+                    experience in developmental, historical, and analytical research. Students discuss ethics in
+                    research and analyze oral presentations and research papers as well as the qualities that make an
+                    effective team.</span>
+            </div>
+            <h2>Research and Experimentation: Engineering for Problem Solving (Robotics)</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Attainment of the outcomes of Research Design or teacher recommendations</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Engineering for Problem Solving is an 11th or 12th grade Research and Experimentation elective currently
+                focused on robotics. Students are currently working on developing their own Segway-type vehicle (dubbed
+                the
+                K-Way after Mr. Kaluta, the teacher of the class). Students design and build all parts of robots
+                including
+                any welding, wiring, and programming necessary. In the past, among other projects, students have
+                created a
+                3d printer.</p>
+            <div class="toggle" onclick="toggle('engineering_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="engineering_formal">
+                <span id="engineering_inner">Students select thematic studies and structured projects that are related
+                    to the various fields of engineering.</span>
+            </div>
+            <h2>Guided Research A/B</h2>
+            <ul class="no-style">
+                <li>Grade Level: 11 - 12</li>
+                <li>Prerequisite: Teacher recommendation and coordinator permission</li>
+                <li>0.5 credit per semester</li>
+            </ul>
+            <p>Guided Research is merely the formal name of Sports Statistics (a Math course) and 3-D Computer Graphics
+                (a
+                Computer Science course). Please see either the Math or Computer Science Courses page for more details
+                on
+                the respective courses.</p>
+            <div class="toggle" onclick="toggle('guided_formal');">Show/Hide formal description</div>
+            <div class="nostart" id="guided_formal">
+                <span id="guided_inner">This is an individualized course that addresses the research interests of
+                    students who are advanced in a particular subject area. Arrangements are made with a sponsoring
+                    teacher for in-depth work in an area of interest, typically involving equipment or materials that
+                    go beyond what is available in the classroom. The advisor and student set individual goals and
+                    expectations.</span>
             </div>
         </div>
-        <h2>Research Design</h2>
-        <ul>
-            <li>Grade Level: 11</li>
-            <li>Prerequisite: Research and Experimentation for Problem Solving 2</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Developing intriguing ways to save lives is just part of life in the Magnet program. In Research and Design
-            classes in eleventh grade, students propose ideas for novel devices that improve our safety from a spinning
-            candleholder to an attachable leg on a crutch. After a thorough investigation of existing patents, students
-            work in groups to actually construct their safety devices and present them in front of an audience of
-            several grade levels. Later on in the semester, students engage in discussions on ethics in research and
-            engineering and analyze an emerging or future technology for entry into the Toshiba ExploraVision
-            Competition. The skills acquired in this course build upon those introduced in ninth and tenth grade and
-            prepare students for their independent senior research projects.</p>
-        <div class="toggle" onclick="toggle('rd');">Show/Hide formal description</div>
-        <div class="nostart" id="rd">
-            <span id="rd_inner">Students explore various research methods used in science and technology to bridge the gap between classroom laboratory exercises and real-world research project design and implementation. Through a series of interdisciplinary mini-projects, students gain hands-on experience in developmental, historical, and analytical research. Students discuss ethics in research and analyze oral presentations and research papers as well as the qualities that make an effective team.</span>
-        </div>
-        <h2>Research and Experimentation: Engineering for Problem Solving (Robotics)</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Attainment of the outcomes of Research Design or teacher recommendations</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Engineering for Problem Solving is an 11th or 12th grade Research and Experimentation elective currently
-            focused on robotics. Students are currently working on developing their own Segway-type vehicle (dubbed the
-            K-Way after Mr. Kaluta, the teacher of the class). Students design and build all parts of robots including
-            any welding, wiring, and programming necessary. In the past, among other projects, students have created a
-            3d printer.</p>
-        <div class="toggle" onclick="toggle('engineering');">Show/Hide formal description</div>
-        <div class="nostart" id="engineering">
-            <span id="engineering_inner">Students select thematic studies and structured projects that are related to the various fields of engineering.</span>
-        </div>
-        <h2>Guided Research A/B</h2>
-        <ul>
-            <li>Grade Level: 11 - 12</li>
-            <li>Prerequisite: Teacher recommendation and coordinator permission</li>
-            <li>0.5 credit per semester</li>
-        </ul>
-        <p>Guided Research is merely the formal name of Sports Statistics (a Math course) and 3-D Computer Graphics (a
-            Computer Science course). Please see either the Math or Computer Science Courses page for more details on
-            the respective courses.</p>
-        <div class="toggle" onclick="toggle('guided');">Show/Hide formal description</div>
-        <div class="nostart" id="guided">
-            <span id="guided_inner">This is an individualized course that addresses the research interests of students who are advanced in a particular subject area. Arrangements are made with a sponsoring teacher for in-depth work in an area of interest, typically involving equipment or materials that go beyond what is available in the classroom. The advisor and student set individual goals and expectations.</span>
-        </div>
     </div>
-</div>
+
+    <br>
+    <hr>
+    <br>
+    <footer class="container">
+        <div class="float-right">
+            <p>Montgomery Blair High School</p>
+            <p>51 University Boulevard East</p>
+            <p>Silver Spring, Maryland 20901-245</p>
+            <p>(301) 649-2800</p>
+        </div>
+        <p>Website designed and mantained by the MBHS Sysops, under the supervision of Peter Hammond</p>
+        <p><a href="http://www.mbhs.edu">MBHS Home </a>|<a href="http://www.montgomeryschoolsmd.org"> MCPS Site </a>|<a
+                href="http://www.montgomeryschoolsmd.org/privacy.shtm" target="_blank"> MCPS Web Privacy Statement</p>
+    </footer>
 
 
-<!-- FOOTER -->
-<footer class="container">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p>&copy; 2018 Simon Chervenak, in affiliation with the MBHS 2018 Sysops. &middot; <a href="#">Privacy</a> &middot;
-        <a href="#">Terms</a></p>
-</footer>
-</main>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="js/index.js"></script>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

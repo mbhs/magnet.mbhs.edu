@@ -1,45 +1,70 @@
 /* A bs-ed version of jquery's add/remove class so the articles grow a little when you hover over them */
-$(".hover-column").mouseover(function(e) {
-    this.old = this.className;
-    this.className += ' animated pulse hover-column';
+$(".hover-column").hover(function(){
+    $(this).toggleClass("animated pulse");
 });
 
-$(".hover-column").mouseout(function(e) {
-    this.className = this.old;
+
+
+
+$(window).on('hashchange', function() {
+    hash = window.location.hash.substring(1);
+    hashes = hash.split("#")
+	if(hash == ""){
+		openTab("overview", null);
+	} else {
+        openTab(hashes[0], hashes[1]);
+    }
+    $("html, body").scrollTop(0);
 });
 
 /* The following functions describe tab utilities, like on overview.html
    that have a lower navbar for navigating multiple pages in one.
  */
-function openTab(evt, name) {
-    $(".tabcontent").hide(); /* hide all tabs */
-    $(".tablinks").removeClass("active"); /* remove old active tab */
-    $("#" + name)[0].style.display = "block"; /* show new tab */
-    evt.currentTarget.className += " active"; /* activate new tab */
+
+$(function(){
+    // array of hashes (#science#class -> [science, class])
+    var hashes = window.location.hash.split("#").splice(1, 3);
+    $(".nostart").hide(); // always hide all technical descriptions of classes
+    if(hashes.length == 0){
+        $(".tabcontent").first().css("display", "block"); // display first tab
+        $(".tablinks").first().addClass("active"); // make first tab active
+        return;
+    }
+    processHashes(hashes);
+})
+
+function processHashes(hashes) {
+     // array of hashes in the url (#science#class -> [science, class])
+    var subject = hashes[0];
+    var _class = hashes[1];
+    openTab(subject, _class);
+
+    if (hashes.length > 1) {
+        var offset = 55; // account for the size of the header 
+        $("html, body").animate({
+            scrollTop: $("#" + hashes[1]).position().top - offset  // animate a scroll down to that class
+        }, 750);
+    } else {
+        $("html, body").scrollTop(0);
+    }
+
+
 }
 
-$(function () {
-    var hashes = window.location.hash.split("#").splice(1, 3); /* get tab from url */
-    if (hashes.length > 0) {
-        /* Show the current tab */
-        $("#" + hashes[0])[0].style.display = "block";
-        $("#t" + hashes[0]).addClass("active");
-        if (hashes.length > 1) {
-            /* Scroll down to the selected class */
-            $("html, body").animate({ scrollTop: $('#'+hashes[1]).position().top }, 1000);
-        }
-    } else {
-        /* To show the first tab because nothing has been selected */
-        var a = $(".tabcontent");
-        if (a.length > 0) { a[0].style.display = "block"; }
-    }
-    $(".nostart").hide(); /* hide formal descriptions */
-});
+function openTab(subject, _class) {
+    subject = (subject == "undefined") ? "overview" : subject;
+    console.log(subject)
+    $(".tabcontent").hide(); // hide all tabs and content to start
+    $(".tablinks").removeClass("active");
+    $("#" + subject)[0].style.display = "block"; // display only the passed tab content
+    $("#" + subject + "_tab").addClass("active"); // display grey "pressed" color on the passed tab button
+    location.hash = _class == null ? subject : subject + "#" + _class;
+}
+
 
 $(".tag").click(function(e, d, g) {
-    /* clicked on a link in overview.html */
-    location.hash = e.target.id;
-    location.reload(); /* for safari */
+    location.hash = e.target.redirect;
+    location.reload();
 });
 
 function toggle(id) {
