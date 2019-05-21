@@ -6,12 +6,14 @@ $(".hover-column").hover(function(){
 
 
 $(window).on('hashchange', function() {
-	hash = window.location.hash.substring(1);
+    hash = window.location.hash.substring(1);
+    hashes = hash.split("#")
 	if(hash == ""){
-		return;
+		openTab("overview", null);
 	} else {
-		openTab(hash);
-	}
+        openTab(hashes[0], hashes[1]);
+    }
+    $("html, body").scrollTop(0);
 });
 
 
@@ -29,26 +31,35 @@ $(function(){
 
 function processHashes(hashes) {
      // array of hashes in the url (#science#class -> [science, class])
-    var _class = hashes[0];
-    openTab(_class);
+    var subject = hashes[0];
+    var _class = hashes[1];
+    openTab(subject, _class);
 
     if (hashes.length > 1) {
+        var offset = 55; // account for the size of the header 
         $("html, body").animate({
-            scrollTop: $("#" + hashes[1]).position().top  // animate a scroll down to that class
-        }, 1000);
+            scrollTop: $("#" + hashes[1]).position().top - offset  // animate a scroll down to that class
+        }, 750);
+    } else {
+        $("html, body").scrollTop(0);
     }
+
+
 }
 
-function openTab(name) {
+function openTab(subject, _class) {
+    subject = (subject == "undefined") ? "overview" : subject;
+    console.log(subject)
     $(".tabcontent").hide(); // hide all tabs and content to start
     $(".tablinks").removeClass("active");
-    $("#" + name)[0].style.display = "block"; // display only the passed tab content
-    $("#" + name + "Tab").addClass("active"); // display grey "pressed" color on the passed tab button
+    $("#" + subject)[0].style.display = "block"; // display only the passed tab content
+    $("#" + subject + "_tab").addClass("active"); // display grey "pressed" color on the passed tab button
+    location.hash = _class == null ? subject : subject + "#" + _class;
 }
 
 
 $(".tag").click(function(e, d, g) {
-    location.hash = e.target.id;
+    location.hash = e.target.redirect;
     location.reload();
 });
 

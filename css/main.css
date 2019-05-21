@@ -1,124 +1,147 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
-}
-
-body { padding-top: 50px; }
-
 * {
-    margin: 0;
+    padding: 0;
+	border: 0;
+	color: #000000;
+	line-height: 20px;
 }
-
-/*.nav > li > a:hover{ { color: #ff192e !important; }*/
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-    margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-    height: 32rem;
-    background-color: #777;
-}
-.carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    height: 32rem;
-}
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-.marketing h2 {
-    font-weight: 400;
-}
-.marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -.05rem;
-}
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
-    }
-
-    .featurette-heading {
-        font-size: 50px;
-    }
-}
-
-@media (min-width: 62em) {
-    .featurette-heading {
-        margin-top: 7rem;
-    }
-}
-
-.front {
-    z-index: 12324;
-}/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
 body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
+
+    /*      top left bot right */
+    margin: 4.5em 10em 0em 10em;
+    background: #eee;
+    font-family:"Noto Sans","Lucida Grande","Lucida Sans","Segoe UI",sans-serif;
+    font-weight:normal;
+    line-height:1.6;
 }
 
-body { padding-top: 50px; }
-
-* {
-    margin: 0;
+div { font-size: 15px; }
+p { border: 0; color: #000000; padding: 0 0 10px 0; float: none; }
+p.plain { padding-top: 0; padding-bottom: 0; }
+a { text-decoration: none; color: #cc0011; }
+a:hover, a:focus { text-decoration: underline; }
+h1 { font-size: 30px; color: #cc0011; padding: 20px 0 20px 0; }
+h2 { font-size: 24px; padding: 20px 0 15px 0; }
+h2.home { padding: 0 0 5px 0; border-bottom: 1px dotted #000;}
+h2.headline { text-align: center; margin: 0 0 10px 0; }
+h2.small { font-family: "Cambria", "Times New Roman", serif; font-size: 17px; }
+h3 { padding: 5px 0 5px 0; font-size: 20px; }
+a h3 { color: #000000; font-weight: normal; }
+a h3:hover, a h3:focus { text-decoration: underline; }
+h3.nav {
+	float: left;
+	border-right: 1px solid #c01;
+	padding: 0 5px 0 5px;
+	font-size: 13px;
 }
 
-/*.nav > li > a:hover{ { color: #ff192e !important; }*/
+ul.no-style {
+    list-style: none;
+}
+.contact-instructor {
+    padding-bottom: 40px;
+}
+
+.toggle:hover { /* for show/hide dropdowns */
+    cursor: pointer;
+}
+
+/* override bootstrap's 75% font size for .badge */
+.contact-badge {
+    font-size: 100%;
+}
+
+/* new bootstrap-like badge color types */
+/* .badge-white {
+    background-color: #f9f9f9;
+} */
+
+.badge-emphasis {
+    background-color: #f1c3c3;
+    color: #000000;
+}
+
+/* smoosh paragraphs together in footer */
+footer p {
+    margin-bottom: 2px;
+    padding-bottom: 0;
+}
+
+/* leave some empty space at the bottom */
+footer { 
+    padding-bottom: 75px;
+}
+
+li {
+    margin-bottom: 3px;
+}
 
 
+/* See: https://stackoverflow.com/questions/4151743/how-i-change-the-thickness-of-my-hr-tag */
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+
+/* SVG css for the blair logo */
+
+:root {
+    --primary-svg: #990000;
+    --secodary-svg: #c0c0c0;
+}
+
+.cls-1 {
+    fill: #fff;
+  }
+   
+  .cls-2 {
+    fill: var(--primary-svg);
+  }
+   
+  .cls-3 {
+    fill: #dbdbdb;
+  }
+   
+  .cls-4 {
+    fill: var(--primary-svg);
+  }
+   
+  .cls-5 {
+    fill: #878787;
+  }
+   
+  .cls-6 {
+    fill: #6e7267;
+  }
+   
+  .cls-7 {
+    fill: #a8a8a8;
+  }
+   
+  .cls-8 {
+    fill: #575951;
+  }
+   
+  .cls-9 {
+    fill: #494949;
+  }
+   
+  .cls-10 {
+    fill: #6d6d6d;
+  }
+   
+  .cls-11 {
+    fill: #ededed;
+  }
+
+
+
+  
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -206,52 +229,40 @@ body { padding-top: 50px; }
 
 /* Style the tab */
 .tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
-
-.nostart {
-  margin-left: 50px;
-}
-
-.tag {
-    color: #3db5e3;
-}
-
-.courses {
-    position: relative;
-}
-
-.courses > div {
-    position: relative;
-}
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+  
+  .nostart {
+    margin-left: 50px;
+  }
