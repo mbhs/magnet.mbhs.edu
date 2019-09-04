@@ -71,14 +71,14 @@ function toggle(id) {
     $('#' + id).toggle("highlight", {}, 500); /* to toggle formal descriptions */
 }
 
-$(window).on('scroll', function(event) {
-    /* scrolling to make the navbar stick to the top if the top div has been scrolled off the screen */
-    var scrollValue = $(window).scrollTop();
-    if (scrollValue > 197) { /* hardcoded for now */
-        $('.navbar').addClass('fixed-top');
-        $("#fixer").show();
-    } else {
-        $(".navbar").removeClass("fixed-top");
-        $("#fixer").hide();
-    }
-});
+// $(window).on('scroll', function(event) {
+//     /* scrolling to make the navbar stick to the top if the top div has been scrolled off the screen */
+//     var scrollValue = $(window).scrollTop();
+//     if (scrollValue > 197) { /* hardcoded for now */
+//         $('.navbar').addClass('fixed-top');
+//         $("#fixer").show();
+//     } else {
+//         $(".navbar").removeClass("fixed-top");
+//         $("#fixer").hide();
+//     }
+// });
