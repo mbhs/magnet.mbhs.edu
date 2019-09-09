@@ -1,5 +1,5 @@
 body {
-    padding: 5px;
+    margin: 4.5em 10em 0em 10em; /* top left bot right */
 }
 
 /* GLOBAL STYLES
@@ -292,4 +292,8 @@ hr {
 
 .tag:hover {
     text-decoration: underline;
+}
+
+#title {
+    padding: 0 10px 0 0;
 }
