@@ -1,3 +1,7 @@
+body {
+    padding: 5px;
+}
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -8,13 +12,28 @@
 	line-height: 20px;
 }
 body {
-
-    /*      top left bot right */
-    margin: 4.5em 10em 0em 10em;
     background: #eee;
     font-family:"Noto Sans","Lucida Grande","Lucida Sans","Segoe UI",sans-serif;
     font-weight:normal;
     line-height:1.6;
+}
+
+main {
+    /*      top left bot right */
+    margin: 0em 10em 0em 10em;
+}
+
+#bg {
+    height: 50px;
+    width: 100px;
+    padding: 0 0 0 0;
+}
+
+#topimage {
+    /*background-color:#F44336;*/
+    /*color:#fff;*/
+    height:200px;
+    width: 100%;
 }
 
 div { font-size: 15px; }

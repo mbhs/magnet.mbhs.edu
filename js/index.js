@@ -1,3 +1,4 @@
+/* A bs-ed version of jquery's add/remove class so the articles grow a little when you hover over them */
 $(".hover-column").hover(function(){
     $(this).toggleClass("animated pulse");
 });
@@ -16,6 +17,9 @@ $(window).on('hashchange', function() {
     $("html, body").scrollTop(0);
 });
 
+/* The following functions describe tab utilities, like on overview.html
+   that have a lower navbar for navigating multiple pages in one.
+ */
 
 $(function(){
     // array of hashes (#science#class -> [science, class])
@@ -64,5 +68,17 @@ $(".tag").click(function(e, d, g) {
 });
 
 function toggle(id) {
-    $('#' + id).toggle("highlight", {}, 500);
+    $('#' + id).toggle("highlight", {}, 500); /* to toggle formal descriptions */
 }
+
+// $(window).on('scroll', function(event) {
+//     /* scrolling to make the navbar stick to the top if the top div has been scrolled off the screen */
+//     var scrollValue = $(window).scrollTop();
+//     if (scrollValue > 197) { /* hardcoded for now */
+//         $('.navbar').addClass('fixed-top');
+//         $("#fixer").show();
+//     } else {
+//         $(".navbar").removeClass("fixed-top");
+//         $("#fixer").hide();
+//     }
+// });
