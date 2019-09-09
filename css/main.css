@@ -285,3 +285,11 @@ hr {
   .nostart {
     margin-left: 50px;
   }
+
+.tag {
+    color: red; /* !important; */
+}
+
+.tag:hover {
+    text-decoration: underline;
+}
