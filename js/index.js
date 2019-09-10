@@ -17,13 +17,23 @@ $(".hover-column").hover(function(){
 // });
 
 $("span").click(function(e) {
-   var newhash = e.target.id.split("#").slice(1);
+   // var newhash = e.target.id.split("#").slice(1);
    // openTab(...newhash);
    // $("html, body").scrollTop(0);
-    processHashes(newhash);
+   document.location.hash = e.target.id
+   console.log(e.target.id);
    e.preventDefault();
    return false;
 });
+
+
+$(window).on('hashchange', function(){
+    var newhash = document.location.hash.split("#").slice(1);
+//    console.log(newhash);
+    processHashes(newhash);
+});
+
+
 
 /* The following functions describe tab utilities, like on overview.html
    that have a lower navbar for navigating multiple pages in one.
