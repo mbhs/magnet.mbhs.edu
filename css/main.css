@@ -292,6 +292,7 @@ hr {
 
 .tag:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 #title {
