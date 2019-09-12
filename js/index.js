@@ -83,7 +83,7 @@ function openTab(subject, _class) {
 // });
 
 function toggle(id) {
-    $('#' + id).toggle("highlight", {}, 500); /* to toggle formal descriptions */
+    $('#' + id).toggle(); /* to toggle formal descriptions */
 }
 
 // $(window).on('scroll', function(event) {

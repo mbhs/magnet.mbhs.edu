@@ -68,6 +68,11 @@ li.dropdown:hover > .dropdown-menu {display: block;}
 
 .toggle:hover { /* for show/hide dropdowns */
     cursor: pointer;
+    text-decoration: underline;
+}
+
+.toggle {
+    color: red;
 }
 
 /* override bootstrap's 75% font size for .badge */
