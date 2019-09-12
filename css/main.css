@@ -63,6 +63,9 @@ ul.no-style {
     padding-bottom: 40px;
 }
 
+li.dropdown:hover > .dropdown-menu {display: block;}
+
+
 .toggle:hover { /* for show/hide dropdowns */
     cursor: pointer;
 }
