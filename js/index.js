@@ -16,7 +16,7 @@ $(".hover-column").hover(function(){
 //     $("html, body").scrollTop(0);
 // });
 
-$("span").click(function(e) {
+$(".tag").click(function(e) {
    // var newhash = e.target.id.split("#").slice(1);
    // openTab(...newhash);
    // $("html, body").scrollTop(0);
