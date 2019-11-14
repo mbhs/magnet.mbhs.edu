@@ -1,4 +1,4 @@
-body {
+main {
     margin: 4.5em 10em 0em 10em; /* top left bot right */
 }
 
@@ -310,10 +310,4 @@ hr {
 
 .navbar.transparent.navbar-inverse .navbar-inner {
     background: none !important; /* rgba(0,0,0,0.4); */
-}
-
-#front-image {
-    height: 100%;
-    background: url("../images/Montgomery-Blair-High-School.jpg") no-repeat center;
-    background-size: cover;
 }
