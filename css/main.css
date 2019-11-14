@@ -308,6 +308,7 @@ hr {
     white-space: nowrap;
 }
 
-.navbar.transparent.navbar-inverse .navbar-inner {
-    background: none !important; /* rgba(0,0,0,0.4); */
+.navbar-transparent .navbar-inner {
+    background: none;
+/*rgba(0,0,0,0.4);*/
 }
