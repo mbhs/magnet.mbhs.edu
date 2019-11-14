@@ -305,4 +305,15 @@ hr {
 
 #title {
     padding: 0 10px 0 0;
+    white-space: nowrap;
+}
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+    background: none !important; /* rgba(0,0,0,0.4); */
+}
+
+#front-image {
+    height: 100%;
+    background: url("../images/Montgomery-Blair-High-School.jpg") no-repeat center;
+    background-size: cover;
 }
