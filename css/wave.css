@@ -26,6 +26,14 @@
     bottom: -1px;
     background-image: linear-gradient(to top, #ff0000 20%, #ff0000 80%);
 }
+.ww2 {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #ffffff 20%, #ffffff 80%);
+}
 .bgTop {
     z-index: 15;
     opacity: 0.5;
@@ -68,8 +76,8 @@
     animation: move_wave 15s linear infinite;
 }
 
-#wavetext {
-    position: absolute;
+.wavetext {
+    position: relative;
     margin: 0;
     top: 50%;
     left: 50%;
@@ -79,8 +87,12 @@
     text-align: center;
 }
 
+.wt2 {
+    left: 5%;
+}
+
 #wavebutton {
-    position: absolute;
+    position: relative;
     top: 75%;
     left: 50%;
     z-index: 100;

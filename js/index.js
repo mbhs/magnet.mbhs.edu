@@ -97,3 +97,15 @@ function toggle(id) {
 //         $("#fixer").hide();
 //     }
 // });
+
+
+new fullpage('#fullpage', {
+    // navigation: true,
+    responsiveWidth: 700,
+    parallax: true,
+    onLeave: function(or, des, dir) {
+        if (or.index == 1) {
+
+        }
+    }
+});

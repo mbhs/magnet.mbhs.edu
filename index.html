@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="stylesheet" type="text/css" href="css/wave.css" />
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
     <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">-->
 </head>
 
@@ -157,18 +158,36 @@
      <!--<br><br><br> -->
 </div>
 <!--<img class="mw-100 mh-100 w-100 h-100" src="images/Montgomery-Blair-High-School.jpg">-->
-<div class="waveWrapper waveAnimation mw-100 mh-100 w-100 h-100" style="display: inline-block;">
-
-    <div class="waveWrapperInner bgTop">
-        <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+<div id="fullpage">
+    <div class="section">
+        <div id="page1" class="waveWrapper waveAnimation mw-100 mh-100 w-100 h-100" style="display: inline-block;">
+            <div class="waveWrapperInner bgTop">
+                <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgMiddle">
+                <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+            </div>
+            <span class="wavetext">The Blair Magnet</span>
+            <!--<image id="wavebutton" src="images/chevron2.png"></image>-->
+            <div class="waveWrapperInner bgBottom">
+                <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+            </div>
+        </div>
     </div>
-    <div class="waveWrapperInner bgMiddle">
-        <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
-    </div>
-    <span id="wavetext">The Blair Magnet</span>
-    <image id="wavebutton" src="images/chevron2.png"></image>
-    <div class="waveWrapperInner bgBottom">
-        <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+    <div class="section">
+        <div id="page2" class="waveAnimation mw-100 mh-100 w-100 h-100 ww2" style="display: inline-block;">
+            <div class="waveWrapperInner bgTop">
+                <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgMiddle">
+                <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+            </div>
+            <span class="wavetext wt2">Let's innovate together.</span>
+            <!--<image id="wavebutton" src="images/chevron2.png"></image>-->
+            <div class="waveWrapperInner bgBottom">
+                <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+            </div>
+        </div>
     </div>
 </div>
 <main role="main">
@@ -188,6 +207,7 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="js/fullpage.js"></script>
 <script src="js/index.js"></script>
 </body>
 
